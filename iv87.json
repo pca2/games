@@ -2709,17 +2709,6 @@
     },
     "rotation": 0
   },
-  "v9d5": {
-    "type": "label",
-    "text": "Command Zone",
-    "x": 1309,
-    "y": 821,
-    "z": 96,
-    "id": "v9d5",
-    "css": {
-      "font-size": "80%"
-    }
-  },
   "commandZone2": {
     "type": "holder",
     "id": "commandZone2",
@@ -2735,17 +2724,6 @@
     "onEnter": {
       "rotation": 0,
       "activeFace": 1
-    }
-  },
-  "v9d6": {
-    "type": "label",
-    "text": "Command Zone",
-    "x": 1315,
-    "y": 172,
-    "z": 96,
-    "id": "v9d6",
-    "css": {
-      "font-size": "80%"
     }
   },
   "commandZoneDeck1": {
@@ -2921,10 +2899,27 @@
     "clickRoutine": [
       {
         "func": "CALL",
-        "routine": "toggleWidgetVisRoutine",
+        "routine": "toggleWidgetVisBulkRoutine",
         "arguments": {
-          "widgetId": "playerDeckActions1"
+          "widgetIds": [
+            "playerDeckActions1"
+          ]
         }
+      }
+    ],
+    "toggleWidgetVisBulkRoutine": [
+      {
+        "func": "FOREACH",
+        "in": "${widgetIds}",
+        "loopRoutine": [
+          {
+            "func": "CALL",
+            "routine": "toggleWidgetVisRoutine",
+            "arguments": {
+              "widgetId": "${value}"
+            }
+          }
+        ]
       }
     ],
     "toggleWidgetVisRoutine": [
@@ -4854,6 +4849,12 @@
             "label": "Show Commander Damage (uncheck to hide)?",
             "variable": "showCD",
             "value": "${PROPERTY showCD}"
+          },
+          {
+            "type": "checkbox",
+            "label": "Show Command Zone (uncheck to hide)?",
+            "variable": "showCZ",
+            "value": "${PROPERTY showCZ}"
           }
         ]
       },
@@ -4862,6 +4863,12 @@
         "collection": "thisButton",
         "property": "showCD",
         "value": "${showCD}"
+      },
+      {
+        "func": "SET",
+        "collection": "thisButton",
+        "property": "showCZ",
+        "value": "${showCZ}"
       }
     ],
     "x": 1569,
@@ -4883,24 +4890,59 @@
     "height": 30,
     "dragging": "Carl",
     "showCD": true,
+    "showCZ": true,
     "showCDChangeRoutine": [
       {
         "func": "CALL",
-        "routine": "toggleWidgetVisRoutine",
+        "routine": "toggleWidgetVisBulkRoutine",
         "widget": "libraryButton1",
         "arguments": {
-          "widgetId": "commanderDamage2"
+          "widgetIds": [
+            "commanderDamage2",
+            "commanderDamage1"
+          ],
+          "newScale":"${showCD}"
         }
-      },
+      }
+    ],
+    "showCZChangeRoutine": [
       {
         "func": "CALL",
-        "routine": "toggleWidgetVisRoutine",
+        "routine": "toggleWidgetVisBulkRoutine",
         "widget": "libraryButton1",
         "arguments": {
-          "widgetId": "commanderDamage1"
+          "widgetIds": [
+            "commandZone1",
+            "commandZone2"
+          ],
+          "newScale":"${showCZ}"
         }
       }
     ]
+  },
+  "commandZoneLabel1": {
+    "type": "label",
+    "id": "commandZoneLabel1",
+    "z": 113,
+    "css": {
+      "font-size": "80%"
+    },
+    "text": "Command Zone",
+    "x": 11,
+    "parent": "commandZone1",
+    "y": -19
+  },
+  "commandZoneLabel2": {
+    "type": "label",
+    "id": "commandZoneLabel2",
+    "x": 10,
+    "z": 114,
+    "css": {
+      "font-size": "80%"
+    },
+    "text": "Command Zone",
+    "y": 167,
+    "parent": "commandZone2"
   },
   "_meta": {
     "version": 15,
