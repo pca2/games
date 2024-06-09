@@ -4944,6 +4944,43 @@
     "y": 167,
     "parent": "commandZone2"
   },
+  "HoverSample": {
+    "id": "HoverSample",
+    "x": -352,
+    "y": 708,
+    "z": 79186,
+    "css": {
+      "default": {
+        "border": "1px solid black",
+        "cursor": "pointer",
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center",
+        "background": "red"
+      },
+      ":hover": {
+        "background": "${PROPERTY bgColor}80",
+        "border": "1px solid ${PROPERTY bgColor}"
+      },
+      "::after": {
+        "content": "\"${PROPERTY hoverText}\"",
+        "display": "none",
+        "position": "absolute",
+        "margin-left": "260px",
+        "color": "white",
+        "background-color": "grey",
+        "width": "145px",
+        "text-align": "center",
+        "border-radius": "4px",
+        "font-size": "20px"
+      },
+      ":hover::after": {
+        "display": "block"
+      }
+    },
+    "text": "Hover over me",
+    "hoverText": "Clone the current card"
+  },
   "_meta": {
     "version": 15,
     "info": {
