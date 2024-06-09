@@ -1,0 +1,24 @@
+{
+  "name": "games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pca2/games.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pca2/games/issues"
+  },
+  "homepage": "https://github.com/pca2/games#readme",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "jszip": "^3.10.1"
+  }
+}
