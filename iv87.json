@@ -130,58 +130,6 @@
     "z": 96,
     "id": "v9d3"
   },
-  "ht1s": {
-    "type": "button",
-    "clickRoutine": [
-      {
-        "func": "INPUT",
-        "css": "background-color:beige",
-        "fields": [
-          {
-            "type": "title",
-            "text": "Create a token card"
-          },
-          {
-            "type": "string",
-            "label": "Enter the Title",
-            "variable": "title",
-            "value": ""
-          },
-          {
-            "type": "string",
-            "label": "(Optional) Enter the Body text",
-            "variable": "body",
-            "value": ""
-          },
-          {
-            "type": "string",
-            "label": "Power/Toughness",
-            "variable": "stats",
-            "value": "1/1"
-          }
-        ]
-      },
-      {
-        "func": "CLONE",
-        "source": [
-          "mcxn"
-        ],
-        "collection": "tokens",
-        "properties": {
-          "text": "${title}\n${body}\n${stats}",
-          "x": 800,
-          "y": 500
-        }
-      }
-    ],
-    "y": 606,
-    "z": 16,
-    "id": "ht1s",
-    "text": "Old Token",
-    "width": 60,
-    "height": 25,
-    "x": 1813
-  },
   "zdvr1": {
     "type": "label",
     "text": 25,
@@ -2707,7 +2655,8 @@
       "rotation": 0,
       "activeFace": 1
     },
-    "rotation": 0
+    "rotation": 0,
+    "scale": 0
   },
   "commandZone2": {
     "type": "holder",
@@ -2724,7 +2673,8 @@
     "onEnter": {
       "rotation": 0,
       "activeFace": 1
-    }
+    },
+    "scale": 0
   },
   "commandZoneDeck1": {
     "type": "deck",
@@ -4817,7 +4767,8 @@
     "css": "font-size: 20px;",
     "editable": true,
     "text": 0,
-    "widgetType": "commanderDamage"
+    "widgetType": "commanderDamage",
+    "scale": 0
   },
   "commanderDamage1": {
     "type": "label",
@@ -4828,7 +4779,8 @@
     "width": 40,
     "css": "font-size: 20px;",
     "editable": true,
-    "text": 0
+    "text": 0,
+    "scale": 0
   },
   "9wmd": {
     "type": "button",
@@ -4889,8 +4841,8 @@
     "width": 30,
     "height": 30,
     "dragging": "Carl",
-    "showCD": true,
-    "showCZ": true,
+    "showCD": false,
+    "showCZ": false,
     "showCDChangeRoutine": [
       {
         "func": "CALL",
@@ -4901,7 +4853,7 @@
             "commanderDamage2",
             "commanderDamage1"
           ],
-          "newScale":"${showCD}"
+          "newScale": "${showCD}"
         }
       }
     ],
@@ -4915,7 +4867,7 @@
             "commandZone1",
             "commandZone2"
           ],
-          "newScale":"${showCZ}"
+          "newScale": "${showCZ}"
         }
       }
     ]
