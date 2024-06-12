@@ -4933,6 +4933,31 @@
     "text": "Hover over me",
     "hoverText": "Clone the current card"
   },
+  "flipCardButton": {
+    "type": "button",
+    "text": "Flip Card",
+    "clickRoutine": [
+      {
+        "func": "SELECT",
+        "property": "parent",
+        "relation": "==",
+        "value": "tokenHolder2",
+        "collection": "tokensToBeFlipped",
+        "max": 1
+      },
+      {
+        "func": "FLIP",
+        "collection": "tokensToBeFlipped"
+      }
+    ],
+    "z": 125,
+    "id": "ah5b",
+    "width": 100,
+    "height": 20,
+    "parent": "tokenActionsBox",
+    "x": 125,
+    "y": 32
+  },
   "_meta": {
     "version": 15,
     "info": {
