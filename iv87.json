@@ -554,8 +554,7 @@
     "hoverParent": "ed19",
     "x": 885,
     "y": 733,
-    "movable": false,
-    "scale": 0
+    "movable": false
   },
   "izon5": {
     "type": "button",
@@ -739,8 +738,7 @@
     "holderId": "playerDeckHolder2",
     "height": 80,
     "movable": false,
-    "x": 852,
-    "scale": 0
+    "x": 852
   },
   "izon7": {
     "type": "button",
@@ -938,7 +936,7 @@
   },
   "tokenActionsBox": {
     "id": "tokenActionsBox",
-    "x": 1362,
+    "x": 1360,
     "y": 685,
     "width": 230,
     "height": 143,
@@ -948,9 +946,8 @@
       "background": "lightgray",
       "border": "1px solid black"
     },
-    "z": 165,
-    "layer": 2,
-    "scale": 0
+    "z": 167,
+    "layer": 2
   },
   "playerHand2": {
     "type": "holder",
@@ -1110,305 +1107,77 @@
       ]
     },
     "cardTypes": {
-      "Plains": {
-        "label": "Plains",
-        "image": "https://api.scryfall.com/cards/named?exact=Plains&format=image"
-      },
-      "Swamp": {
-        "label": "Swamp",
-        "image": "https://api.scryfall.com/cards/named?exact=Swamp&format=image"
-      },
-      "Arcane_Signet": {
-        "label": "Arcane Signet",
-        "image": "https://api.scryfall.com/cards/named?exact=Arcane+Signet&format=image"
-      },
-      "Command_Tower": {
-        "label": "Command Tower",
-        "image": "https://api.scryfall.com/cards/named?exact=Command+Tower&format=image"
-      },
-      "Foreboding_Fruit": {
-        "label": "Foreboding Fruit",
-        "image": "https://api.scryfall.com/cards/named?exact=Foreboding+Fruit&format=image"
-      },
-      "Giant_s_Skewer": {
-        "label": "Giant's Skewer",
-        "image": "https://api.scryfall.com/cards/named?exact=Giant's+Skewer&format=image"
-      },
-      "Disenchant": {
-        "label": "Disenchant",
-        "image": "https://api.scryfall.com/cards/named?exact=Disenchant&format=image"
-      },
-      "Doomed_Traveler": {
-        "label": "Doomed Traveler",
-        "image": "https://api.scryfall.com/cards/named?exact=Doomed+Traveler&format=image"
-      },
-      "Doomed_Dissenter": {
-        "label": "Doomed Dissenter",
-        "image": "https://api.scryfall.com/cards/named?exact=Doomed+Dissenter&format=image"
-      },
-      "Dusk_Legion_Zealot": {
-        "label": "Dusk Legion Zealot",
-        "image": "https://api.scryfall.com/cards/named?exact=Dusk+Legion+Zealot&format=image"
-      },
-      "Ephemerate": {
-        "label": "Ephemerate",
-        "image": "https://api.scryfall.com/cards/named?exact=Ephemerate&format=image"
-      },
-      "Gods_Willing": {
-        "label": "Gods Willing",
-        "image": "https://api.scryfall.com/cards/named?exact=Gods+Willing&format=image"
-      },
-      "Mind_Stone": {
-        "label": "Mind Stone",
-        "image": "https://api.scryfall.com/cards/named?exact=Mind+Stone&format=image"
-      },
-      "Night_s_Whisper": {
-        "label": "Night's Whisper",
-        "image": "https://api.scryfall.com/cards/named?exact=Night's+Whisper&format=image"
-      },
-      "Orzhov_Basilica": {
-        "label": "Orzhov Basilica",
-        "image": "https://api.scryfall.com/cards/named?exact=Orzhov+Basilica&format=image"
-      },
-      "Pestilence": {
-        "label": "Pestilence",
-        "image": "https://api.scryfall.com/cards/named?exact=Pestilence&format=image"
-      },
-      "Phyrexian_Rager": {
-        "label": "Phyrexian Rager",
-        "image": "https://api.scryfall.com/cards/named?exact=Phyrexian+Rager&format=image"
-      },
-      "Read_the_Bones": {
-        "label": "Read the Bones",
-        "image": "https://api.scryfall.com/cards/named?exact=Read+the+Bones&format=image"
-      },
-      "Rootborn_Defenses": {
-        "label": "Rootborn Defenses",
-        "image": "https://api.scryfall.com/cards/named?exact=Rootborn+Defenses&format=image"
-      },
-      "Stave_Off": {
-        "label": "Stave Off",
-        "image": "https://api.scryfall.com/cards/named?exact=Stave+Off&format=image"
-      },
-      "Thraben_Inspector": {
-        "label": "Thraben Inspector",
-        "image": "https://api.scryfall.com/cards/named?exact=Thraben+Inspector&format=image"
-      },
-      "Tragic_Slip": {
-        "label": "Tragic Slip",
-        "image": "https://api.scryfall.com/cards/named?exact=Tragic+Slip&format=image"
-      },
-      "Whispersilk_Cloak": {
-        "label": "Whispersilk Cloak",
-        "image": "https://api.scryfall.com/cards/named?exact=Whispersilk+Cloak&format=image"
-      },
-      "Grasp_of_Darkness": {
-        "label": "Grasp of Darkness",
-        "image": "https://api.scryfall.com/cards/named?exact=Grasp+of+Darkness&format=image"
-      },
-      "Village_Rites": {
-        "label": "Village Rites",
-        "image": "https://api.scryfall.com/cards/named?exact=Village+Rites&format=image"
-      },
-      "Ancestral_Blade": {
-        "label": "Ancestral Blade",
-        "image": "https://api.scryfall.com/cards/named?exact=Ancestral+Blade&format=image"
-      },
-      "Raise_the_Alarm": {
-        "label": "Raise the Alarm",
-        "image": "https://api.scryfall.com/cards/named?exact=Raise+the+Alarm&format=image"
-      },
-      "Commander_s_Sphere": {
-        "label": "Commander's Sphere",
-        "image": "https://api.scryfall.com/cards/named?exact=Commander's+Sphere&format=image"
-      },
-      "Orzhov_Signet": {
-        "label": "Orzhov Signet",
-        "image": "https://api.scryfall.com/cards/named?exact=Orzhov+Signet&format=image"
-      },
-      "Sign_in_Blood": {
-        "label": "Sign in Blood",
-        "image": "https://api.scryfall.com/cards/named?exact=Sign+in+Blood&format=image"
-      },
-      "Prismatic_Strands": {
-        "label": "Prismatic Strands",
-        "image": "https://api.scryfall.com/cards/named?exact=Prismatic+Strands&format=image"
-      },
-      "Righteous_Charge": {
-        "label": "Righteous Charge",
-        "image": "https://api.scryfall.com/cards/named?exact=Righteous+Charge&format=image"
-      },
-      "Ghastly_Demise": {
-        "label": "Ghastly Demise",
-        "image": "https://api.scryfall.com/cards/named?exact=Ghastly+Demise&format=image"
-      },
-      "Oubliette": {
-        "label": "Oubliette",
-        "image": "https://api.scryfall.com/cards/named?exact=Oubliette&format=image"
-      },
-      "Soul_s_Attendant": {
-        "label": "Soul's Attendant",
-        "image": "https://api.scryfall.com/cards/named?exact=Soul's+Attendant&format=image"
-      },
-      "Vendetta": {
-        "label": "Vendetta",
-        "image": "https://api.scryfall.com/cards/named?exact=Vendetta&format=image"
-      },
-      "Beckon_Apparition": {
-        "label": "Beckon Apparition",
-        "image": "https://api.scryfall.com/cards/named?exact=Beckon+Apparition&format=image"
-      },
-      "Orzhov_Guildgate": {
-        "label": "Orzhov Guildgate",
-        "image": "https://api.scryfall.com/cards/named?exact=Orzhov+Guildgate&format=image"
-      },
-      "Prismatic_Lens": {
-        "label": "Prismatic Lens",
-        "image": "https://api.scryfall.com/cards/named?exact=Prismatic+Lens&format=image"
-      },
-      "Shelter": {
-        "label": "Shelter",
-        "image": "https://api.scryfall.com/cards/named?exact=Shelter&format=image"
-      },
-      "Dead_Weight": {
-        "label": "Dead Weight",
-        "image": "https://api.scryfall.com/cards/named?exact=Dead+Weight&format=image"
-      },
-      "Succumb_to_Temptation": {
-        "label": "Succumb to Temptation",
-        "image": "https://api.scryfall.com/cards/named?exact=Succumb+to+Temptation&format=image"
-      },
-      "Imperious_Oligarch": {
-        "label": "Imperious Oligarch",
-        "image": "https://api.scryfall.com/cards/named?exact=Imperious+Oligarch&format=image"
-      },
-      "Hunted_Witness": {
-        "label": "Hunted Witness",
-        "image": "https://api.scryfall.com/cards/named?exact=Hunted+Witness&format=image"
-      },
-      "Attended_Knight": {
-        "label": "Attended Knight",
-        "image": "https://api.scryfall.com/cards/named?exact=Attended+Knight&format=image"
-      },
-      "Veteran_Armorer": {
-        "label": "Veteran Armorer",
-        "image": "https://api.scryfall.com/cards/named?exact=Veteran+Armorer&format=image"
-      },
-      "Gather_the_Townsfolk": {
-        "label": "Gather the Townsfolk",
-        "image": "https://api.scryfall.com/cards/named?exact=Gather+the+Townsfolk&format=image"
-      },
-      "Journey_to_Nowhere": {
-        "label": "Journey to Nowhere",
-        "image": "https://api.scryfall.com/cards/named?exact=Journey+to+Nowhere&format=image"
-      },
-      "Spark_Reaper": {
-        "label": "Spark Reaper",
-        "image": "https://api.scryfall.com/cards/named?exact=Spark+Reaper&format=image"
-      },
-      "Defile": {
-        "label": "Defile",
-        "image": "https://api.scryfall.com/cards/named?exact=Defile&format=image"
-      },
-      "Reprobation": {
-        "label": "Reprobation",
-        "image": "https://api.scryfall.com/cards/named?exact=Reprobation&format=image"
-      },
-      "Recruit_the_Worthy": {
-        "label": "Recruit the Worthy",
-        "image": "https://api.scryfall.com/cards/named?exact=Recruit+the+Worthy&format=image"
-      },
-      "Bonder_s_Ornament": {
-        "label": "Bonder's Ornament",
-        "image": "https://api.scryfall.com/cards/named?exact=Bonder's+Ornament&format=image"
-      },
-      "Guardians__Pledge": {
-        "label": "Guardians' Pledge",
-        "image": "https://api.scryfall.com/cards/named?exact=Guardians'+Pledge&format=image"
-      },
-      "Cast_Down": {
-        "label": "Cast Down",
-        "image": "https://api.scryfall.com/cards/named?exact=Cast+Down&format=image"
-      },
-      "Crusader_of_Odric": {
-        "label": "Crusader of Odric",
-        "image": "https://api.scryfall.com/cards/named?exact=Crusader+of+Odric&format=image"
-      },
-      "Garrison_Cat": {
-        "label": "Garrison Cat",
-        "image": "https://api.scryfall.com/cards/named?exact=Garrison+Cat&format=image"
-      },
-      "Deathspore_Thallid": {
-        "label": "Deathspore Thallid",
-        "image": "https://api.scryfall.com/cards/named?exact=Deathspore+Thallid&format=image"
-      },
-      "Vulturous_Aven": {
-        "label": "Vulturous Aven",
-        "image": "https://api.scryfall.com/cards/named?exact=Vulturous+Aven&format=image"
-      },
-      "Prying_Blade": {
-        "label": "Prying Blade",
-        "image": "https://api.scryfall.com/cards/named?exact=Prying+Blade&format=image"
-      },
-      "Captain_s_Call": {
-        "label": "Captain's Call",
-        "image": "https://api.scryfall.com/cards/named?exact=Captain's+Call&format=image"
-      },
-      "Funeral_Pyre": {
-        "label": "Funeral Pyre",
-        "image": "https://api.scryfall.com/cards/named?exact=Funeral+Pyre&format=image"
-      },
-      "Goldvein_Pick": {
-        "label": "Goldvein Pick",
-        "image": "https://api.scryfall.com/cards/named?exact=Goldvein+Pick&format=image"
-      },
-      "Beskir_Shieldmate": {
-        "label": "Beskir Shieldmate",
-        "image": "https://api.scryfall.com/cards/named?exact=Beskir+Shieldmate&format=image"
-      },
-      "Shambling_Ghast": {
-        "label": "Shambling Ghast",
-        "image": "https://api.scryfall.com/cards/named?exact=Shambling+Ghast&format=image"
-      },
-      "Deadly_Dispute": {
-        "label": "Deadly Dispute",
-        "image": "https://api.scryfall.com/cards/named?exact=Deadly+Dispute&format=image"
-      },
-      "Blood_Pact": {
-        "label": "Blood Pact",
-        "image": "https://api.scryfall.com/cards/named?exact=Blood+Pact&format=image"
-      },
-      "Ceremonial_Knife": {
-        "label": "Ceremonial Knife",
-        "image": "https://api.scryfall.com/cards/named?exact=Ceremonial+Knife&format=image"
-      },
-      "Pointed_Discussion": {
-        "label": "Pointed Discussion",
-        "image": "https://api.scryfall.com/cards/named?exact=Pointed+Discussion&format=image"
-      },
-      "Undercity_Scrounger": {
-        "label": "Undercity Scrounger",
-        "image": "https://api.scryfall.com/cards/named?exact=Undercity+Scrounger&format=image"
-      },
-      "Heap_Gate": {
-        "label": "Heap Gate",
-        "image": "https://api.scryfall.com/cards/named?exact=Heap+Gate&format=image"
-      },
-      "Citadel_Gate": {
-        "label": "Citadel Gate",
-        "image": "https://api.scryfall.com/cards/named?exact=Citadel+Gate&format=image"
-      },
-      "Black_Dragon_Gate": {
-        "label": "Black Dragon Gate",
-        "image": "https://api.scryfall.com/cards/named?exact=Black+Dragon+Gate&format=image"
-      },
-      "Recruitment_Drive": {
-        "label": "Recruitment Drive",
-        "image": "https://api.scryfall.com/cards/named?exact=Recruitment+Drive&format=image"
-      },
-      "Wyrm_s_Crossing_Patrol": {
-        "label": "Wyrm's Crossing Patrol",
-        "image": "https://api.scryfall.com/cards/named?exact=Wyrm's+Crossing+Patrol&format=image"
+      "Island": {
+        "label": "Island",
+        "image": "https://api.scryfall.com/cards/named?exact=Island&format=image"
+      },
+      "Cloudkin_Seer": {
+        "label": "Cloudkin Seer",
+        "image": "https://api.scryfall.com/cards/named?exact=Cloudkin+Seer&format=image"
+      },
+      "Frilled_Sea_Serpent": {
+        "label": "Frilled Sea Serpent",
+        "image": "https://api.scryfall.com/cards/named?exact=Frilled+Sea+Serpent&format=image"
+      },
+      "Glint": {
+        "label": "Glint",
+        "image": "https://api.scryfall.com/cards/named?exact=Glint&format=image"
+      },
+      "Sleep": {
+        "label": "Sleep",
+        "image": "https://api.scryfall.com/cards/named?exact=Sleep&format=image"
+      },
+      "Warden_of_Evos_Isle": {
+        "label": "Warden of Evos Isle",
+        "image": "https://api.scryfall.com/cards/named?exact=Warden+of+Evos+Isle&format=image"
+      },
+      "Overflowing_Insight": {
+        "label": "Overflowing Insight",
+        "image": "https://api.scryfall.com/cards/named?exact=Overflowing+Insight&format=image"
+      },
+      "Waterknot": {
+        "label": "Waterknot",
+        "image": "https://api.scryfall.com/cards/named?exact=Waterknot&format=image"
+      },
+      "Wall_of_Runes": {
+        "label": "Wall of Runes",
+        "image": "https://api.scryfall.com/cards/named?exact=Wall+of+Runes&format=image"
+      },
+      "Unsummon": {
+        "label": "Unsummon",
+        "image": "https://api.scryfall.com/cards/named?exact=Unsummon&format=image"
+      },
+      "Octoprophet": {
+        "label": "Octoprophet",
+        "image": "https://api.scryfall.com/cards/named?exact=Octoprophet&format=image"
+      },
+      "Riddlemaster_Sphinx": {
+        "label": "Riddlemaster Sphinx",
+        "image": "https://api.scryfall.com/cards/named?exact=Riddlemaster+Sphinx&format=image"
+      },
+      "Waterkin_Shaman": {
+        "label": "Waterkin Shaman",
+        "image": "https://api.scryfall.com/cards/named?exact=Waterkin+Shaman&format=image"
+      },
+      "Winged_Words": {
+        "label": "Winged Words",
+        "image": "https://api.scryfall.com/cards/named?exact=Winged+Words&format=image"
+      },
+      "Soulblade_Djinn": {
+        "label": "Soulblade Djinn",
+        "image": "https://api.scryfall.com/cards/named?exact=Soulblade+Djinn&format=image"
+      },
+      "Windstorm_Drake": {
+        "label": "Windstorm Drake",
+        "image": "https://api.scryfall.com/cards/named?exact=Windstorm+Drake&format=image"
+      },
+      "Windreader_Sphinx": {
+        "label": "Windreader Sphinx",
+        "image": "https://api.scryfall.com/cards/named?exact=Windreader+Sphinx&format=image"
+      },
+      "Sworn_Guardian": {
+        "label": "Sworn Guardian",
+        "image": "https://api.scryfall.com/cards/named?exact=Sworn+Guardian&format=image"
       }
     },
     "faceTemplates": [
@@ -1488,305 +1257,61 @@
       ]
     },
     "cardTypes": {
-      "Selesnya_Guildgate": {
-        "label": "Selesnya Guildgate",
-        "image": "https://api.scryfall.com/cards/named?exact=Selesnya+Guildgate&format=image"
-      },
-      "Kodama_s_Reach": {
-        "label": "Kodama's Reach",
-        "image": "https://api.scryfall.com/cards/named?exact=Kodama's+Reach&format=image"
-      },
-      "Arcane_Signet": {
-        "label": "Arcane Signet",
-        "image": "https://api.scryfall.com/cards/named?exact=Arcane+Signet&format=image"
-      },
-      "Journey_to_Nowhere": {
-        "label": "Journey to Nowhere",
-        "image": "https://api.scryfall.com/cards/named?exact=Journey+to+Nowhere&format=image"
-      },
-      "Farseek": {
-        "label": "Farseek",
-        "image": "https://api.scryfall.com/cards/named?exact=Farseek&format=image"
-      },
-      "Ash_Barrens": {
-        "label": "Ash Barrens",
-        "image": "https://api.scryfall.com/cards/named?exact=Ash+Barrens&format=image"
-      },
-      "Tranquil_Thicket": {
-        "label": "Tranquil Thicket",
-        "image": "https://api.scryfall.com/cards/named?exact=Tranquil+Thicket&format=image"
-      },
-      "Rootborn_Defenses": {
-        "label": "Rootborn Defenses",
-        "image": "https://api.scryfall.com/cards/named?exact=Rootborn+Defenses&format=image"
-      },
-      "Call_of_the_Conclave": {
-        "label": "Call of the Conclave",
-        "image": "https://api.scryfall.com/cards/named?exact=Call+of+the+Conclave&format=image"
-      },
-      "Command_Tower": {
-        "label": "Command Tower",
-        "image": "https://api.scryfall.com/cards/named?exact=Command+Tower&format=image"
-      },
-      "Cultivate": {
-        "label": "Cultivate",
-        "image": "https://api.scryfall.com/cards/named?exact=Cultivate&format=image"
-      },
-      "Shelter": {
-        "label": "Shelter",
-        "image": "https://api.scryfall.com/cards/named?exact=Shelter&format=image"
-      },
-      "Lignify": {
-        "label": "Lignify",
-        "image": "https://api.scryfall.com/cards/named?exact=Lignify&format=image"
-      },
-      "Secluded_Steppe": {
-        "label": "Secluded Steppe",
-        "image": "https://api.scryfall.com/cards/named?exact=Secluded+Steppe&format=image"
-      },
-      "Savannah_Lions": {
-        "label": "Savannah Lions",
-        "image": "https://api.scryfall.com/cards/named?exact=Savannah+Lions&format=image"
-      },
-      "Commander_s_Sphere": {
-        "label": "Commander's Sphere",
-        "image": "https://api.scryfall.com/cards/named?exact=Commander's+Sphere&format=image"
-      },
-      "Shield_of_the_Oversoul": {
-        "label": "Shield of the Oversoul",
-        "image": "https://api.scryfall.com/cards/named?exact=Shield+of+the+Oversoul&format=image"
-      },
-      "Your_Temple_Is_Under_Attack": {
-        "label": "Your Temple Is Under Attack",
-        "image": "https://api.scryfall.com/cards/named?exact=Your+Temple+Is+Under+Attack&format=image"
-      },
-      "Explore": {
-        "label": "Explore",
-        "image": "https://api.scryfall.com/cards/named?exact=Explore&format=image"
-      },
-      "Botanical_Plaza": {
-        "label": "Botanical Plaza",
-        "image": "https://api.scryfall.com/cards/named?exact=Botanical+Plaza&format=image"
-      },
-      "Blossoming_Sands": {
-        "label": "Blossoming Sands",
-        "image": "https://api.scryfall.com/cards/named?exact=Blossoming+Sands&format=image"
-      },
-      "Tamiyo_s_Safekeeping": {
-        "label": "Tamiyo's Safekeeping",
-        "image": "https://api.scryfall.com/cards/named?exact=Tamiyo's+Safekeeping&format=image"
-      },
-      "You_Meet_in_a_Tavern": {
-        "label": "You Meet in a Tavern",
-        "image": "https://api.scryfall.com/cards/named?exact=You+Meet+in+a+Tavern&format=image"
-      },
-      "Blacksmith_s_Skill": {
-        "label": "Blacksmith's Skill",
-        "image": "https://api.scryfall.com/cards/named?exact=Blacksmith's+Skill&format=image"
-      },
-      "Leyline_Invocation": {
-        "label": "Leyline Invocation",
-        "image": "https://api.scryfall.com/cards/named?exact=Leyline+Invocation&format=image"
-      },
-      "Grizzled_Outrider": {
-        "label": "Grizzled Outrider",
-        "image": "https://api.scryfall.com/cards/named?exact=Grizzled+Outrider&format=image"
-      },
-      "Snakeskin_Veil": {
-        "label": "Snakeskin Veil",
-        "image": "https://api.scryfall.com/cards/named?exact=Snakeskin+Veil&format=image"
-      },
-      "Cliffhaven_Sell_Sword": {
-        "label": "Cliffhaven Sell-Sword",
-        "image": "https://api.scryfall.com/cards/named?exact=Cliffhaven+Sell-Sword&format=image"
-      },
-      "Panther_Warriors": {
-        "label": "Panther Warriors",
-        "image": "https://api.scryfall.com/cards/named?exact=Panther+Warriors&format=image"
-      },
-      "Dawn_Charm": {
-        "label": "Dawn Charm",
-        "image": "https://api.scryfall.com/cards/named?exact=Dawn+Charm&format=image"
-      },
-      "Kindercatch": {
-        "label": "Kindercatch",
-        "image": "https://api.scryfall.com/cards/named?exact=Kindercatch&format=image"
-      },
-      "Armored_Wolf_Rider": {
-        "label": "Armored Wolf-Rider",
-        "image": "https://api.scryfall.com/cards/named?exact=Armored+Wolf-Rider&format=image"
-      },
-      "Gods_Willing": {
-        "label": "Gods Willing",
-        "image": "https://api.scryfall.com/cards/named?exact=Gods+Willing&format=image"
-      },
-      "Knight_of_New_Benalia": {
-        "label": "Knight of New Benalia",
-        "image": "https://api.scryfall.com/cards/named?exact=Knight+of+New+Benalia&format=image"
-      },
-      "Ancient_Brontodon": {
-        "label": "Ancient Brontodon",
-        "image": "https://api.scryfall.com/cards/named?exact=Ancient+Brontodon&format=image"
-      },
-      "Raptor_Companion": {
-        "label": "Raptor Companion",
-        "image": "https://api.scryfall.com/cards/named?exact=Raptor+Companion&format=image"
-      },
-      "Tranquil_Expanse": {
-        "label": "Tranquil Expanse",
-        "image": "https://api.scryfall.com/cards/named?exact=Tranquil+Expanse&format=image"
-      },
-      "Oreskos_Swiftclaw": {
-        "label": "Oreskos Swiftclaw",
-        "image": "https://api.scryfall.com/cards/named?exact=Oreskos+Swiftclaw&format=image"
-      },
-      "Terrain_Elemental": {
-        "label": "Terrain Elemental",
-        "image": "https://api.scryfall.com/cards/named?exact=Terrain+Elemental&format=image"
-      },
-      "Cowl_Prowler": {
-        "label": "Cowl Prowler",
-        "image": "https://api.scryfall.com/cards/named?exact=Cowl+Prowler&format=image"
-      },
-      "Dromoka_Warrior": {
-        "label": "Dromoka Warrior",
-        "image": "https://api.scryfall.com/cards/named?exact=Dromoka+Warrior&format=image"
-      },
-      "Alpine_Grizzly": {
-        "label": "Alpine Grizzly",
-        "image": "https://api.scryfall.com/cards/named?exact=Alpine+Grizzly&format=image"
-      },
-      "Swordwise_Centaur": {
-        "label": "Swordwise Centaur",
-        "image": "https://api.scryfall.com/cards/named?exact=Swordwise+Centaur&format=image"
-      },
-      "Rumbling_Baloth": {
-        "label": "Rumbling Baloth",
-        "image": "https://api.scryfall.com/cards/named?exact=Rumbling+Baloth&format=image"
-      },
-      "Fog": {
-        "label": "Fog",
-        "image": "https://api.scryfall.com/cards/named?exact=Fog&format=image"
-      },
-      "Elvish_Warrior": {
-        "label": "Elvish Warrior",
-        "image": "https://api.scryfall.com/cards/named?exact=Elvish+Warrior&format=image"
-      },
-      "Llanowar_Elves": {
-        "label": "Llanowar Elves",
-        "image": "https://api.scryfall.com/cards/named?exact=Llanowar+Elves&format=image"
-      },
-      "Savai_Sabertooth": {
-        "label": "Savai Sabertooth",
-        "image": "https://api.scryfall.com/cards/named?exact=Savai+Sabertooth&format=image"
-      },
-      "Lead_the_Stampede": {
-        "label": "Lead the Stampede",
-        "image": "https://api.scryfall.com/cards/named?exact=Lead+the+Stampede&format=image"
-      },
-      "Orazca_Frillback": {
-        "label": "Orazca Frillback",
-        "image": "https://api.scryfall.com/cards/named?exact=Orazca+Frillback&format=image"
-      },
-      "Nyxborn_Colossus": {
-        "label": "Nyxborn Colossus",
-        "image": "https://api.scryfall.com/cards/named?exact=Nyxborn+Colossus&format=image"
-      },
-      "Heliod_s_Pilgrim": {
-        "label": "Heliod's Pilgrim",
-        "image": "https://api.scryfall.com/cards/named?exact=Heliod's+Pilgrim&format=image"
-      },
-      "Armored_Warhorse": {
-        "label": "Armored Warhorse",
-        "image": "https://api.scryfall.com/cards/named?exact=Armored+Warhorse&format=image"
-      },
-      "Sundering_Growth": {
-        "label": "Sundering Growth",
-        "image": "https://api.scryfall.com/cards/named?exact=Sundering+Growth&format=image"
-      },
-      "Slime_Molding": {
-        "label": "Slime Molding",
-        "image": "https://api.scryfall.com/cards/named?exact=Slime+Molding&format=image"
-      },
-      "Vines_of_Vastwood": {
-        "label": "Vines of Vastwood",
-        "image": "https://api.scryfall.com/cards/named?exact=Vines+of+Vastwood&format=image"
-      },
-      "Colossapede": {
-        "label": "Colossapede",
-        "image": "https://api.scryfall.com/cards/named?exact=Colossapede&format=image"
-      },
-      "Trumpeting_Herd": {
-        "label": "Trumpeting Herd",
-        "image": "https://api.scryfall.com/cards/named?exact=Trumpeting+Herd&format=image"
-      },
-      "Reprobation": {
-        "label": "Reprobation",
-        "image": "https://api.scryfall.com/cards/named?exact=Reprobation&format=image"
-      },
-      "Primordial_Wurm": {
-        "label": "Primordial Wurm",
-        "image": "https://api.scryfall.com/cards/named?exact=Primordial+Wurm&format=image"
-      },
-      "Rampant_Growth": {
-        "label": "Rampant Growth",
-        "image": "https://api.scryfall.com/cards/named?exact=Rampant+Growth&format=image"
-      },
-      "Elite_Vanguard": {
-        "label": "Elite Vanguard",
-        "image": "https://api.scryfall.com/cards/named?exact=Elite+Vanguard&format=image"
-      },
-      "Hollowhenge_Beast": {
-        "label": "Hollowhenge Beast",
-        "image": "https://api.scryfall.com/cards/named?exact=Hollowhenge+Beast&format=image"
-      },
-      "Miming_Slime": {
-        "label": "Miming Slime",
-        "image": "https://api.scryfall.com/cards/named?exact=Miming+Slime&format=image"
-      },
-      "Prowling_Caracal": {
-        "label": "Prowling Caracal",
-        "image": "https://api.scryfall.com/cards/named?exact=Prowling+Caracal&format=image"
-      },
-      "Ferocious_Zheng": {
-        "label": "Ferocious Zheng",
-        "image": "https://api.scryfall.com/cards/named?exact=Ferocious+Zheng&format=image"
-      },
-      "Elephant_Guide": {
-        "label": "Elephant Guide",
-        "image": "https://api.scryfall.com/cards/named?exact=Elephant+Guide&format=image"
-      },
-      "Armadillo_Cloak": {
-        "label": "Armadillo Cloak",
-        "image": "https://api.scryfall.com/cards/named?exact=Armadillo+Cloak&format=image"
-      },
-      "Vorstclaw": {
-        "label": "Vorstclaw",
-        "image": "https://api.scryfall.com/cards/named?exact=Vorstclaw&format=image"
-      },
-      "Plains": {
-        "label": "Plains",
-        "image": "https://api.scryfall.com/cards/named?exact=Plains&format=image"
-      },
-      "Garruk_s_Gorehorn": {
-        "label": "Garruk's Gorehorn",
-        "image": "https://api.scryfall.com/cards/named?exact=Garruk's+Gorehorn&format=image"
-      },
-      "Forest": {
-        "label": "Forest",
-        "image": "https://api.scryfall.com/cards/named?exact=Forest&format=image"
-      },
-      "Feat_of_Resistance": {
-        "label": "Feat of Resistance",
-        "image": "https://api.scryfall.com/cards/named?exact=Feat+of+Resistance&format=image"
-      },
-      "Devilthorn_Fox": {
-        "label": "Devilthorn Fox",
-        "image": "https://api.scryfall.com/cards/named?exact=Devilthorn+Fox&format=image"
-      },
-      "Tuinvale_Treefolk____Oaken_Boon": {
-        "label": "Tuinvale Treefolk // Oaken Boon",
-        "image": "https://api.scryfall.com/cards/named?exact=Tuinvale+Treefolk+//+Oaken+Boon&format=image"
+      "Witch_s_Cottage": {
+        "label": "Witch's Cottage",
+        "image": "https://api.scryfall.com/cards/named?exact=Witch's+Cottage&format=image"
+      },
+      "Gempalm_Polluter": {
+        "label": "Gempalm Polluter",
+        "image": "https://api.scryfall.com/cards/named?exact=Gempalm+Polluter&format=image"
+      },
+      "Gray_Merchant_of_Asphodel": {
+        "label": "Gray Merchant of Asphodel",
+        "image": "https://api.scryfall.com/cards/named?exact=Gray+Merchant+of+Asphodel&format=image"
+      },
+      "Snow_Covered_Swamp": {
+        "label": "Snow-Covered Swamp",
+        "image": "https://api.scryfall.com/cards/named?exact=Snow-Covered+Swamp&format=image"
+      },
+      "Fleshbag_Marauder": {
+        "label": "Fleshbag Marauder",
+        "image": "https://api.scryfall.com/cards/named?exact=Fleshbag+Marauder&format=image"
+      },
+      "Lazotep_Reaver": {
+        "label": "Lazotep Reaver",
+        "image": "https://api.scryfall.com/cards/named?exact=Lazotep+Reaver&format=image"
+      },
+      "Putrid_Goblin": {
+        "label": "Putrid Goblin",
+        "image": "https://api.scryfall.com/cards/named?exact=Putrid+Goblin&format=image"
+      },
+      "Ghoulraiser": {
+        "label": "Ghoulraiser",
+        "image": "https://api.scryfall.com/cards/named?exact=Ghoulraiser&format=image"
+      },
+      "Priest_of_the_Haunted_Edge": {
+        "label": "Priest of the Haunted Edge",
+        "image": "https://api.scryfall.com/cards/named?exact=Priest+of+the+Haunted+Edge&format=image"
+      },
+      "Shambling_Ghast": {
+        "label": "Shambling Ghast",
+        "image": "https://api.scryfall.com/cards/named?exact=Shambling+Ghast&format=image"
+      },
+      "Deadly_Dispute": {
+        "label": "Deadly Dispute",
+        "image": "https://api.scryfall.com/cards/named?exact=Deadly+Dispute&format=image"
+      },
+      "A_Sepulcher_Ghoul": {
+        "label": "A-Sepulcher Ghoul",
+        "image": "https://api.scryfall.com/cards/named?exact=A-Sepulcher+Ghoul&format=image"
+      },
+      "A_Hobbling_Zombie": {
+        "label": "A-Hobbling Zombie",
+        "image": "https://api.scryfall.com/cards/named?exact=A-Hobbling+Zombie&format=image"
+      },
+      "Writhing_Necromass": {
+        "label": "Writhing Necromass",
+        "image": "https://api.scryfall.com/cards/named?exact=Writhing+Necromass&format=image"
       }
     },
     "faceTemplates": [
@@ -2905,35 +2430,6 @@
     "z": 100,
     "id": "gm5f"
   },
-  "ah4b": {
-    "type": "button",
-    "text": "Clone Card",
-    "clickRoutine": [
-      {
-        "func": "SELECT",
-        "property": "parent",
-        "relation": "==",
-        "value": "tokenHolder2",
-        "collection": "tokensToBeCloned",
-        "max": 1
-      },
-      {
-        "func": "CLONE",
-        "source": [
-          "tokensToBeCloned"
-        ],
-        "count": "1",
-        "collection": "clonedCards"
-      }
-    ],
-    "z": 125,
-    "id": "ah4b",
-    "width": 100,
-    "height": 20,
-    "parent": "tokenActionsBox",
-    "x": 127,
-    "y": 5
-  },
   "h8y3": {
     "type": "label",
     "text": "HP",
@@ -3056,798 +2552,6 @@
     "parent": "commanderDamage2",
     "x": -32
   },
-  "Selesnya_Guildgate-ms1y": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Selesnya_Guildgate",
-    "id": "Selesnya_Guildgate-ms1y",
-    "parent": "03jj",
-    "z": 81439
-  },
-  "Kodama_s_Reach-qznj": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Kodama_s_Reach",
-    "id": "Kodama_s_Reach-qznj",
-    "z": 81442,
-    "parent": "03jj"
-  },
-  "Arcane_Signet-4zjr": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Arcane_Signet",
-    "id": "Arcane_Signet-4zjr",
-    "parent": "03jj",
-    "z": 81418
-  },
-  "Journey_to_Nowhere-6n1o": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Journey_to_Nowhere",
-    "id": "Journey_to_Nowhere-6n1o",
-    "parent": "03jj",
-    "z": 81430
-  },
-  "Farseek-a161": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Farseek",
-    "id": "Farseek-a161",
-    "parent": "03jj",
-    "z": 81406
-  },
-  "Ash_Barrens-8p2n": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Ash_Barrens",
-    "id": "Ash_Barrens-8p2n",
-    "parent": "03jj",
-    "z": 81402
-  },
-  "Tranquil_Thicket-pnk0": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Tranquil_Thicket",
-    "id": "Tranquil_Thicket-pnk0",
-    "z": 81450,
-    "parent": "03jj"
-  },
-  "Rootborn_Defenses-hceu": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Rootborn_Defenses",
-    "id": "Rootborn_Defenses-hceu",
-    "z": 81423,
-    "parent": "03jj"
-  },
-  "Call_of_the_Conclave-o7pz": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Call_of_the_Conclave",
-    "id": "Call_of_the_Conclave-o7pz",
-    "z": 81465,
-    "parent": "03jj"
-  },
-  "Command_Tower-y5mn": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Command_Tower",
-    "id": "Command_Tower-y5mn",
-    "parent": "03jj",
-    "z": 81443
-  },
-  "Cultivate-h5oz": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Cultivate",
-    "id": "Cultivate-h5oz",
-    "z": 81409,
-    "parent": "03jj"
-  },
-  "Shelter-koub": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Shelter",
-    "id": "Shelter-koub",
-    "z": 81394,
-    "parent": "03jj"
-  },
-  "Lignify-5cfa": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Lignify",
-    "id": "Lignify-5cfa",
-    "z": 81482,
-    "parent": "03jj"
-  },
-  "Secluded_Steppe-gf7c": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Secluded_Steppe",
-    "id": "Secluded_Steppe-gf7c",
-    "z": 81393,
-    "parent": "03jj"
-  },
-  "Savannah_Lions-g68o": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Savannah_Lions",
-    "id": "Savannah_Lions-g68o",
-    "z": 81391,
-    "parent": "03jj"
-  },
-  "Commander_s_Sphere-pw35": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Commander_s_Sphere",
-    "id": "Commander_s_Sphere-pw35",
-    "z": 81469,
-    "parent": "03jj"
-  },
-  "Shield_of_the_Oversoul-n5d1": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Shield_of_the_Oversoul",
-    "id": "Shield_of_the_Oversoul-n5d1",
-    "parent": "03jj",
-    "z": 81457
-  },
-  "Your_Temple_Is_Under_Attack-ka6w": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Your_Temple_Is_Under_Attack",
-    "id": "Your_Temple_Is_Under_Attack-ka6w",
-    "parent": "03jj",
-    "z": 81456
-  },
-  "Explore-c9hv": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Explore",
-    "id": "Explore-c9hv",
-    "z": 81400,
-    "parent": "03jj"
-  },
-  "Botanical_Plaza-ra2c": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Botanical_Plaza",
-    "id": "Botanical_Plaza-ra2c",
-    "z": 81452,
-    "parent": "03jj"
-  },
-  "Blossoming_Sands-m90h": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Blossoming_Sands",
-    "id": "Blossoming_Sands-m90h",
-    "z": 81478,
-    "parent": "03jj"
-  },
-  "Tamiyo_s_Safekeeping-wlmd": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Tamiyo_s_Safekeeping",
-    "id": "Tamiyo_s_Safekeeping-wlmd",
-    "parent": "03jj",
-    "z": 81399
-  },
-  "You_Meet_in_a_Tavern-iqdp": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "You_Meet_in_a_Tavern",
-    "id": "You_Meet_in_a_Tavern-iqdp",
-    "parent": "03jj",
-    "z": 81438
-  },
-  "Blacksmith_s_Skill-oxj9": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Blacksmith_s_Skill",
-    "id": "Blacksmith_s_Skill-oxj9",
-    "parent": "03jj",
-    "z": 81428
-  },
-  "Leyline_Invocation-p4vc": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Leyline_Invocation",
-    "id": "Leyline_Invocation-p4vc",
-    "z": 81437,
-    "parent": "03jj"
-  },
-  "Grizzled_Outrider-wutg": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Grizzled_Outrider",
-    "id": "Grizzled_Outrider-wutg",
-    "parent": "03jj",
-    "z": 81431
-  },
-  "Snakeskin_Veil-jq39": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snakeskin_Veil",
-    "id": "Snakeskin_Veil-jq39",
-    "parent": "03jj",
-    "z": 81401
-  },
-  "Cliffhaven_Sell_Sword-no2i": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Cliffhaven_Sell_Sword",
-    "id": "Cliffhaven_Sell_Sword-no2i",
-    "parent": "03jj",
-    "z": 81390
-  },
-  "Panther_Warriors-q15j": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Panther_Warriors",
-    "id": "Panther_Warriors-q15j",
-    "parent": "03jj",
-    "z": 81426
-  },
-  "Dawn_Charm-o4pd": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Dawn_Charm",
-    "id": "Dawn_Charm-o4pd",
-    "parent": "03jj",
-    "z": 81449
-  },
-  "Kindercatch-k8h4": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Kindercatch",
-    "id": "Kindercatch-k8h4",
-    "parent": "03jj",
-    "z": 81411
-  },
-  "Armored_Wolf_Rider-ur6g": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Armored_Wolf_Rider",
-    "id": "Armored_Wolf_Rider-ur6g",
-    "z": 81454,
-    "parent": "03jj"
-  },
-  "Gods_Willing-l161": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gods_Willing",
-    "id": "Gods_Willing-l161",
-    "z": 81444,
-    "parent": "03jj"
-  },
-  "Knight_of_New_Benalia-su2d": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Knight_of_New_Benalia",
-    "id": "Knight_of_New_Benalia-su2d",
-    "parent": "03jj",
-    "z": 81395
-  },
-  "Ancient_Brontodon-5i9a": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Ancient_Brontodon",
-    "id": "Ancient_Brontodon-5i9a",
-    "z": 81396,
-    "parent": "03jj"
-  },
-  "Raptor_Companion-5nfw": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Raptor_Companion",
-    "id": "Raptor_Companion-5nfw",
-    "parent": "03jj",
-    "z": 81387
-  },
-  "Tranquil_Expanse-rd06": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Tranquil_Expanse",
-    "id": "Tranquil_Expanse-rd06",
-    "parent": "03jj",
-    "z": 81432
-  },
-  "Oreskos_Swiftclaw-dxa9": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Oreskos_Swiftclaw",
-    "id": "Oreskos_Swiftclaw-dxa9",
-    "parent": "03jj",
-    "z": 81407
-  },
-  "Terrain_Elemental-r5p2": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Terrain_Elemental",
-    "id": "Terrain_Elemental-r5p2",
-    "parent": "03jj",
-    "z": 81477
-  },
-  "Cowl_Prowler-q9ve": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Cowl_Prowler",
-    "id": "Cowl_Prowler-q9ve",
-    "parent": "03jj",
-    "z": 81475
-  },
-  "Dromoka_Warrior-4k7t": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Dromoka_Warrior",
-    "id": "Dromoka_Warrior-4k7t",
-    "z": 81446,
-    "parent": "03jj"
-  },
-  "Alpine_Grizzly-8ac4": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Alpine_Grizzly",
-    "id": "Alpine_Grizzly-8ac4",
-    "parent": "03jj",
-    "z": 81388
-  },
-  "Swordwise_Centaur-zphj": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Swordwise_Centaur",
-    "id": "Swordwise_Centaur-zphj",
-    "z": 81488,
-    "parent": "03jj"
-  },
-  "Rumbling_Baloth-ky5m": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Rumbling_Baloth",
-    "id": "Rumbling_Baloth-ky5m",
-    "z": 81476,
-    "parent": "03jj"
-  },
-  "Fog-m4mh": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Fog",
-    "id": "Fog-m4mh",
-    "parent": "03jj",
-    "z": 81455
-  },
-  "Elvish_Warrior-906i": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Elvish_Warrior",
-    "id": "Elvish_Warrior-906i",
-    "parent": "03jj",
-    "z": 81416
-  },
-  "Llanowar_Elves-pg6a": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Llanowar_Elves",
-    "id": "Llanowar_Elves-pg6a",
-    "parent": "03jj",
-    "z": 81419
-  },
-  "Savai_Sabertooth-7kqm": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Savai_Sabertooth",
-    "id": "Savai_Sabertooth-7kqm",
-    "parent": "03jj",
-    "z": 81459
-  },
-  "Lead_the_Stampede-nlhh": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Lead_the_Stampede",
-    "id": "Lead_the_Stampede-nlhh",
-    "parent": "03jj",
-    "z": 81410
-  },
-  "Orazca_Frillback-5xr1": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Orazca_Frillback",
-    "id": "Orazca_Frillback-5xr1",
-    "parent": "03jj",
-    "z": 81405
-  },
-  "Nyxborn_Colossus-g1bc": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Nyxborn_Colossus",
-    "id": "Nyxborn_Colossus-g1bc",
-    "z": 81436,
-    "parent": "03jj"
-  },
-  "Heliod_s_Pilgrim-4jag": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Heliod_s_Pilgrim",
-    "id": "Heliod_s_Pilgrim-4jag",
-    "parent": "03jj",
-    "z": 81392
-  },
-  "Armored_Warhorse-3tsn": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Armored_Warhorse",
-    "id": "Armored_Warhorse-3tsn",
-    "parent": "03jj",
-    "z": 81404
-  },
-  "Sundering_Growth-obnd": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Sundering_Growth",
-    "id": "Sundering_Growth-obnd",
-    "parent": "03jj",
-    "z": 81435
-  },
-  "Slime_Molding-okv1": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Slime_Molding",
-    "id": "Slime_Molding-okv1",
-    "z": 81464,
-    "parent": "03jj"
-  },
-  "Vines_of_Vastwood-qnh4": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Vines_of_Vastwood",
-    "id": "Vines_of_Vastwood-qnh4",
-    "z": 81415,
-    "parent": "03jj"
-  },
-  "Colossapede-asyt": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Colossapede",
-    "id": "Colossapede-asyt",
-    "z": 81413,
-    "parent": "03jj"
-  },
-  "Trumpeting_Herd-47fx": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Trumpeting_Herd",
-    "id": "Trumpeting_Herd-47fx",
-    "parent": "03jj",
-    "z": 81408
-  },
-  "Reprobation-nb5v": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Reprobation",
-    "id": "Reprobation-nb5v",
-    "parent": "03jj",
-    "z": 81424
-  },
-  "Primordial_Wurm-m2yx": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Primordial_Wurm",
-    "id": "Primordial_Wurm-m2yx",
-    "parent": "03jj",
-    "z": 81453
-  },
-  "Rampant_Growth-b6jg": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Rampant_Growth",
-    "id": "Rampant_Growth-b6jg",
-    "z": 81414,
-    "parent": "03jj"
-  },
-  "Elite_Vanguard-01vv": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Elite_Vanguard",
-    "id": "Elite_Vanguard-01vv",
-    "parent": "03jj",
-    "z": 81448
-  },
-  "Hollowhenge_Beast-t4g8": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Hollowhenge_Beast",
-    "id": "Hollowhenge_Beast-t4g8",
-    "z": 81425,
-    "parent": "03jj"
-  },
-  "Miming_Slime-jz3n": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Miming_Slime",
-    "id": "Miming_Slime-jz3n",
-    "z": 81483,
-    "parent": "03jj"
-  },
-  "Prowling_Caracal-0sqe": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Prowling_Caracal",
-    "id": "Prowling_Caracal-0sqe",
-    "z": 81389,
-    "parent": "03jj"
-  },
-  "Ferocious_Zheng-lcwg": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Ferocious_Zheng",
-    "id": "Ferocious_Zheng-lcwg",
-    "parent": "03jj",
-    "z": 81466
-  },
-  "Elephant_Guide-bc1n": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Elephant_Guide",
-    "id": "Elephant_Guide-bc1n",
-    "parent": "03jj",
-    "z": 81472
-  },
-  "Armadillo_Cloak-jibb": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Armadillo_Cloak",
-    "id": "Armadillo_Cloak-jibb",
-    "z": 81445,
-    "parent": "03jj"
-  },
-  "Vorstclaw-uv9r": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Vorstclaw",
-    "id": "Vorstclaw-uv9r",
-    "parent": "03jj",
-    "z": 81440
-  },
-  "Plains-2xrl": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-2xrl",
-    "z": 81441,
-    "parent": "03jj"
-  },
-  "Plains-2kq5": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-2kq5",
-    "parent": "03jj",
-    "z": 81433
-  },
-  "Plains-42d9": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-42d9",
-    "z": 81467,
-    "parent": "03jj"
-  },
-  "Plains-l7d0": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-l7d0",
-    "parent": "03jj",
-    "z": 81434
-  },
-  "Plains-ss2b": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-ss2b",
-    "z": 81417,
-    "parent": "03jj"
-  },
-  "Plains-ckxm": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-ckxm",
-    "z": 81412,
-    "parent": "03jj"
-  },
-  "Plains-jfqa": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-jfqa",
-    "parent": "03jj",
-    "z": 81479
-  },
-  "Plains-l3po": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-l3po",
-    "z": 81398,
-    "parent": "03jj"
-  },
-  "Plains-ijb5": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-ijb5",
-    "parent": "03jj",
-    "z": 81403
-  },
-  "Plains-k0n0": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-k0n0",
-    "z": 81481,
-    "parent": "03jj"
-  },
-  "Plains-vkkm": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-vkkm",
-    "parent": "03jj",
-    "z": 81471
-  },
-  "Garruk_s_Gorehorn-dj9i": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Garruk_s_Gorehorn",
-    "id": "Garruk_s_Gorehorn-dj9i",
-    "parent": "03jj",
-    "z": 81420
-  },
-  "Forest-c4vz": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-c4vz",
-    "parent": "03jj",
-    "z": 81429
-  },
-  "Forest-2rpx": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-2rpx",
-    "z": 81480,
-    "parent": "03jj"
-  },
-  "Forest-sgaj": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-sgaj",
-    "z": 81474,
-    "parent": "03jj"
-  },
-  "Forest-hzu8": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-hzu8",
-    "z": 81463,
-    "parent": "03jj"
-  },
-  "Forest-50ct": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-50ct",
-    "z": 81458,
-    "parent": "03jj"
-  },
-  "Forest-ac7x": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-ac7x",
-    "z": 81460,
-    "parent": "03jj"
-  },
-  "Forest-newj": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-newj",
-    "z": 81484,
-    "parent": "03jj"
-  },
-  "Forest-jl4g": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-jl4g",
-    "parent": "03jj",
-    "z": 81427
-  },
-  "Forest-1tmb": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-1tmb",
-    "z": 81422,
-    "parent": "03jj"
-  },
-  "Forest-gscf": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-gscf",
-    "z": 81421,
-    "parent": "03jj"
-  },
-  "Forest-zspa": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-zspa",
-    "z": 81397,
-    "parent": "03jj"
-  },
-  "Forest-og79": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-og79",
-    "parent": "03jj",
-    "z": 81462
-  },
-  "Forest-9kbk": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-9kbk",
-    "z": 81473,
-    "parent": "03jj"
-  },
-  "Forest-moh4": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-moh4",
-    "z": 81451,
-    "parent": "03jj"
-  },
-  "Forest-misk": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Forest",
-    "id": "Forest-misk",
-    "z": 81468,
-    "parent": "03jj"
-  },
-  "Feat_of_Resistance-tfew": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Feat_of_Resistance",
-    "id": "Feat_of_Resistance-tfew",
-    "parent": "03jj",
-    "z": 81461
-  },
-  "Devilthorn_Fox-1kvy": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Devilthorn_Fox",
-    "id": "Devilthorn_Fox-1kvy",
-    "parent": "03jj",
-    "z": 81447
-  },
-  "Tuinvale_Treefolk____Oaken_Boon-xvi8": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Tuinvale_Treefolk____Oaken_Boon",
-    "id": "Tuinvale_Treefolk____Oaken_Boon-xvi8",
-    "z": 81470,
-    "parent": "03jj"
-  },
   "h06d": {
     "deck": "commandZoneDeck1",
     "type": "card",
@@ -3871,798 +2575,6 @@
     "y": 4,
     "parent": "commandZone2"
   },
-  "Plains-oif2": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-oif2",
-    "z": 80964,
-    "parent": "m38y"
-  },
-  "Plains-v8yo": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-v8yo",
-    "z": 80975,
-    "parent": "m38y"
-  },
-  "Plains-83it": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-83it",
-    "parent": "m38y",
-    "z": 81022
-  },
-  "Plains-wxa4": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-wxa4",
-    "z": 80981,
-    "parent": "m38y"
-  },
-  "Plains-yhdi": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-yhdi",
-    "z": 80972,
-    "parent": "m38y"
-  },
-  "Plains-27bx": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-27bx",
-    "parent": "m38y",
-    "z": 81005
-  },
-  "Plains-ou0e": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-ou0e",
-    "parent": "m38y",
-    "z": 80957
-  },
-  "Plains-w4n6": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-w4n6",
-    "z": 80966,
-    "parent": "m38y"
-  },
-  "Plains-jym6": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-jym6",
-    "z": 80938,
-    "parent": "m38y"
-  },
-  "Plains-nn9r": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-nn9r",
-    "parent": "m38y",
-    "z": 81015
-  },
-  "Plains-es0f": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-es0f",
-    "z": 80961,
-    "parent": "m38y"
-  },
-  "Plains-84bt": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-84bt",
-    "z": 81008,
-    "parent": "m38y"
-  },
-  "Plains-xujp": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Plains",
-    "id": "Plains-xujp",
-    "z": 80995,
-    "parent": "m38y"
-  },
-  "Swamp-lchm": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-lchm",
-    "z": 80952,
-    "parent": "m38y"
-  },
-  "Swamp-6d3p": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-6d3p",
-    "parent": "m38y",
-    "z": 81025
-  },
-  "Swamp-opvl": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-opvl",
-    "parent": "m38y",
-    "z": 81000
-  },
-  "Swamp-06ot": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-06ot",
-    "z": 80978,
-    "parent": "m38y"
-  },
-  "Swamp-alyb": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-alyb",
-    "z": 80955,
-    "parent": "m38y"
-  },
-  "Swamp-5v8q": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-5v8q",
-    "z": 81014,
-    "parent": "m38y"
-  },
-  "Swamp-char": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-char",
-    "z": 80989,
-    "parent": "m38y"
-  },
-  "Swamp-wcpx": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-wcpx",
-    "z": 81028,
-    "parent": "m38y"
-  },
-  "Swamp-pg6a": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-pg6a",
-    "z": 80979,
-    "parent": "m38y"
-  },
-  "Swamp-399a": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-399a",
-    "z": 80944,
-    "parent": "m38y"
-  },
-  "Swamp-lnu1": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-lnu1",
-    "z": 81026,
-    "parent": "m38y"
-  },
-  "Swamp-xosg": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-xosg",
-    "z": 80945,
-    "parent": "m38y"
-  },
-  "Swamp-1fjp": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Swamp",
-    "id": "Swamp-1fjp",
-    "z": 80969,
-    "parent": "m38y"
-  },
-  "Arcane_Signet-33te": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Arcane_Signet",
-    "id": "Arcane_Signet-33te",
-    "z": 80947,
-    "parent": "m38y"
-  },
-  "Command_Tower-p2ew": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Command_Tower",
-    "id": "Command_Tower-p2ew",
-    "parent": "m38y",
-    "z": 80988
-  },
-  "Foreboding_Fruit-c05o": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Foreboding_Fruit",
-    "id": "Foreboding_Fruit-c05o",
-    "z": 81029,
-    "parent": "m38y"
-  },
-  "Giant_s_Skewer-ocde": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Giant_s_Skewer",
-    "id": "Giant_s_Skewer-ocde",
-    "z": 80951,
-    "parent": "m38y"
-  },
-  "Disenchant-pk0w": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Disenchant",
-    "id": "Disenchant-pk0w",
-    "parent": "m38y",
-    "z": 80992
-  },
-  "Doomed_Traveler-ggiw": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Doomed_Traveler",
-    "id": "Doomed_Traveler-ggiw",
-    "z": 80967,
-    "parent": "m38y"
-  },
-  "Doomed_Dissenter-yswc": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Doomed_Dissenter",
-    "id": "Doomed_Dissenter-yswc",
-    "parent": "m38y",
-    "z": 80991
-  },
-  "Dusk_Legion_Zealot-5yew": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Dusk_Legion_Zealot",
-    "id": "Dusk_Legion_Zealot-5yew",
-    "parent": "m38y",
-    "z": 80977
-  },
-  "Ephemerate-ocgo": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Ephemerate",
-    "id": "Ephemerate-ocgo",
-    "parent": "m38y",
-    "z": 80986
-  },
-  "Gods_Willing-00lp": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Gods_Willing",
-    "id": "Gods_Willing-00lp",
-    "z": 80982,
-    "parent": "m38y"
-  },
-  "Mind_Stone-dk72": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Mind_Stone",
-    "id": "Mind_Stone-dk72",
-    "z": 80973,
-    "parent": "m38y"
-  },
-  "Night_s_Whisper-i7hu": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Night_s_Whisper",
-    "id": "Night_s_Whisper-i7hu",
-    "parent": "m38y",
-    "z": 80985
-  },
-  "Orzhov_Basilica-i1t3": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Orzhov_Basilica",
-    "id": "Orzhov_Basilica-i1t3",
-    "z": 80954,
-    "parent": "m38y"
-  },
-  "Pestilence-tosc": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Pestilence",
-    "id": "Pestilence-tosc",
-    "parent": "m38y",
-    "z": 81010
-  },
-  "Phyrexian_Rager-2qjn": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Phyrexian_Rager",
-    "id": "Phyrexian_Rager-2qjn",
-    "z": 80939,
-    "parent": "m38y"
-  },
-  "Read_the_Bones-y6nn": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Read_the_Bones",
-    "id": "Read_the_Bones-y6nn",
-    "z": 80970,
-    "parent": "m38y"
-  },
-  "Rootborn_Defenses-cqrw": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Rootborn_Defenses",
-    "id": "Rootborn_Defenses-cqrw",
-    "parent": "m38y",
-    "z": 81013
-  },
-  "Stave_Off-j0e9": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Stave_Off",
-    "id": "Stave_Off-j0e9",
-    "parent": "m38y",
-    "z": 80990
-  },
-  "Thraben_Inspector-5sye": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Thraben_Inspector",
-    "id": "Thraben_Inspector-5sye",
-    "z": 81030,
-    "parent": "m38y"
-  },
-  "Tragic_Slip-u5eo": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Tragic_Slip",
-    "id": "Tragic_Slip-u5eo",
-    "parent": "m38y",
-    "z": 81009
-  },
-  "Whispersilk_Cloak-yhez": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Whispersilk_Cloak",
-    "id": "Whispersilk_Cloak-yhez",
-    "parent": "m38y",
-    "z": 80996
-  },
-  "Grasp_of_Darkness-iptg": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Grasp_of_Darkness",
-    "id": "Grasp_of_Darkness-iptg",
-    "z": 80950,
-    "parent": "m38y"
-  },
-  "Village_Rites-opxm": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Village_Rites",
-    "id": "Village_Rites-opxm",
-    "z": 81016,
-    "parent": "m38y"
-  },
-  "Ancestral_Blade-ev8j": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Ancestral_Blade",
-    "id": "Ancestral_Blade-ev8j",
-    "parent": "m38y",
-    "z": 81003
-  },
-  "Raise_the_Alarm-swsy": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Raise_the_Alarm",
-    "id": "Raise_the_Alarm-swsy",
-    "z": 81023,
-    "parent": "m38y"
-  },
-  "Commander_s_Sphere-rn4m": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Commander_s_Sphere",
-    "id": "Commander_s_Sphere-rn4m",
-    "z": 80962,
-    "parent": "m38y"
-  },
-  "Orzhov_Signet-jdi1": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Orzhov_Signet",
-    "id": "Orzhov_Signet-jdi1",
-    "parent": "m38y",
-    "z": 80960
-  },
-  "Sign_in_Blood-7dhh": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Sign_in_Blood",
-    "id": "Sign_in_Blood-7dhh",
-    "parent": "m38y",
-    "z": 81004
-  },
-  "Prismatic_Strands-5vmi": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Prismatic_Strands",
-    "id": "Prismatic_Strands-5vmi",
-    "z": 80948,
-    "parent": "m38y"
-  },
-  "Righteous_Charge-op66": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Righteous_Charge",
-    "id": "Righteous_Charge-op66",
-    "parent": "m38y",
-    "z": 81018
-  },
-  "Ghastly_Demise-n5wn": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Ghastly_Demise",
-    "id": "Ghastly_Demise-n5wn",
-    "z": 80980,
-    "parent": "m38y"
-  },
-  "Oubliette-8uqy": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Oubliette",
-    "id": "Oubliette-8uqy",
-    "z": 80949,
-    "parent": "m38y"
-  },
-  "Soul_s_Attendant-1ylw": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Soul_s_Attendant",
-    "id": "Soul_s_Attendant-1ylw",
-    "z": 81031,
-    "parent": "m38y"
-  },
-  "Vendetta-enm6": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Vendetta",
-    "id": "Vendetta-enm6",
-    "parent": "m38y",
-    "z": 81006
-  },
-  "Beckon_Apparition-ddxc": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Beckon_Apparition",
-    "id": "Beckon_Apparition-ddxc",
-    "parent": "m38y",
-    "z": 80956
-  },
-  "Orzhov_Guildgate-y6ra": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Orzhov_Guildgate",
-    "id": "Orzhov_Guildgate-y6ra",
-    "parent": "m38y",
-    "z": 80974
-  },
-  "Prismatic_Lens-1mqp": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Prismatic_Lens",
-    "id": "Prismatic_Lens-1mqp",
-    "z": 80941,
-    "parent": "m38y"
-  },
-  "Shelter-t92z": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Shelter",
-    "id": "Shelter-t92z",
-    "parent": "m38y",
-    "z": 80987
-  },
-  "Dead_Weight-vt2k": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Dead_Weight",
-    "id": "Dead_Weight-vt2k",
-    "parent": "m38y",
-    "z": 81011
-  },
-  "Succumb_to_Temptation-2ejv": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Succumb_to_Temptation",
-    "id": "Succumb_to_Temptation-2ejv",
-    "z": 81032,
-    "parent": "m38y"
-  },
-  "Imperious_Oligarch-97sv": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Imperious_Oligarch",
-    "id": "Imperious_Oligarch-97sv",
-    "parent": "m38y",
-    "z": 80942
-  },
-  "Hunted_Witness-u1ib": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Hunted_Witness",
-    "id": "Hunted_Witness-u1ib",
-    "parent": "m38y",
-    "z": 80959
-  },
-  "Attended_Knight-aeho": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Attended_Knight",
-    "id": "Attended_Knight-aeho",
-    "z": 80994,
-    "parent": "m38y"
-  },
-  "Veteran_Armorer-2r14": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Veteran_Armorer",
-    "id": "Veteran_Armorer-2r14",
-    "z": 80971,
-    "parent": "m38y"
-  },
-  "Gather_the_Townsfolk-ckdq": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Gather_the_Townsfolk",
-    "id": "Gather_the_Townsfolk-ckdq",
-    "z": 81021,
-    "parent": "m38y"
-  },
-  "Journey_to_Nowhere-ozqe": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Journey_to_Nowhere",
-    "id": "Journey_to_Nowhere-ozqe",
-    "z": 80953,
-    "parent": "m38y"
-  },
-  "Spark_Reaper-lzsd": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Spark_Reaper",
-    "id": "Spark_Reaper-lzsd",
-    "z": 81017,
-    "parent": "m38y"
-  },
-  "Defile-lsgw": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Defile",
-    "id": "Defile-lsgw",
-    "parent": "m38y",
-    "z": 80997
-  },
-  "Reprobation-m980": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Reprobation",
-    "id": "Reprobation-m980",
-    "parent": "m38y",
-    "z": 80993
-  },
-  "Recruit_the_Worthy-hf0m": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Recruit_the_Worthy",
-    "id": "Recruit_the_Worthy-hf0m",
-    "parent": "m38y",
-    "z": 80943
-  },
-  "Bonder_s_Ornament-269l": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Bonder_s_Ornament",
-    "id": "Bonder_s_Ornament-269l",
-    "z": 80963,
-    "parent": "m38y"
-  },
-  "Guardians__Pledge-llvb": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Guardians__Pledge",
-    "id": "Guardians__Pledge-llvb",
-    "parent": "m38y",
-    "z": 81012
-  },
-  "Cast_Down-4gm4": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Cast_Down",
-    "id": "Cast_Down-4gm4",
-    "parent": "m38y",
-    "z": 80998
-  },
-  "Crusader_of_Odric-ovuq": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Crusader_of_Odric",
-    "id": "Crusader_of_Odric-ovuq",
-    "parent": "m38y",
-    "z": 81020
-  },
-  "Garrison_Cat-5mr9": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Garrison_Cat",
-    "id": "Garrison_Cat-5mr9",
-    "z": 81007,
-    "parent": "m38y"
-  },
-  "Deathspore_Thallid-6isj": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Deathspore_Thallid",
-    "id": "Deathspore_Thallid-6isj",
-    "parent": "m38y",
-    "z": 80968
-  },
-  "Vulturous_Aven-ewak": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Vulturous_Aven",
-    "id": "Vulturous_Aven-ewak",
-    "parent": "m38y",
-    "z": 81019
-  },
-  "Prying_Blade-caiz": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Prying_Blade",
-    "id": "Prying_Blade-caiz",
-    "parent": "m38y",
-    "z": 80965
-  },
-  "Captain_s_Call-bc8e": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Captain_s_Call",
-    "id": "Captain_s_Call-bc8e",
-    "parent": "m38y",
-    "z": 81033
-  },
-  "Funeral_Pyre-io62": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Funeral_Pyre",
-    "id": "Funeral_Pyre-io62",
-    "z": 80984,
-    "parent": "m38y"
-  },
-  "Goldvein_Pick-i57u": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Goldvein_Pick",
-    "id": "Goldvein_Pick-i57u",
-    "z": 80983,
-    "parent": "m38y"
-  },
-  "Beskir_Shieldmate-ov3j": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Beskir_Shieldmate",
-    "id": "Beskir_Shieldmate-ov3j",
-    "z": 80937,
-    "parent": "m38y"
-  },
-  "Shambling_Ghast-wtyt": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Shambling_Ghast",
-    "id": "Shambling_Ghast-wtyt",
-    "parent": "m38y",
-    "z": 81035
-  },
-  "Deadly_Dispute-8p10": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Deadly_Dispute",
-    "id": "Deadly_Dispute-8p10",
-    "z": 80946,
-    "parent": "m38y"
-  },
-  "Blood_Pact-iyop": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Blood_Pact",
-    "id": "Blood_Pact-iyop",
-    "parent": "m38y",
-    "z": 80976
-  },
-  "Ceremonial_Knife-mrpv": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Ceremonial_Knife",
-    "id": "Ceremonial_Knife-mrpv",
-    "z": 81001,
-    "parent": "m38y"
-  },
-  "Pointed_Discussion-j2p9": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Pointed_Discussion",
-    "id": "Pointed_Discussion-j2p9",
-    "parent": "m38y",
-    "z": 80958
-  },
-  "Undercity_Scrounger-1qbi": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Undercity_Scrounger",
-    "id": "Undercity_Scrounger-1qbi",
-    "z": 81034,
-    "parent": "m38y"
-  },
-  "Heap_Gate-i4er": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Heap_Gate",
-    "id": "Heap_Gate-i4er",
-    "z": 80999,
-    "parent": "m38y"
-  },
-  "Citadel_Gate-q8v3": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Citadel_Gate",
-    "id": "Citadel_Gate-q8v3",
-    "parent": "m38y",
-    "z": 81027
-  },
-  "Black_Dragon_Gate-tc2x": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Black_Dragon_Gate",
-    "id": "Black_Dragon_Gate-tc2x",
-    "z": 81002,
-    "parent": "m38y"
-  },
-  "Recruitment_Drive-zo9d": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Recruitment_Drive",
-    "id": "Recruitment_Drive-zo9d",
-    "z": 80940,
-    "parent": "m38y"
-  },
-  "Wyrm_s_Crossing_Patrol-pv1d": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Wyrm_s_Crossing_Patrol",
-    "id": "Wyrm_s_Crossing_Patrol-pv1d",
-    "parent": "m38y",
-    "z": 81024
-  },
   "libraryButton2": {
     "type": "button",
     "id": "libraryButton2",
@@ -4683,14 +2595,14 @@
       }
     ]
   },
-  "03jj": {
+  "playerPile1": {
     "type": "pile",
     "parent": "playerDeckHolder1",
     "x": 4,
     "y": 4,
     "width": 115,
     "height": 160,
-    "id": "03jj"
+    "id": "playerPile1"
   },
   "rules": {
     "id": "rules",
@@ -4705,14 +2617,14 @@
     "text": "1. Untap and Draw\n2. Main Phase\n - (If you have any) play a land card (1 per turn)\n - Play any cards you can afford\n3. Combat Phase (Optional)\n - Declare Attackers\n - (Other player) Declare Blockers\n - Combat Damage Resolves\n 4. Main Phase (Again)\n 5. End of Your Turn\n",
     "z": 159
   },
-  "m38y": {
+  "playerPile2": {
     "type": "pile",
     "parent": "playerDeckHolder2",
     "x": 4,
     "y": 4,
     "width": 115,
     "height": 160,
-    "id": "m38y"
+    "id": "playerPile2"
   },
   "playerLife2": {
     "type": "button",
@@ -4933,8 +2845,856 @@
     "text": "Hover over me",
     "hoverText": "Clone the current card"
   },
-  "flipCardButton": {
+  "Witch_s_Cottage-mvad": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Witch_s_Cottage",
+    "id": "Witch_s_Cottage-mvad",
+    "parent": "playerPile1"
+  },
+  "Witch_s_Cottage-p87f": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Witch_s_Cottage",
+    "id": "Witch_s_Cottage-p87f",
+    "parent": "playerPile1"
+  },
+  "Gempalm_Polluter-tbeq": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gempalm_Polluter",
+    "id": "Gempalm_Polluter-tbeq",
+    "parent": "playerPile1"
+  },
+  "Gempalm_Polluter-yrvq": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gempalm_Polluter",
+    "id": "Gempalm_Polluter-yrvq",
+    "parent": "playerPile1"
+  },
+  "Gempalm_Polluter-gfb6": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gempalm_Polluter",
+    "id": "Gempalm_Polluter-gfb6",
+    "parent": "playerPile1"
+  },
+  "Gempalm_Polluter-udc5": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gempalm_Polluter",
+    "id": "Gempalm_Polluter-udc5",
+    "parent": "playerPile1"
+  },
+  "Gray_Merchant_of_Asphodel-8npp": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gray_Merchant_of_Asphodel",
+    "id": "Gray_Merchant_of_Asphodel-8npp",
+    "parent": "playerPile1"
+  },
+  "Gray_Merchant_of_Asphodel-ee41": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gray_Merchant_of_Asphodel",
+    "id": "Gray_Merchant_of_Asphodel-ee41",
+    "parent": "playerPile1"
+  },
+  "Gray_Merchant_of_Asphodel-yt56": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gray_Merchant_of_Asphodel",
+    "id": "Gray_Merchant_of_Asphodel-yt56",
+    "parent": "playerPile1"
+  },
+  "Gray_Merchant_of_Asphodel-m06j": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Gray_Merchant_of_Asphodel",
+    "id": "Gray_Merchant_of_Asphodel-m06j",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-8j26": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-8j26",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-23zh": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-23zh",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-blxq": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-blxq",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-jwps": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-jwps",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-idr2": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-idr2",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-5rgr": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-5rgr",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-j9mx": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-j9mx",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-f257": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-f257",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-chg7": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-chg7",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-qoke": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-qoke",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-hdsk": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-hdsk",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-qa9m": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-qa9m",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-01mb": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-01mb",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-xlz8": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-xlz8",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-61c4": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-61c4",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-omlx": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-omlx",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-sv74": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-sv74",
+    "parent": "playerPile1"
+  },
+  "Snow_Covered_Swamp-m0po": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Snow_Covered_Swamp",
+    "id": "Snow_Covered_Swamp-m0po",
+    "parent": "playerPile1"
+  },
+  "Fleshbag_Marauder-br9k": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Fleshbag_Marauder",
+    "id": "Fleshbag_Marauder-br9k",
+    "parent": "playerPile1"
+  },
+  "Fleshbag_Marauder-beki": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Fleshbag_Marauder",
+    "id": "Fleshbag_Marauder-beki",
+    "parent": "playerPile1"
+  },
+  "Lazotep_Reaver-10y2": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Lazotep_Reaver",
+    "id": "Lazotep_Reaver-10y2",
+    "parent": "playerPile1"
+  },
+  "Lazotep_Reaver-u85x": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Lazotep_Reaver",
+    "id": "Lazotep_Reaver-u85x",
+    "parent": "playerPile1"
+  },
+  "Lazotep_Reaver-ljn1": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Lazotep_Reaver",
+    "id": "Lazotep_Reaver-ljn1",
+    "parent": "playerPile1"
+  },
+  "Lazotep_Reaver-p8o4": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Lazotep_Reaver",
+    "id": "Lazotep_Reaver-p8o4",
+    "parent": "playerPile1"
+  },
+  "Putrid_Goblin-2c7q": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Putrid_Goblin",
+    "id": "Putrid_Goblin-2c7q",
+    "parent": "playerPile1"
+  },
+  "Putrid_Goblin-uxsr": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Putrid_Goblin",
+    "id": "Putrid_Goblin-uxsr",
+    "parent": "playerPile1"
+  },
+  "Putrid_Goblin-7cra": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Putrid_Goblin",
+    "id": "Putrid_Goblin-7cra",
+    "parent": "playerPile1"
+  },
+  "Putrid_Goblin-zc8q": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Putrid_Goblin",
+    "id": "Putrid_Goblin-zc8q",
+    "parent": "playerPile1"
+  },
+  "Ghoulraiser-9cow": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Ghoulraiser",
+    "id": "Ghoulraiser-9cow",
+    "parent": "playerPile1"
+  },
+  "Ghoulraiser-fyh6": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Ghoulraiser",
+    "id": "Ghoulraiser-fyh6",
+    "parent": "playerPile1"
+  },
+  "Ghoulraiser-gdav": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Ghoulraiser",
+    "id": "Ghoulraiser-gdav",
+    "parent": "playerPile1"
+  },
+  "Priest_of_the_Haunted_Edge-bm3d": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Priest_of_the_Haunted_Edge",
+    "id": "Priest_of_the_Haunted_Edge-bm3d",
+    "parent": "playerPile1"
+  },
+  "Priest_of_the_Haunted_Edge-m8sy": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Priest_of_the_Haunted_Edge",
+    "id": "Priest_of_the_Haunted_Edge-m8sy",
+    "parent": "playerPile1"
+  },
+  "Shambling_Ghast-1xxd": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Shambling_Ghast",
+    "id": "Shambling_Ghast-1xxd",
+    "parent": "playerPile1"
+  },
+  "Shambling_Ghast-34dp": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Shambling_Ghast",
+    "id": "Shambling_Ghast-34dp",
+    "parent": "playerPile1"
+  },
+  "Shambling_Ghast-2365": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Shambling_Ghast",
+    "id": "Shambling_Ghast-2365",
+    "parent": "playerPile1"
+  },
+  "Shambling_Ghast-nz3r": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Shambling_Ghast",
+    "id": "Shambling_Ghast-nz3r",
+    "parent": "playerPile1"
+  },
+  "Deadly_Dispute-tx5l": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Deadly_Dispute",
+    "id": "Deadly_Dispute-tx5l",
+    "parent": "playerPile1"
+  },
+  "Deadly_Dispute-2s36": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Deadly_Dispute",
+    "id": "Deadly_Dispute-2s36",
+    "parent": "playerPile1"
+  },
+  "Deadly_Dispute-nse1": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Deadly_Dispute",
+    "id": "Deadly_Dispute-nse1",
+    "parent": "playerPile1"
+  },
+  "Deadly_Dispute-h4ox": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Deadly_Dispute",
+    "id": "Deadly_Dispute-h4ox",
+    "parent": "playerPile1"
+  },
+  "A_Sepulcher_Ghoul-4l74": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "A_Sepulcher_Ghoul",
+    "id": "A_Sepulcher_Ghoul-4l74",
+    "parent": "playerPile1"
+  },
+  "A_Sepulcher_Ghoul-rcet": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "A_Sepulcher_Ghoul",
+    "id": "A_Sepulcher_Ghoul-rcet",
+    "parent": "playerPile1"
+  },
+  "A_Sepulcher_Ghoul-vtcl": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "A_Sepulcher_Ghoul",
+    "id": "A_Sepulcher_Ghoul-vtcl",
+    "parent": "playerPile1"
+  },
+  "A_Hobbling_Zombie-ett9": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "A_Hobbling_Zombie",
+    "id": "A_Hobbling_Zombie-ett9",
+    "parent": "playerPile1"
+  },
+  "A_Hobbling_Zombie-2cqa": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "A_Hobbling_Zombie",
+    "id": "A_Hobbling_Zombie-2cqa",
+    "parent": "playerPile1"
+  },
+  "A_Hobbling_Zombie-hw7s": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "A_Hobbling_Zombie",
+    "id": "A_Hobbling_Zombie-hw7s",
+    "parent": "playerPile1"
+  },
+  "A_Hobbling_Zombie-opuj": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "A_Hobbling_Zombie",
+    "id": "A_Hobbling_Zombie-opuj",
+    "parent": "playerPile1"
+  },
+  "Writhing_Necromass-1efr": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Writhing_Necromass",
+    "id": "Writhing_Necromass-1efr",
+    "parent": "playerPile1"
+  },
+  "Writhing_Necromass-u8y9": {
+    "deck": "playerDeck1",
+    "type": "card",
+    "cardType": "Writhing_Necromass",
+    "id": "Writhing_Necromass-u8y9",
+    "z": 81499,
+    "parent": "playerPile1"
+  },
+  "Island-f0ix": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-f0ix",
+    "parent": "playerPile2"
+  },
+  "Island-ebmn": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-ebmn",
+    "parent": "playerPile2"
+  },
+  "Island-xfx6": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-xfx6",
+    "parent": "playerPile2"
+  },
+  "Island-6g0m": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-6g0m",
+    "parent": "playerPile2"
+  },
+  "Island-t44e": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-t44e",
+    "parent": "playerPile2"
+  },
+  "Island-1c0v": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-1c0v",
+    "parent": "playerPile2"
+  },
+  "Island-t6yt": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-t6yt",
+    "parent": "playerPile2"
+  },
+  "Island-6gud": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-6gud",
+    "parent": "playerPile2"
+  },
+  "Island-wdan": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-wdan",
+    "parent": "playerPile2"
+  },
+  "Island-1jqe": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-1jqe",
+    "parent": "playerPile2"
+  },
+  "Island-bgt8": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-bgt8",
+    "parent": "playerPile2"
+  },
+  "Island-aegg": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-aegg",
+    "parent": "playerPile2"
+  },
+  "Island-508f": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-508f",
+    "parent": "playerPile2"
+  },
+  "Island-0mly": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-0mly",
+    "parent": "playerPile2"
+  },
+  "Island-2iq3": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-2iq3",
+    "parent": "playerPile2"
+  },
+  "Island-aog7": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-aog7",
+    "parent": "playerPile2"
+  },
+  "Island-ssuq": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-ssuq",
+    "parent": "playerPile2"
+  },
+  "Island-d79v": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-d79v",
+    "parent": "playerPile2"
+  },
+  "Island-14yq": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-14yq",
+    "parent": "playerPile2"
+  },
+  "Island-1cas": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-1cas",
+    "parent": "playerPile2"
+  },
+  "Island-vx1n": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-vx1n",
+    "parent": "playerPile2"
+  },
+  "Island-7rh1": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-7rh1",
+    "parent": "playerPile2"
+  },
+  "Island-h30i": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-h30i",
+    "parent": "playerPile2"
+  },
+  "Island-fvmu": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-fvmu",
+    "parent": "playerPile2"
+  },
+  "Island-y481": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Island",
+    "id": "Island-y481",
+    "parent": "playerPile2"
+  },
+  "Cloudkin_Seer-do4r": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Cloudkin_Seer",
+    "id": "Cloudkin_Seer-do4r",
+    "parent": "playerPile2"
+  },
+  "Cloudkin_Seer-ljf2": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Cloudkin_Seer",
+    "id": "Cloudkin_Seer-ljf2",
+    "parent": "playerPile2"
+  },
+  "Cloudkin_Seer-hqrt": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Cloudkin_Seer",
+    "id": "Cloudkin_Seer-hqrt",
+    "parent": "playerPile2"
+  },
+  "Frilled_Sea_Serpent-lc98": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Frilled_Sea_Serpent",
+    "id": "Frilled_Sea_Serpent-lc98",
+    "parent": "playerPile2"
+  },
+  "Glint-wrb5": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Glint",
+    "id": "Glint-wrb5",
+    "parent": "playerPile2"
+  },
+  "Glint-jxzf": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Glint",
+    "id": "Glint-jxzf",
+    "parent": "playerPile2"
+  },
+  "Sleep-d3cc": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Sleep",
+    "id": "Sleep-d3cc",
+    "parent": "playerPile2"
+  },
+  "Warden_of_Evos_Isle-mbfn": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Warden_of_Evos_Isle",
+    "id": "Warden_of_Evos_Isle-mbfn",
+    "parent": "playerPile2"
+  },
+  "Warden_of_Evos_Isle-einj": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Warden_of_Evos_Isle",
+    "id": "Warden_of_Evos_Isle-einj",
+    "parent": "playerPile2"
+  },
+  "Warden_of_Evos_Isle-a44p": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Warden_of_Evos_Isle",
+    "id": "Warden_of_Evos_Isle-a44p",
+    "parent": "playerPile2"
+  },
+  "Overflowing_Insight-v1mx": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Overflowing_Insight",
+    "id": "Overflowing_Insight-v1mx",
+    "parent": "playerPile2"
+  },
+  "Waterknot-0hol": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Waterknot",
+    "id": "Waterknot-0hol",
+    "parent": "playerPile2"
+  },
+  "Waterknot-kbxu": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Waterknot",
+    "id": "Waterknot-kbxu",
+    "parent": "playerPile2"
+  },
+  "Waterknot-g0m1": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Waterknot",
+    "id": "Waterknot-g0m1",
+    "parent": "playerPile2"
+  },
+  "Wall_of_Runes-gf4m": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Wall_of_Runes",
+    "id": "Wall_of_Runes-gf4m",
+    "parent": "playerPile2"
+  },
+  "Wall_of_Runes-x1ep": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Wall_of_Runes",
+    "id": "Wall_of_Runes-x1ep",
+    "parent": "playerPile2"
+  },
+  "Unsummon-sujz": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Unsummon",
+    "id": "Unsummon-sujz",
+    "parent": "playerPile2"
+  },
+  "Unsummon-q6gx": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Unsummon",
+    "id": "Unsummon-q6gx",
+    "parent": "playerPile2"
+  },
+  "Unsummon-j9hw": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Unsummon",
+    "id": "Unsummon-j9hw",
+    "parent": "playerPile2"
+  },
+  "Octoprophet-7asp": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Octoprophet",
+    "id": "Octoprophet-7asp",
+    "parent": "playerPile2"
+  },
+  "Octoprophet-n1ve": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Octoprophet",
+    "id": "Octoprophet-n1ve",
+    "parent": "playerPile2"
+  },
+  "Riddlemaster_Sphinx-17fw": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Riddlemaster_Sphinx",
+    "id": "Riddlemaster_Sphinx-17fw",
+    "parent": "playerPile2"
+  },
+  "Riddlemaster_Sphinx-ilbz": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Riddlemaster_Sphinx",
+    "id": "Riddlemaster_Sphinx-ilbz",
+    "parent": "playerPile2"
+  },
+  "Waterkin_Shaman-e7yt": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Waterkin_Shaman",
+    "id": "Waterkin_Shaman-e7yt",
+    "parent": "playerPile2"
+  },
+  "Waterkin_Shaman-tbda": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Waterkin_Shaman",
+    "id": "Waterkin_Shaman-tbda",
+    "parent": "playerPile2"
+  },
+  "Waterkin_Shaman-jx2j": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Waterkin_Shaman",
+    "id": "Waterkin_Shaman-jx2j",
+    "parent": "playerPile2"
+  },
+  "Winged_Words-i8a6": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Winged_Words",
+    "id": "Winged_Words-i8a6",
+    "parent": "playerPile2"
+  },
+  "Winged_Words-7ilz": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Winged_Words",
+    "id": "Winged_Words-7ilz",
+    "parent": "playerPile2"
+  },
+  "Soulblade_Djinn-92zq": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Soulblade_Djinn",
+    "id": "Soulblade_Djinn-92zq",
+    "parent": "playerPile2"
+  },
+  "Soulblade_Djinn-hd5q": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Soulblade_Djinn",
+    "id": "Soulblade_Djinn-hd5q",
+    "parent": "playerPile2"
+  },
+  "Windstorm_Drake-m95w": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Windstorm_Drake",
+    "id": "Windstorm_Drake-m95w",
+    "parent": "playerPile2"
+  },
+  "Windstorm_Drake-74q8": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Windstorm_Drake",
+    "id": "Windstorm_Drake-74q8",
+    "parent": "playerPile2"
+  },
+  "Windreader_Sphinx-38ts": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Windreader_Sphinx",
+    "id": "Windreader_Sphinx-38ts",
+    "parent": "playerPile2"
+  },
+  "Sworn_Guardian-b8l4": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Sworn_Guardian",
+    "id": "Sworn_Guardian-b8l4",
+    "parent": "playerPile2"
+  },
+  "Sworn_Guardian-sz65": {
+    "deck": "playerDeck2",
+    "type": "card",
+    "cardType": "Sworn_Guardian",
+    "id": "Sworn_Guardian-sz65",
+    "parent": "playerPile2"
+  },
+  "flipCardButton2": {
     "type": "button",
+    "id": "flipCardButton2",
+    "parent": "tokenActionsBox",
+    "x": 127,
+    "y": 33,
+    "width": 100,
+    "height": 20,
+    "z": 126,
     "text": "Flip Card",
     "clickRoutine": [
       {
@@ -4949,14 +3709,36 @@
         "func": "FLIP",
         "collection": "tokensToBeFlipped"
       }
-    ],
-    "z": 125,
-    "id": "ah5b",
+    ]
+  },
+  "cloneCardButton": {
+    "type": "button",
+    "id": "cloneCardButton",
+    "parent": "tokenActionsBox",
+    "x": 127,
+    "y": 5,
     "width": 100,
     "height": 20,
-    "parent": "tokenActionsBox",
-    "x": 125,
-    "y": 32
+    "z": 125,
+    "text": "Clone Card",
+    "clickRoutine": [
+      {
+        "func": "SELECT",
+        "property": "parent",
+        "relation": "==",
+        "value": "tokenHolder2",
+        "collection": "tokensToBeCloned",
+        "max": 1
+      },
+      {
+        "func": "CLONE",
+        "source": [
+          "tokensToBeCloned"
+        ],
+        "count": "1",
+        "collection": "clonedCards"
+      }
+    ]
   },
   "_meta": {
     "version": 15,
