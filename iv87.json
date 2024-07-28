@@ -1342,7 +1342,24 @@
             "height": 160,
             "color": "transparent",
             "dynamicProperties": {
-              "value": "image"
+              "value": "imageFront"
+            }
+          }
+        ]
+      },
+      {
+        "border": false,
+        "radius": 5,
+        "objects": [
+          {
+            "type": "image",
+            "x": 0,
+            "y": 0,
+            "width": 115,
+            "height": 160,
+            "color": "transparent",
+            "dynamicProperties": {
+              "value": "imageBack"
             }
           }
         ]
@@ -3706,10 +3723,49 @@
         "max": 1
       },
       {
-        "func": "FLIP",
-        "collection": "tokensToBeFlipped"
+        "func": "CALL",
+        "routine": "customFlipCardRoutine"
       }
+    ],
+    "customFlipCardRoutine": [
+          {
+      "func": "GET",
+      "collection": "tokensToBeFlipped",
+      "aggregation": "first",
+      "property": "activeFace",
+      "variable": "currentFace"
+    },
+      {
+      "func": "GET",
+      "collection": "tokensToBeFlipped",
+      "aggregation": "first",
+      "property": "layout",
+      "variable": "cardLayout"
+    },
+      "var singleFaced = ${cardLayout} == 'normal'",
+      {
+        "func": "IF",
+        "condition": "${singleFaced} && ${currentFace} == 1",
+        "thenRoutine": [
+         {
+            "func": "SET",
+          "collection": "tokensToBeFlipped", 
+        "property": "activeFace",
+        "value": "0"
+          }
+        ], 
+        "elseRoutine": [
+         {
+            "func": "SET",
+        "collection": "targetCollection", 
+        "property": "activeFace",
+        "value": "${currentFace} + 1"
+          }
+        ] 
+      }
+
     ]
+
   },
   "cloneCardButton": {
     "type": "button",
