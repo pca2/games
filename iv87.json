@@ -1,87 +1,114 @@
 {
-  "ds1q": {
-    "type": "button",
-    "text": "Untap & Draw",
+  "0feq": {
     "clickRoutine": [
       {
-        "func": "SELECT",
-        "property": "y",
-        "value": 470,
-        "relation": ">=",
-        "collection": "bottomCollection",
-        "type": "card"
+        "confirmButtonText": "Confirm and shuffle deck",
+        "fields": [
+          {
+            "text": "Player 1 Library",
+            "type": "title"
+          },
+          {
+            "text": "Selected cards will be placed in your hand",
+            "type": "subtitle"
+          },
+          {
+            "collection": "thisCollection",
+            "holder": [
+              "playerDeckHolder1"
+            ],
+            "max": 200,
+            "propertyOverride": {
+              "activeFace": 1
+            },
+            "type": "choose",
+            "variable": "chosenCard"
+          }
+        ],
+        "func": "INPUT"
       },
       {
-        "func": "SELECT",
-        "source": "bottomCollection",
-        "collection": "bottomCards"
-      },
-      {
-        "func": "ROTATE",
-        "collection": "bottomCards",
-        "mode": "set",
-        "angle": 0,
-        "count": 0
-      },
-      {
+        "collection": "thisCollection",
         "func": "MOVE",
-        "count": 1,
-        "from": "playerDeckHolder1",
         "to": "playerHand1"
+      },
+      {
+        "func": "SHUFFLE",
+        "holder": "playerDeckHolder1"
       }
     ],
-    "x": 931,
-    "y": 783,
-    "z": 17,
-    "id": "ds1q",
-    "height": 31,
-    "width": 120
-  },
-  "gnef": {
-    "y": 501,
-    "height": 0,
-    "borderRadius": "1px",
-    "css": {
-      "border": "1px solid #666"
-    },
-    "z": 1,
-    "id": "gnef",
-    "movable": false,
-    "width": 1600
-  },
-  "lch2": {
-    "deck": "vrlpD",
-    "type": "card",
-    "cardType": "",
-    "id": "lch2",
-    "z": 1905,
-    "x": 932,
-    "y": 538
-  },
-  "zdvr": {
-    "type": "label",
-    "id": "zdvr",
-    "width": 65,
-    "height": 40,
-    "css": "font-size: 30px;",
-    "editable": true,
-    "movable": true,
-    "z": 109,
-    "x": 1518,
-    "y": 882,
-    "text": 25
-  },
-  "zdvrD": {
-    "id": "zdvrD",
-    "parent": "zdvr",
-    "fixedParent": true,
-    "width": 36,
-    "height": 36,
+    "height": 20,
+    "id": "0feq",
+    "parent": "playerDeckActions1",
+    "text": "Search Deck",
     "type": "button",
-    "movableInEdit": false,
+    "width": 120,
+    "x": 5,
+    "y": 5,
+    "z": 25
+  },
+  "1feq": {
+    "clickRoutine": [
+      {
+        "confirmButtonText": "Confirm and shuffle deck",
+        "fields": [
+          {
+            "text": "Player 2 Library",
+            "type": "title"
+          },
+          {
+            "text": "Selected cards will be placed in your hand",
+            "type": "subtitle"
+          },
+          {
+            "collection": "thisCollection",
+            "holder": [
+              "playerDeckHolder2"
+            ],
+            "max": 200,
+            "propertyOverride": {
+              "activeFace": 1
+            },
+            "type": "choose",
+            "variable": "chosenCard"
+          }
+        ],
+        "func": "INPUT"
+      },
+      {
+        "collection": "thisCollection",
+        "func": "MOVE",
+        "to": "playerHand2"
+      },
+      {
+        "func": "SHUFFLE",
+        "holder": "playerDeckHolder2"
+      }
+    ],
+    "height": 20,
+    "id": "1feq",
+    "parent": "playerDeckActions2",
+    "text": "Search Deck",
+    "type": "button",
+    "width": 120,
+    "x": 5,
+    "y": 5,
+    "z": 25
+  },
+  "3kg2": {
+    "css": "font-size: 20px;",
+    "editable": true,
+    "id": "3kg2",
+    "movable": true,
+    "text": 0,
+    "type": "label",
+    "width": 45,
+    "x": 1651,
+    "y": 590,
+    "z": 32
+  },
+  "3kg2D": {
     "classes": "symbols",
-    "css": "font-size: 28px",
-    "text": "remove",
     "clickRoutine": [
       {
         "func": "LABEL",
@@ -90,72 +117,20 @@
         "value": 1
       }
     ],
-    "x": 15,
-    "y": 35,
-    "z": 1
-  },
-  "kzty": {
-    "type": "label",
-    "text": "Player 1",
-    "x": 1405,
-    "y": 535,
-    "z": 13,
-    "id": "kzty",
-    "parent": "zdvr",
-    "fixedParent": true
-  },
-  "7czp": {
-    "type": "label",
-    "text": "Player 1",
-    "x": 1059,
-    "y": 170,
-    "z": 14,
-    "id": "7czp",
-    "parent": "zdvr",
-    "fixedParent": true
-  },
-  "b08s": {
-    "type": "label",
-    "text": "Graveyard",
-    "x": 1063,
-    "y": 822,
-    "z": 97,
-    "id": "b08s"
-  },
-  "v9d3": {
-    "type": "label",
-    "text": "Exile",
-    "x": 1188,
-    "y": 820,
-    "z": 96,
-    "id": "v9d3"
-  },
-  "zdvr1": {
-    "type": "label",
-    "text": 25,
-    "id": "zdvr1",
-    "width": 65,
-    "height": 40,
-    "css": "font-size: 30px;",
-    "editable": true,
-    "movable": true,
-    "z": 112,
-    "x": 1516,
-    "y": 84
-  },
-  "zdvrU1": {
-    "id": "zdvrU1",
-    "parent": "zdvr1",
+    "css": "font-size: 14px",
     "fixedParent": true,
-    "x": 15,
-    "y": -40,
-    "width": 36,
-    "height": 36,
-    "type": "button",
+    "height": 18,
+    "id": "3kg2D",
     "movableInEdit": false,
+    "parent": "3kg2",
+    "text": "remove",
+    "type": "button",
+    "width": 18,
+    "x": -16,
+    "y": 1
+  },
+  "3kg2U": {
     "classes": "symbols",
-    "css": "font-size: 28px",
-    "text": "add",
     "clickRoutine": [
       {
         "func": "LABEL",
@@ -163,233 +138,3699 @@
         "mode": "inc",
         "value": 1
       }
-    ]
-  },
-  "kzty1": {
-    "type": "label",
-    "text": "Player 1",
-    "x": 1405,
-    "y": 535,
-    "z": 13,
-    "id": "kzty1",
-    "parent": "zdvr1",
-    "fixedParent": true
-  },
-  "8czp": {
-    "type": "label",
-    "text": "Player 1",
-    "x": 1059,
-    "y": 170,
-    "z": 14,
-    "id": "8czp",
-    "parent": "zdvr1",
-    "fixedParent": true
-  },
-  "v9d4": {
-    "type": "label",
-    "text": "Exile",
-    "x": 1198,
-    "y": 177,
-    "z": 95,
-    "id": "v9d4"
-  },
-  "b9s": {
-    "type": "label",
-    "text": "Graveyard",
-    "x": 1066,
-    "y": 175,
-    "z": 94,
-    "id": "b9s"
-  },
-  "ds2q": {
+    ],
+    "css": "font-size: 14px",
+    "fixedParent": true,
+    "height": 18,
+    "id": "3kg2U",
+    "movableInEdit": false,
+    "parent": "3kg2",
+    "text": "add",
     "type": "button",
-    "text": "Untap & Draw",
+    "width": 18,
+    "x": 41,
+    "y": 1
+  },
+  "50atD": {
+    "classes": "symbols",
     "clickRoutine": [
       {
+        "func": "LABEL",
+        "label": "${PROPERTY parent}",
+        "mode": "dec",
+        "value": 1
+      }
+    ],
+    "css": "font-size: 20px",
+    "fixedParent": true,
+    "height": 20,
+    "id": "50atD",
+    "movableInEdit": false,
+    "parent": "commanderDamage1",
+    "text": "remove",
+    "type": "button",
+    "width": 20,
+    "x": 10,
+    "y": 23
+  },
+  "50atU": {
+    "classes": "symbols",
+    "clickRoutine": [
+      {
+        "func": "LABEL",
+        "label": "${PROPERTY parent}",
+        "mode": "inc",
+        "value": 1
+      }
+    ],
+    "css": "font-size: 20px",
+    "fixedParent": true,
+    "height": 20,
+    "id": "50atU",
+    "movableInEdit": false,
+    "parent": "commanderDamage1",
+    "text": "add",
+    "type": "button",
+    "width": 20,
+    "x": 10,
+    "y": -22
+  },
+  "51atD": {
+    "classes": "symbols",
+    "clickRoutine": [
+      {
+        "func": "LABEL",
+        "label": "${PROPERTY parent}",
+        "mode": "dec",
+        "value": 1
+      }
+    ],
+    "css": "font-size: 20px",
+    "fixedParent": true,
+    "height": 20,
+    "id": "51atD",
+    "movableInEdit": false,
+    "parent": "commanderDamage2",
+    "text": "remove",
+    "type": "button",
+    "width": 20,
+    "x": 10,
+    "y": 23
+  },
+  "51atU": {
+    "classes": "symbols",
+    "clickRoutine": [
+      {
+        "func": "LABEL",
+        "label": "${PROPERTY parent}",
+        "mode": "inc",
+        "value": 1
+      }
+    ],
+    "css": "font-size: 20px",
+    "fixedParent": true,
+    "height": 20,
+    "id": "51atU",
+    "movableInEdit": false,
+    "parent": "commanderDamage2",
+    "text": "add",
+    "type": "button",
+    "width": 20,
+    "x": 10,
+    "y": -22
+  },
+  "7czp": {
+    "fixedParent": true,
+    "id": "7czp",
+    "parent": "zdvr",
+    "text": "Player 1",
+    "type": "label",
+    "x": 1059,
+    "y": 170,
+    "z": 14
+  },
+  "8czp": {
+    "fixedParent": true,
+    "id": "8czp",
+    "parent": "zdvr1",
+    "text": "Player 1",
+    "type": "label",
+    "x": 1059,
+    "y": 170,
+    "z": 14
+  },
+  "9wmd": {
+    "classes": "material-icons",
+    "clickRoutine": [
+      {
+        "fields": [
+          {
+            "text": "Room Options",
+            "type": "title"
+          },
+          {
+            "text": "Commander",
+            "type": "subtitle"
+          },
+          {
+            "label": "Show Commander Damage (uncheck to hide)?",
+            "type": "checkbox",
+            "value": "${PROPERTY showCD}",
+            "variable": "showCD"
+          },
+          {
+            "label": "Show Command Zone (uncheck to hide)?",
+            "type": "checkbox",
+            "value": "${PROPERTY showCZ}",
+            "variable": "showCZ"
+          }
+        ],
+        "func": "INPUT"
+      },
+      {
+        "collection": "thisButton",
+        "func": "SET",
+        "property": "showCD",
+        "value": "${showCD}"
+      },
+      {
+        "collection": "thisButton",
+        "func": "SET",
+        "property": "showCZ",
+        "value": "${showCZ}"
+      }
+    ],
+    "color": "white",
+    "css": {
+      "--wcBorder": "white",
+      "--wcBorderOH": "black",
+      "--wcMain": "black",
+      "--wcMainOH": "grey",
+      "font-size": "15px",
+      "line-height": "1.4"
+    },
+    "dragging": "Carl",
+    "height": 30,
+    "id": "9wmd",
+    "showCD": false,
+    "showCDChangeRoutine": [
+      {
+        "arguments": {
+          "newScale": "${showCD}",
+          "widgetIds": [
+            "commanderDamage2",
+            "commanderDamage1"
+          ]
+        },
+        "func": "CALL",
+        "routine": "toggleWidgetVisBulkRoutine",
+        "widget": "libraryButton1"
+      }
+    ],
+    "showCZ": false,
+    "showCZChangeRoutine": [
+      {
+        "arguments": {
+          "newScale": "${showCZ}",
+          "widgetIds": [
+            "commandZone1",
+            "commandZone2"
+          ]
+        },
+        "func": "CALL",
+        "routine": "toggleWidgetVisBulkRoutine",
+        "widget": "libraryButton1"
+      }
+    ],
+    "text": "settings",
+    "type": "button",
+    "width": 30,
+    "x": 1569,
+    "y": 467,
+    "z": 114
+  },
+  "Battle_Screech-7n52": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck1",
+    "id": "Battle_Screech-7n52",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 81760
+  },
+  "Battle_Screech-fk8m": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck1",
+    "id": "Battle_Screech-fk8m",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 81770
+  },
+  "Battle_Screech-qz6i": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck1",
+    "id": "Battle_Screech-qz6i",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 81782
+  },
+  "Battle_Screech-znnw": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck1",
+    "id": "Battle_Screech-znnw",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 81754
+  },
+  "Benevolent_Bodyguard-ifx2": {
+    "cardType": "Benevolent_Bodyguard",
+    "deck": "playerDeck1",
+    "id": "Benevolent_Bodyguard-ifx2",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81765
+  },
+  "Blacksmith_s_Skill-g0no": {
+    "cardType": "Blacksmith_s_Skill",
+    "deck": "playerDeck1",
+    "id": "Blacksmith_s_Skill-g0no",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 81781
+  },
+  "Blacksmith_s_Skill-ksuu": {
+    "cardType": "Blacksmith_s_Skill",
+    "deck": "playerDeck1",
+    "id": "Blacksmith_s_Skill-ksuu",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 81753
+  },
+  "Blacksmith_s_Skill-oz85": {
+    "cardType": "Blacksmith_s_Skill",
+    "deck": "playerDeck1",
+    "id": "Blacksmith_s_Skill-oz85",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 81739
+  },
+  "Celestial_Unicorn-2fdg": {
+    "cardType": "Celestial_Unicorn",
+    "deck": "playerDeck1",
+    "id": "Celestial_Unicorn-2fdg",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 81777
+  },
+  "Celestial_Unicorn-736j": {
+    "cardType": "Celestial_Unicorn",
+    "deck": "playerDeck1",
+    "id": "Celestial_Unicorn-736j",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 81752
+  },
+  "Celestial_Unicorn-lzoh": {
+    "cardType": "Celestial_Unicorn",
+    "deck": "playerDeck1",
+    "id": "Celestial_Unicorn-lzoh",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 81763
+  },
+  "Celestial_Unicorn-z7ow": {
+    "cardType": "Celestial_Unicorn",
+    "deck": "playerDeck1",
+    "id": "Celestial_Unicorn-z7ow",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 81774
+  },
+  "Cloudkin_Seer-do4r": {
+    "cardType": "Cloudkin_Seer",
+    "deck": "playerDeck2",
+    "id": "Cloudkin_Seer-do4r",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Cloudkin_Seer-hqrt": {
+    "cardType": "Cloudkin_Seer",
+    "deck": "playerDeck2",
+    "id": "Cloudkin_Seer-hqrt",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Cloudkin_Seer-ljf2": {
+    "cardType": "Cloudkin_Seer",
+    "deck": "playerDeck2",
+    "id": "Cloudkin_Seer-ljf2",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Frilled_Sea_Serpent-lc98": {
+    "cardType": "Frilled_Sea_Serpent",
+    "deck": "playerDeck2",
+    "id": "Frilled_Sea_Serpent-lc98",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Glint-jxzf": {
+    "cardType": "Glint",
+    "deck": "playerDeck2",
+    "id": "Glint-jxzf",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Glint-wrb5": {
+    "cardType": "Glint",
+    "deck": "playerDeck2",
+    "id": "Glint-wrb5",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "HoverSample": {
+    "css": {
+      "::after": {
+        "background-color": "grey",
+        "border-radius": "4px",
+        "color": "white",
+        "content": "\"${PROPERTY hoverText}\"",
+        "display": "none",
+        "font-size": "20px",
+        "margin-left": "260px",
+        "position": "absolute",
+        "text-align": "center",
+        "width": "145px"
+      },
+      ":hover": {
+        "background": "${PROPERTY bgColor}80",
+        "border": "1px solid ${PROPERTY bgColor}"
+      },
+      ":hover::after": {
+        "display": "block"
+      },
+      "default": {
+        "align-items": "center",
+        "background": "red",
+        "border": "1px solid black",
+        "cursor": "pointer",
+        "display": "flex",
+        "justify-content": "center"
+      }
+    },
+    "hoverText": "Clone the current card",
+    "id": "HoverSample",
+    "text": "Hover over me",
+    "x": -352,
+    "y": 708,
+    "z": 79186
+  },
+  "Inspiring_Overseer-2ark": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck1",
+    "id": "Inspiring_Overseer-2ark",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 81769
+  },
+  "Inspiring_Overseer-51jb": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck1",
+    "id": "Inspiring_Overseer-51jb",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 81736
+  },
+  "Inspiring_Overseer-ilbp": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck1",
+    "id": "Inspiring_Overseer-ilbp",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 81786
+  },
+  "Inspiring_Overseer-la44": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck1",
+    "id": "Inspiring_Overseer-la44",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 81790
+  },
+  "Island-0mly": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-0mly",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-14yq": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-14yq",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-1c0v": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-1c0v",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-1cas": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-1cas",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-1jqe": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-1jqe",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-2iq3": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-2iq3",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-508f": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-508f",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-6g0m": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-6g0m",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-6gud": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-6gud",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-7rh1": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-7rh1",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-aegg": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-aegg",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-aog7": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-aog7",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-bgt8": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-bgt8",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-d79v": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-d79v",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-ebmn": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-ebmn",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-f0ix": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-f0ix",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-fvmu": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-fvmu",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-h30i": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-h30i",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-ssuq": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-ssuq",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-t44e": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-t44e",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-t6yt": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-t6yt",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-vx1n": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-vx1n",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-wdan": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-wdan",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-xfx6": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-xfx6",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Island-y481": {
+    "cardType": "Island",
+    "deck": "playerDeck2",
+    "id": "Island-y481",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Journey_to_Nowhere-7off": {
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck1",
+    "id": "Journey_to_Nowhere-7off",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 81759
+  },
+  "Journey_to_Nowhere-9h7u": {
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck1",
+    "id": "Journey_to_Nowhere-9h7u",
+    "layout": "normal",
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 81776,
+    "parent": "playerPile1"
+  },
+  "Journey_to_Nowhere-jjl1": {
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck1",
+    "id": "Journey_to_Nowhere-jjl1",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 81768
+  },
+  "Journey_to_Nowhere-ml3r": {
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck1",
+    "id": "Journey_to_Nowhere-ml3r",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 81738
+  },
+  "Lunarch_Veteran____Luminous_Phantom-41go": {
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
+    "deck": "playerDeck1",
+    "id": "Lunarch_Veteran____Luminous_Phantom-41go",
+    "layout": "transform",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 81789,
+    "parent": "playerPile1"
+  },
+  "Lunarch_Veteran____Luminous_Phantom-86qk": {
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
+    "deck": "playerDeck1",
+    "id": "Lunarch_Veteran____Luminous_Phantom-86qk",
+    "layout": "transform",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 81764
+  },
+  "Lunarch_Veteran____Luminous_Phantom-cen1": {
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
+    "deck": "playerDeck1",
+    "id": "Lunarch_Veteran____Luminous_Phantom-cen1",
+    "layout": "transform",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 81766
+  },
+  "Lunarch_Veteran____Luminous_Phantom-zb2r": {
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
+    "deck": "playerDeck1",
+    "id": "Lunarch_Veteran____Luminous_Phantom-zb2r",
+    "layout": "transform",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 81771
+  },
+  "Octoprophet-7asp": {
+    "cardType": "Octoprophet",
+    "deck": "playerDeck2",
+    "id": "Octoprophet-7asp",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Octoprophet-n1ve": {
+    "cardType": "Octoprophet",
+    "deck": "playerDeck2",
+    "id": "Octoprophet-n1ve",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Overflowing_Insight-v1mx": {
+    "cardType": "Overflowing_Insight",
+    "deck": "playerDeck2",
+    "id": "Overflowing_Insight-v1mx",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Plains-0ka4": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-0ka4",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81748
+  },
+  "Plains-21kc": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-21kc",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81757
+  },
+  "Plains-23sm": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-23sm",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81751
+  },
+  "Plains-51z8": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-51z8",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81747
+  },
+  "Plains-94i6": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-94i6",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81773
+  },
+  "Plains-9hph": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-9hph",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81778
+  },
+  "Plains-bb81": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-bb81",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81737
+  },
+  "Plains-d5vm": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-d5vm",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81772
+  },
+  "Plains-dih2": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-dih2",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81756
+  },
+  "Plains-du00": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-du00",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81775
+  },
+  "Plains-e2tc": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-e2tc",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81783
+  },
+  "Plains-hnmz": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-hnmz",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81761
+  },
+  "Plains-j352": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-j352",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81746
+  },
+  "Plains-k4km": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-k4km",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81743
+  },
+  "Plains-ofgs": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-ofgs",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81733
+  },
+  "Plains-qbjy": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-qbjy",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81735
+  },
+  "Plains-r4ep": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-r4ep",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81787
+  },
+  "Plains-u3ks": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-u3ks",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81779
+  },
+  "Plains-wnve": {
+    "cardType": "Plains",
+    "deck": "playerDeck1",
+    "id": "Plains-wnve",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81740
+  },
+  "Riddlemaster_Sphinx-17fw": {
+    "cardType": "Riddlemaster_Sphinx",
+    "deck": "playerDeck2",
+    "id": "Riddlemaster_Sphinx-17fw",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Riddlemaster_Sphinx-ilbz": {
+    "cardType": "Riddlemaster_Sphinx",
+    "deck": "playerDeck2",
+    "id": "Riddlemaster_Sphinx-ilbz",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Sleep-d3cc": {
+    "cardType": "Sleep",
+    "deck": "playerDeck2",
+    "id": "Sleep-d3cc",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Soul_Warden-0wro": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck1",
+    "id": "Soul_Warden-0wro",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81745
+  },
+  "Soul_Warden-1utl": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck1",
+    "id": "Soul_Warden-1utl",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81755
+  },
+  "Soul_Warden-4ti0": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck1",
+    "id": "Soul_Warden-4ti0",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81780
+  },
+  "Soul_Warden-ig0h": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck1",
+    "id": "Soul_Warden-ig0h",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81749
+  },
+  "Soul_s_Attendant-44zi": {
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck1",
+    "id": "Soul_s_Attendant-44zi",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81750
+  },
+  "Soul_s_Attendant-fesa": {
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck1",
+    "id": "Soul_s_Attendant-fesa",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81758
+  },
+  "Soul_s_Attendant-ija8": {
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck1",
+    "id": "Soul_s_Attendant-ija8",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81791
+  },
+  "Soul_s_Attendant-w8c7": {
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck1",
+    "id": "Soul_s_Attendant-w8c7",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81762
+  },
+  "Soulblade_Djinn-92zq": {
+    "cardType": "Soulblade_Djinn",
+    "deck": "playerDeck2",
+    "id": "Soulblade_Djinn-92zq",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Soulblade_Djinn-hd5q": {
+    "cardType": "Soulblade_Djinn",
+    "deck": "playerDeck2",
+    "id": "Soulblade_Djinn-hd5q",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Stave_Off-0are": {
+    "cardType": "Stave_Off",
+    "deck": "playerDeck1",
+    "id": "Stave_Off-0are",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 81767
+  },
+  "Stave_Off-3pnp": {
+    "cardType": "Stave_Off",
+    "deck": "playerDeck1",
+    "id": "Stave_Off-3pnp",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 81785
+  },
+  "Suture_Priest-7ask": {
+    "cardType": "Suture_Priest",
+    "deck": "playerDeck1",
+    "id": "Suture_Priest-7ask",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Phyrexian Cleric",
+    "z": 81732
+  },
+  "Suture_Priest-c7pe": {
+    "cardType": "Suture_Priest",
+    "deck": "playerDeck1",
+    "id": "Suture_Priest-c7pe",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Phyrexian Cleric",
+    "z": 81744
+  },
+  "Suture_Priest-mp1z": {
+    "cardType": "Suture_Priest",
+    "deck": "playerDeck1",
+    "id": "Suture_Priest-mp1z",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Phyrexian Cleric",
+    "z": 81784
+  },
+  "Suture_Priest-ynbm": {
+    "cardType": "Suture_Priest",
+    "deck": "playerDeck1",
+    "id": "Suture_Priest-ynbm",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Phyrexian Cleric",
+    "z": 81788
+  },
+  "Sworn_Guardian-b8l4": {
+    "cardType": "Sworn_Guardian",
+    "deck": "playerDeck2",
+    "id": "Sworn_Guardian-b8l4",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Sworn_Guardian-sz65": {
+    "cardType": "Sworn_Guardian",
+    "deck": "playerDeck2",
+    "id": "Sworn_Guardian-sz65",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Thraben_Inspector-d7jc": {
+    "cardType": "Thraben_Inspector",
+    "deck": "playerDeck1",
+    "id": "Thraben_Inspector-d7jc",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Soldier",
+    "z": 81742
+  },
+  "Thraben_Inspector-q9y4": {
+    "cardType": "Thraben_Inspector",
+    "deck": "playerDeck1",
+    "id": "Thraben_Inspector-q9y4",
+    "layout": "normal",
+    "parent": "playerPile1",
+    "type": "card",
+    "typeLine": "Creature — Human Soldier",
+    "z": 81741
+  },
+  "Thraben_Inspector-vkvr": {
+    "cardType": "Thraben_Inspector",
+    "deck": "playerDeck1",
+    "id": "Thraben_Inspector-vkvr",
+    "layout": "normal",
+    "type": "card",
+    "typeLine": "Creature — Human Soldier",
+    "z": 81734,
+    "parent": "playerPile1"
+  },
+  "Unsummon-j9hw": {
+    "cardType": "Unsummon",
+    "deck": "playerDeck2",
+    "id": "Unsummon-j9hw",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Unsummon-q6gx": {
+    "cardType": "Unsummon",
+    "deck": "playerDeck2",
+    "id": "Unsummon-q6gx",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Unsummon-sujz": {
+    "cardType": "Unsummon",
+    "deck": "playerDeck2",
+    "id": "Unsummon-sujz",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Wall_of_Runes-gf4m": {
+    "cardType": "Wall_of_Runes",
+    "deck": "playerDeck2",
+    "id": "Wall_of_Runes-gf4m",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Wall_of_Runes-x1ep": {
+    "cardType": "Wall_of_Runes",
+    "deck": "playerDeck2",
+    "id": "Wall_of_Runes-x1ep",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Warden_of_Evos_Isle-a44p": {
+    "cardType": "Warden_of_Evos_Isle",
+    "deck": "playerDeck2",
+    "id": "Warden_of_Evos_Isle-a44p",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Warden_of_Evos_Isle-einj": {
+    "cardType": "Warden_of_Evos_Isle",
+    "deck": "playerDeck2",
+    "id": "Warden_of_Evos_Isle-einj",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Warden_of_Evos_Isle-mbfn": {
+    "cardType": "Warden_of_Evos_Isle",
+    "deck": "playerDeck2",
+    "id": "Warden_of_Evos_Isle-mbfn",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Waterkin_Shaman-e7yt": {
+    "cardType": "Waterkin_Shaman",
+    "deck": "playerDeck2",
+    "id": "Waterkin_Shaman-e7yt",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Waterkin_Shaman-jx2j": {
+    "cardType": "Waterkin_Shaman",
+    "deck": "playerDeck2",
+    "id": "Waterkin_Shaman-jx2j",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Waterkin_Shaman-tbda": {
+    "cardType": "Waterkin_Shaman",
+    "deck": "playerDeck2",
+    "id": "Waterkin_Shaman-tbda",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Waterknot-0hol": {
+    "cardType": "Waterknot",
+    "deck": "playerDeck2",
+    "id": "Waterknot-0hol",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Waterknot-g0m1": {
+    "cardType": "Waterknot",
+    "deck": "playerDeck2",
+    "id": "Waterknot-g0m1",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Waterknot-kbxu": {
+    "cardType": "Waterknot",
+    "deck": "playerDeck2",
+    "id": "Waterknot-kbxu",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Windreader_Sphinx-38ts": {
+    "cardType": "Windreader_Sphinx",
+    "deck": "playerDeck2",
+    "id": "Windreader_Sphinx-38ts",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Windstorm_Drake-74q8": {
+    "cardType": "Windstorm_Drake",
+    "deck": "playerDeck2",
+    "id": "Windstorm_Drake-74q8",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Windstorm_Drake-m95w": {
+    "cardType": "Windstorm_Drake",
+    "deck": "playerDeck2",
+    "id": "Windstorm_Drake-m95w",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Winged_Words-7ilz": {
+    "cardType": "Winged_Words",
+    "deck": "playerDeck2",
+    "id": "Winged_Words-7ilz",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "Winged_Words-i8a6": {
+    "cardType": "Winged_Words",
+    "deck": "playerDeck2",
+    "id": "Winged_Words-i8a6",
+    "parent": "playerPile2",
+    "type": "card"
+  },
+  "b08s": {
+    "id": "b08s",
+    "text": "Graveyard",
+    "type": "label",
+    "x": 1063,
+    "y": 822,
+    "z": 97
+  },
+  "b9s": {
+    "id": "b9s",
+    "text": "Graveyard",
+    "type": "label",
+    "x": 1066,
+    "y": 175,
+    "z": 94
+  },
+  "cclf": {
+    "clickRoutine": [
+      "var mouseX = ${PROPERTY $mouseCoords }",
+      "var xCord = ${PROPERTY x} // sets a to the x value of this widget",
+      "var yCord = ${PROPERTY y} // sets a to the x value of this widget",
+      {
+        "func": "CLONE",
+        "properties": {
+          "parent": "tokenHolder2",
+          "x": 1513,
+          "y": 575
+        },
+        "recursive": true,
+        "source": [
+          "3kg2"
+        ]
+      }
+    ],
+    "height": 20,
+    "id": "cclf",
+    "parent": "tokenActionsBox",
+    "text": "Create Counter",
+    "type": "button",
+    "width": 120,
+    "x": 1,
+    "y": 5,
+    "z": 44
+  },
+  "cloneCardButton": {
+    "clickRoutine": [
+      {
+        "collection": "tokensToBeCloned",
+        "func": "SELECT",
+        "max": 1,
+        "property": "parent",
+        "relation": "==",
+        "value": "tokenHolder2"
+      },
+      {
+        "collection": "clonedCards",
+        "count": "1",
+        "func": "CLONE",
+        "source": [
+          "tokensToBeCloned"
+        ]
+      }
+    ],
+    "height": 20,
+    "id": "cloneCardButton",
+    "parent": "tokenActionsBox",
+    "text": "Clone Card",
+    "type": "button",
+    "width": 100,
+    "x": 127,
+    "y": 5,
+    "z": 125
+  },
+  "commandZone1": {
+    "dropShadow": true,
+    "height": 156,
+    "id": "commandZone1",
+    "inheritFrom": {
+      "playerDeck1": [
+        "*"
+      ]
+    },
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    },
+    "rotation": 0,
+    "scale": 0,
+    "type": "holder",
+    "width": 123,
+    "x": 373,
+    "y": 0,
+    "z": 3
+  },
+  "commandZone2": {
+    "dropShadow": true,
+    "id": "commandZone2",
+    "inheritFrom": {
+      "playerDeck2": [
+        "*"
+      ]
+    },
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    },
+    "scale": 0,
+    "type": "holder",
+    "x": 382,
+    "y": -2,
+    "z": 3
+  },
+  "commandZoneDeck1": {
+    "cardDefaults": {
+      "clickRoutine": [
+        {
+          "condition": "${PROPERTY activeFace}",
+          "elseRoutine": [
+            {
+              "collection": "thisButton",
+              "func": "FLIP"
+            }
+          ],
+          "func": "IF",
+          "thenRoutine": [
+            "var newAngle = 90 - ${PROPERTY rotation} ",
+            {
+              "angle": "${newAngle}",
+              "collection": "thisButton",
+              "func": "ROTATE",
+              "mode": "set"
+            }
+          ]
+        }
+      ],
+      "enlarge": 5,
+      "width": 115
+    },
+    "cardTypes": {
+      "commander1": {
+        "image": "https://api.scryfall.com/cards/named?exact=jasmine+boreal+of+the+seven&format=image",
+        "label": "commander1"
+      }
+    },
+    "faceTemplates": [
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "height": 160,
+            "type": "image",
+            "value": "/assets/-1013412466_522053",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      },
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "dynamicProperties": {
+              "value": "image"
+            },
+            "height": 160,
+            "type": "image",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      }
+    ],
+    "hoverParent": "nd4n",
+    "id": "commandZoneDeck1",
+    "parent": "commandZone1",
+    "rotation": -167,
+    "type": "deck",
+    "x": 19,
+    "y": 32,
+    "z": 1150
+  },
+  "commandZoneDeck2": {
+    "cardDefaults": {
+      "clickRoutine": [
+        {
+          "condition": "${PROPERTY activeFace}",
+          "elseRoutine": [
+            {
+              "collection": "thisButton",
+              "func": "FLIP"
+            }
+          ],
+          "func": "IF",
+          "thenRoutine": [
+            "var newAngle = 90 - ${PROPERTY rotation} ",
+            {
+              "angle": "${newAngle}",
+              "collection": "thisButton",
+              "func": "ROTATE",
+              "mode": "set"
+            }
+          ]
+        }
+      ],
+      "enlarge": 5,
+      "width": 115
+    },
+    "cardTypes": {
+      "commander2": {
+        "image": "https://api.scryfall.com/cards/named?exact=thalisse+reverent+medium&format=image",
+        "label": "commander2"
+      }
+    },
+    "faceTemplates": [
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "height": 160,
+            "type": "image",
+            "value": "/assets/-1013412466_522053",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      },
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "dynamicProperties": {
+              "value": "image"
+            },
+            "height": 160,
+            "type": "image",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      }
+    ],
+    "hoverParent": "nd4n",
+    "id": "commandZoneDeck2",
+    "parent": "commandZone2",
+    "rotation": -167,
+    "type": "deck",
+    "x": 12,
+    "y": 32,
+    "z": 1150
+  },
+  "commandZoneLabel1": {
+    "css": {
+      "font-size": "80%"
+    },
+    "id": "commandZoneLabel1",
+    "parent": "commandZone1",
+    "text": "Command Zone",
+    "type": "label",
+    "x": 11,
+    "y": -19,
+    "z": 113
+  },
+  "commandZoneLabel2": {
+    "css": {
+      "font-size": "80%"
+    },
+    "id": "commandZoneLabel2",
+    "parent": "commandZone2",
+    "text": "Command Zone",
+    "type": "label",
+    "x": 10,
+    "y": 167,
+    "z": 114
+  },
+  "commanderDamage1": {
+    "css": "font-size: 20px;",
+    "editable": true,
+    "id": "commanderDamage1",
+    "scale": 0,
+    "text": 0,
+    "type": "label",
+    "widgetType": "commanderDamage",
+    "width": 40,
+    "x": 1569,
+    "y": 906
+  },
+  "commanderDamage2": {
+    "css": "font-size: 20px;",
+    "editable": true,
+    "id": "commanderDamage2",
+    "scale": 0,
+    "text": 0,
+    "type": "label",
+    "widgetType": "commanderDamage",
+    "width": 40,
+    "x": 1565,
+    "y": 71
+  },
+  "draw1-1": {
+    "clickRoutine": [
+      {
+        "count": 1,
+        "from": "playerDeckHolder1",
+        "func": "MOVE",
+        "to": "playerHand1"
+      }
+    ],
+    "height": 20,
+    "id": "draw1-1",
+    "parent": "playerDeckActions1",
+    "text": "Draw 1",
+    "type": "button",
+    "width": 60,
+    "x": 3,
+    "y": 30,
+    "z": 18
+  },
+  "draw7-1": {
+    "clickRoutine": [
+      {
+        "count": 7,
+        "from": "playerDeckHolder1",
+        "func": "MOVE",
+        "to": "playerHand1"
+      }
+    ],
+    "height": 20,
+    "id": "draw7-1",
+    "parent": "playerDeckActions1",
+    "text": "Draw 7",
+    "type": "button",
+    "width": 60,
+    "x": 3,
+    "y": 58,
+    "z": 18
+  },
+  "ds1q": {
+    "clickRoutine": [
+      {
+        "collection": "bottomCollection",
         "func": "SELECT",
         "property": "y",
-        "value": 375,
-        "relation": "<=",
+        "relation": ">=",
+        "type": "card",
+        "value": 470
+      },
+      {
+        "collection": "bottomCards",
+        "func": "SELECT",
+        "source": "bottomCollection"
+      },
+      {
+        "angle": 0,
+        "collection": "bottomCards",
+        "count": 0,
+        "func": "ROTATE",
+        "mode": "set"
+      },
+      {
+        "count": 1,
+        "from": "playerDeckHolder1",
+        "func": "MOVE",
+        "to": "playerHand1"
+      }
+    ],
+    "height": 31,
+    "id": "ds1q",
+    "text": "Untap & Draw",
+    "type": "button",
+    "width": 120,
+    "x": 931,
+    "y": 783,
+    "z": 17
+  },
+  "ds2q": {
+    "clickRoutine": [
+      {
         "collection": "topCollection",
+        "func": "SELECT",
+        "property": "y",
+        "relation": "<=",
+        "type": "card",
+        "value": 375
+      },
+      {
+        "collection": "topCards",
+        "func": "SELECT",
+        "source": "topCollection",
         "type": "card"
       },
       {
-        "func": "SELECT",
-        "type": "card",
-        "source": "topCollection",
-        "collection": "topCards"
-      },
-      {
-        "func": "ROTATE",
-        "collection": "topCards",
-        "mode": "set",
         "angle": 0,
-        "count": 0
+        "collection": "topCards",
+        "count": 0,
+        "func": "ROTATE",
+        "mode": "set"
       },
       {
-        "func": "MOVE",
         "count": 1,
         "from": "playerDeckHolder2",
+        "func": "MOVE",
         "to": "playerHand2"
       }
     ],
-    "y": 190,
-    "z": 111,
-    "id": "ds2q",
     "height": 31,
+    "id": "ds2q",
+    "text": "Untap & Draw",
+    "type": "button",
+    "width": 120,
     "x": 923,
-    "width": 120
+    "y": 190,
+    "z": 111
+  },
+  "ex51": {
+    "activeFace": 1,
+    "cardType": "one",
+    "deck": "oa80D",
+    "id": "ex51",
+    "parent": "tokenHolder1",
+    "type": "card",
+    "x": 4,
+    "y": 4,
+    "z": 41864
+  },
+  "flipCardButton2": {
+    "clickRoutine": [
+      {
+        "collection": "tokensToBeFlipped",
+        "func": "SELECT",
+        "max": 1,
+        "property": "parent",
+        "relation": "==",
+        "value": "tokenHolder2"
+      },
+      {
+        "func": "CALL",
+        "routine": "customFlipCardRoutine"
+      }
+    ],
+    "customFlipCardRoutine": [
+      {
+        "aggregation": "first",
+        "collection": "tokensToBeFlipped",
+        "func": "GET",
+        "property": "id",
+        "variable": "cardID"
+      },
+      "var singleFaced = ${PROPERTY layout OF $cardID} == 'normal'",
+      "var currentFace = ${PROPERTY activeFace OF $cardID}",
+      "var nextFace = ${currentFace} + 1",
+      "var isCurrentFace1 = ${currentFace} == 1",
+      "var shouldBeReset = ${singleFaced} && ${isCurrentFace1}",
+      {
+        "condition": "${shouldBeReset}",
+        "func": "IF",
+        "thenRoutine": [
+          {
+            "collection": [
+              "${cardID}"
+            ],
+            "func": "FLIP",
+            "face": 0
+          }
+        ],
+        "elseRoutine": [
+          {
+            "collection": [
+              "${cardID}"
+            ],
+            "func": "FLIP"
+          }
+        ]
+      }
+    ],
+    "height": 20,
+    "id": "flipCardButton2",
+    "parent": "tokenActionsBox",
+    "text": "Flip Card",
+    "type": "button",
+    "width": 100,
+    "x": 125,
+    "y": 34,
+    "z": 127
+  },
+  "g8g7": {
+    "css": {
+      "color": "white",
+      "font-size": "30px"
+    },
+    "height": 42,
+    "id": "g8g7",
+    "parent": "scryBoard",
+    "text": "Top",
+    "type": "label",
+    "width": 200,
+    "x": 257,
+    "y": 426,
+    "z": 85
+  },
+  "g8g8": {
+    "css": {
+      "color": "white",
+      "font-size": "30px"
+    },
+    "height": 42,
+    "id": "g8g8",
+    "parent": "scryBoard",
+    "text": "Bottom",
+    "type": "label",
+    "width": 200,
+    "x": 625,
+    "y": 425,
+    "z": 83
+  },
+  "gm5f": {
+    "css": {
+      "background": "white",
+      "font-size": "30px"
+    },
+    "height": 42,
+    "id": "gm5f",
+    "text": "scryTempHolder",
+    "type": "label",
+    "width": 200,
+    "x": -278,
+    "y": 326,
+    "z": 100
+  },
+  "gnef": {
+    "borderRadius": "1px",
+    "css": {
+      "border": "1px solid #666"
+    },
+    "height": 0,
+    "id": "gnef",
+    "movable": false,
+    "width": 1600,
+    "y": 501,
+    "z": 1
+  },
+  "h06d": {
+    "activeFace": 1,
+    "cardType": "commander1",
+    "deck": "commandZoneDeck1",
+    "hoverParent": "commandZone1",
+    "id": "h06d",
+    "parent": "commandZone1",
+    "type": "card",
+    "x": 4,
+    "y": 4,
+    "z": 81489
+  },
+  "h8y3": {
+    "id": "h8y3",
+    "text": "HP",
+    "type": "label",
+    "x": 1501,
+    "y": 819,
+    "z": 102
+  },
+  "h8y4": {
+    "id": "h8y4",
+    "text": "HP",
+    "type": "label",
+    "x": 1499,
+    "y": 162,
+    "z": 102
+  },
+  "handSize1": {
+    "css": "font-size: 16px",
+    "height": 25,
+    "id": "handSize1",
+    "text": "Hand: 0",
+    "type": "label",
+    "x": 842,
+    "y": 821,
+    "z": 101
+  },
+  "handSize2": {
+    "css": "font-size: 16px",
+    "height": 25,
+    "id": "handSize2",
+    "text": "Hand: 0",
+    "type": "label",
+    "x": 818,
+    "y": 157,
+    "z": 44
+  },
+  "importDeck1": {
+    "clickRoutine": [
+      {
+        "css": "background-color:beige",
+        "fields": [
+          {
+            "text": "Import deck from Moxfield.com",
+            "type": "title"
+          },
+          {
+            "text": "May take 30~ seconds",
+            "type": "subtitle"
+          },
+          {
+            "label": "Moxfield URL",
+            "type": "string",
+            "value": "",
+            "variable": "moxfieldUrl"
+          },
+          {
+            "label": "Current Room ID (virtualtabletop.io/<Room ID>)",
+            "type": "string",
+            "value": "",
+            "variable": "roomID"
+          }
+        ],
+        "func": "INPUT"
+      },
+      "var playerNumber = 1",
+      "var parsedMoxfieldArray = ${moxfieldUrl} split 'https://www.moxfield.com/decks/'",
+      "var moxfieldId = ${parsedMoxfieldArray.1}",
+      "var glitchURL = 'https://balsam-incandescent-year.glitch.me/' + ${roomID}",
+      "var glitchURL = ${glitchURL} + '/'",
+      "var glitchURL = ${glitchURL} + ${moxfieldId}",
+      "var glitchURL = ${glitchURL} + '/'",
+      "var glitchURL = ${glitchURL} + ${playerNumber}",
+      "var json = fetch ${glitchURL}",
+      {
+        "func": "SELECT",
+        "property": "id",
+        "value": "outputBox"
+      },
+      {
+        "func": "SET",
+        "property": "text",
+        "value": "${json}"
+      }
+    ],
+    "height": 18,
+    "id": "importDeck1",
+    "parent": "playerDeckActions1",
+    "text": "Import Deck",
+    "type": "button",
+    "width": 100,
+    "x": 132,
+    "y": 61,
+    "z": 57
+  },
+  "importDeck2": {
+    "clickRoutine": [
+      {
+        "css": "background-color:beige",
+        "fields": [
+          {
+            "text": "Import deck from Moxfield.com",
+            "type": "title"
+          },
+          {
+            "label": "Moxfield URL",
+            "type": "string",
+            "value": "",
+            "variable": "moxfieldUrl"
+          },
+          {
+            "label": "Room ID",
+            "type": "string",
+            "value": "",
+            "variable": "roomID"
+          }
+        ],
+        "func": "INPUT"
+      },
+      "var playerNumber = 2",
+      "var parsedMoxfieldArray = ${moxfieldUrl} split 'https://www.moxfield.com/decks/'",
+      "var moxfieldId = ${parsedMoxfieldArray.1}",
+      "var glitchURL = 'https://balsam-incandescent-year.glitch.me/' + ${roomID}",
+      "var glitchURL = ${glitchURL} + '/'",
+      "var glitchURL = ${glitchURL} + ${moxfieldId}",
+      "var glitchURL = ${glitchURL} + '/'",
+      "var glitchURL = ${glitchURL} + ${playerNumber}",
+      "var json = fetch ${glitchURL}",
+      {
+        "func": "SELECT",
+        "property": "id",
+        "value": "outputBox"
+      },
+      {
+        "func": "SET",
+        "property": "text",
+        "value": "${json}"
+      }
+    ],
+    "height": 18,
+    "id": "importDeck2",
+    "parent": "playerDeckActions2",
+    "text": "Import Deck",
+    "type": "button",
+    "width": 100,
+    "x": 137,
+    "y": 58,
+    "z": 56
+  },
+  "izon1": {
+    "clickRoutine": [
+      {
+        "func": "SHUFFLE",
+        "holder": "playerDeckHolder1"
+      }
+    ],
+    "height": 20,
+    "id": "izon1",
+    "parent": "playerDeckActions1",
+    "text": "Shuffle",
+    "type": "button",
+    "width": 60,
+    "x": 70,
+    "y": 58,
+    "z": 18
+  },
+  "izon10": {
+    "clickRoutine": [
+      {
+        "func": "SHUFFLE",
+        "holder": "playerDeckHolder2"
+      }
+    ],
+    "height": 20,
+    "id": "izon10",
+    "parent": "playerDeckActions2",
+    "text": "Shuffle",
+    "type": "button",
+    "width": 60,
+    "x": 70,
+    "y": 58,
+    "z": 18
+  },
+  "izon11": {
+    "clickRoutine": [
+      {
+        "collection": "bottomCollection",
+        "func": "SELECT",
+        "property": "y",
+        "relation": "<=",
+        "type": "card",
+        "value": 375
+      },
+      {
+        "collection": "bottomCards",
+        "func": "SELECT",
+        "source": "bottomCollection"
+      },
+      {
+        "angle": 0,
+        "collection": "bottomCards",
+        "count": 0,
+        "func": "ROTATE",
+        "mode": "set"
+      }
+    ],
+    "height": 20,
+    "id": "izon11",
+    "parent": "playerDeckActions2",
+    "text": "Untap",
+    "type": "button",
+    "width": 60,
+    "x": 129,
+    "y": 5,
+    "z": 109
+  },
+  "izon5": {
+    "clickRoutine": [
+      "var holder = 'playerDeckHolder1'",
+      {
+        "func": "RECALL",
+        "holder": "${holder}"
+      },
+      {
+        "face": 0,
+        "func": "FLIP",
+        "holder": "${holder}"
+      },
+      {
+        "angle": 0,
+        "count": 0,
+        "func": "ROTATE",
+        "holder": "${holder}",
+        "mode": "set"
+      },
+      {
+        "func": "SHUFFLE",
+        "holder": "${holder}"
+      }
+    ],
+    "height": 25,
+    "id": "izon5",
+    "parent": "playerDeckActions1",
+    "text": "Recall & Shuffle",
+    "type": "button",
+    "width": 120,
+    "x": 71,
+    "y": 30,
+    "z": 18
+  },
+  "izon6": {
+    "clickRoutine": [
+      {
+        "collection": "bottomCollection",
+        "func": "SELECT",
+        "property": "y",
+        "relation": ">=",
+        "type": "card",
+        "value": 470
+      },
+      {
+        "collection": "bottomCards",
+        "func": "SELECT",
+        "source": "bottomCollection"
+      },
+      {
+        "angle": 0,
+        "collection": "bottomCards",
+        "count": 0,
+        "func": "ROTATE",
+        "mode": "set"
+      }
+    ],
+    "height": 20,
+    "id": "izon6",
+    "parent": "playerDeckActions1",
+    "text": "Untap",
+    "type": "button",
+    "width": 60,
+    "x": 131,
+    "y": 6,
+    "z": 18
+  },
+  "izon7": {
+    "clickRoutine": [
+      {
+        "count": 1,
+        "from": "playerDeckHolder2",
+        "func": "MOVE",
+        "to": "playerHand2"
+      }
+    ],
+    "height": 20,
+    "id": "izon7",
+    "parent": "playerDeckActions2",
+    "text": "Draw 1",
+    "type": "button",
+    "width": 60,
+    "x": 3,
+    "y": 30,
+    "z": 18
+  },
+  "izon8": {
+    "clickRoutine": [
+      {
+        "count": 7,
+        "from": "playerDeckHolder2",
+        "func": "MOVE",
+        "to": "playerHand2"
+      }
+    ],
+    "height": 20,
+    "id": "izon8",
+    "parent": "playerDeckActions2",
+    "text": "Draw 7",
+    "type": "button",
+    "width": 60,
+    "x": 3,
+    "y": 58,
+    "z": 18
+  },
+  "izon9": {
+    "clickRoutine": [
+      "var holder = 'playerDeckHolder2'",
+      {
+        "func": "RECALL",
+        "holder": "${holder}"
+      },
+      {
+        "face": 0,
+        "func": "FLIP",
+        "holder": "${holder}"
+      },
+      {
+        "angle": 0,
+        "count": 0,
+        "func": "ROTATE",
+        "holder": "${holder}",
+        "mode": "set"
+      },
+      {
+        "func": "SHUFFLE",
+        "holder": "${holder}"
+      }
+    ],
+    "height": 25,
+    "id": "izon9",
+    "parent": "playerDeckActions2",
+    "text": "Recall & Shuffle",
+    "type": "button",
+    "width": 120,
+    "x": 71,
+    "y": 30,
+    "z": 18
+  },
+  "kzty": {
+    "fixedParent": true,
+    "id": "kzty",
+    "parent": "zdvr",
+    "text": "Player 1",
+    "type": "label",
+    "x": 1405,
+    "y": 535,
+    "z": 13
+  },
+  "kzty1": {
+    "fixedParent": true,
+    "id": "kzty1",
+    "parent": "zdvr1",
+    "text": "Player 1",
+    "type": "label",
+    "x": 1405,
+    "y": 535,
+    "z": 13
+  },
+  "lch2": {
+    "cardType": "",
+    "deck": "vrlpD",
+    "id": "lch2",
+    "type": "card",
+    "x": 932,
+    "y": 538,
+    "z": 1905
+  },
+  "libraryButton1": {
+    "clickRoutine": [
+      {
+        "arguments": {
+          "widgetIds": [
+            "playerDeckActions1"
+          ]
+        },
+        "func": "CALL",
+        "routine": "toggleWidgetVisBulkRoutine"
+      }
+    ],
+    "height": 20,
+    "id": "libraryButton1",
+    "text": "Library",
+    "toggleWidgetVisBulkRoutine": [
+      {
+        "func": "FOREACH",
+        "in": "${widgetIds}",
+        "loopRoutine": [
+          {
+            "arguments": {
+              "widgetId": "${value}"
+            },
+            "func": "CALL",
+            "routine": "toggleWidgetVisRoutine"
+          }
+        ]
+      }
+    ],
+    "toggleWidgetVisRoutine": [
+      "var newScale = 1 - ${PROPERTY scale OF $widgetId}",
+      {
+        "collection": [
+          "${widgetId}"
+        ],
+        "func": "SET",
+        "property": "scale",
+        "value": "${newScale}"
+      }
+    ],
+    "type": "button",
+    "width": 60,
+    "x": 959,
+    "y": 821,
+    "z": 28
+  },
+  "libraryButton2": {
+    "clickRoutine": [
+      {
+        "arguments": {
+          "widgetId": "playerDeckActions2"
+        },
+        "func": "CALL",
+        "routine": "toggleWidgetVisRoutine",
+        "widget": "libraryButton1"
+      }
+    ],
+    "height": 20,
+    "id": "libraryButton2",
+    "text": "Library",
+    "type": "button",
+    "width": 60,
+    "x": 957,
+    "y": 169,
+    "z": 114
+  },
+  "loadingAlert": {
+    "css": {
+      "": {
+        "animation": "anim2 3s forwards",
+        "background": "lightblue",
+        "font-size": "95px",
+        "line-height": "3em",
+        "text-align": "center"
+      },
+      "@keyframes anim2": {
+        "0%": {
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "100%": {
+          "opacity": "0",
+          "visibility": "hidden"
+        },
+        "99%": {
+          "opacity": "0",
+          "visibility": "visible"
+        }
+      }
+    },
+    "height": 300,
+    "id": "loadingAlert",
+    "text": "Deck Loaded",
+    "width": 800,
+    "x": 337,
+    "y": 348,
+    "z": 154
+  },
+  "m2w9": {
+    "activeFace": 1,
+    "cardType": "Temple_of_Enlightenment",
+    "deck": "commandZoneDeck1",
+    "id": "m2w9",
+    "parent": "commandZone1",
+    "type": "card",
+    "x": -139,
+    "y": -295,
+    "z": 55456
   },
   "oa80B": {
-    "id": "oa80B",
-    "parent": "tokenHolder1",
-    "fixedParent": true,
-    "y": 171.36,
-    "width": 111,
-    "height": 40,
-    "type": "button",
-    "text": "Recall & Shuffle",
-    "movableInEdit": false,
     "clickRoutine": [
       {
         "func": "RECALL",
         "holder": "${PROPERTY parent}"
       },
       {
+        "face": 0,
         "func": "FLIP",
-        "holder": "${PROPERTY parent}",
-        "face": 0
+        "holder": "${PROPERTY parent}"
       },
       {
         "func": "SHUFFLE",
         "holder": "${PROPERTY parent}"
       }
-    ]
+    ],
+    "fixedParent": true,
+    "height": 40,
+    "id": "oa80B",
+    "movableInEdit": false,
+    "parent": "tokenHolder1",
+    "text": "Recall & Shuffle",
+    "type": "button",
+    "width": 111,
+    "y": 171.36
   },
   "oa80D": {
-    "type": "deck",
-    "id": "oa80D",
-    "x": 4,
-    "y": 4,
+    "cardDefaults": {
+      "clickRoutine": [
+        "var newAngle = 90 - ${PROPERTY rotation} ",
+        {
+          "angle": "${newAngle}",
+          "collection": "thisButton",
+          "func": "ROTATE",
+          "mode": "set"
+        }
+      ],
+      "enlarge": 5,
+      "titlesize": "24px"
+    },
+    "cardTypes": {
+      "one": {
+        "bgcolor": "#808080",
+        "content": "Template",
+        "stats": "1/1",
+        "title": "Token"
+      }
+    },
+    "css": {
+      "_,.html": {
+        "border": "1px solid rgba(0, 0, 0, 0.4)",
+        "border-radius": "5px"
+      }
+    },
     "faceTemplates": [
       {
         "border": false,
-        "radius": false,
         "objects": [
           {
-            "type": "html",
+            "classes": "html",
+            "color": "black",
             "css": {
+              ".flex": {
+                "flex": 1,
+                "text-align": "center"
+              },
+              ".stats": {
+                "bottom": 0,
+                "position": "absolute",
+                "text-align": "right",
+                "width": "90%"
+              },
+              ".test": {
+                "color": "red"
+              },
+              ".title": {
+                "background": "${PROPERTY bgcolor}",
+                "font-size": "22px",
+                "text-align": "center"
+              },
               "body": {
                 "background": "white",
                 "display": "flex",
                 "flex-direction": "column",
                 "justify-content": "center",
-                "position": "relative",
-                "padding": "0px"
-              },
-              ".flex": {
-                "flex": 1,
-                "text-align": "center"
-              },
-              ".title": {
-                "font-size": "22px",
-                "background": "${PROPERTY bgcolor}",
-                "text-align": "center"
+                "padding": "0px",
+                "position": "relative"
               },
               "body > div": {
                 "padding": "8px"
-              },
-              ".test": {
-                "color": "red"
-              },
-              ".stats": {
-                "text-align": "right",
-                "width": "90%",
-                "position": "absolute",
-                "bottom": 0
               }
             },
-            "x": 0,
-            "y": 0,
-            "width": 103,
             "height": 160,
-            "classes": "html",
-            "color": "black",
-            "value": "<div class=\"title\"> ${PROPERTY title}</div><div class=\"flex\">${PROPERTY content}<div class=\"stats\">${PROPERTY stats}</div></div>"
+            "type": "html",
+            "value": "<div class=\"title\"> ${PROPERTY title}</div><div class=\"flex\">${PROPERTY content}<div class=\"stats\">${PROPERTY stats}</div></div>",
+            "width": 103,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": false
+      }
+    ],
+    "hoverParent": "oa80",
+    "id": "oa80D",
+    "parent": "tokenHolder1",
+    "type": "deck",
+    "x": 4,
+    "y": 4,
+    "z": 20626
+  },
+  "playerDeck1": {
+    "cardDefaults": {
+      "clickRoutine": [
+        {
+          "condition": "${PROPERTY activeFace}",
+          "elseRoutine": [
+            {
+              "collection": "thisButton",
+              "func": "FLIP"
+            }
+          ],
+          "func": "IF",
+          "thenRoutine": [
+            "var newAngle = 90 - ${PROPERTY rotation} ",
+            {
+              "angle": "${newAngle}",
+              "collection": "thisButton",
+              "func": "ROTATE",
+              "mode": "set"
+            }
+          ]
+        }
+      ],
+      "enlarge": 5,
+      "grid": [
+        {
+          "offsetX": 0,
+          "offsetY": 0,
+          "x": 40,
+          "y": 20
+        }
+      ],
+      "width": 115
+    },
+    "cardTypes": {
+      "Battle_Screech": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Battle+Screech&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Battle+Screech&format=image",
+        "label": "Battle Screech"
+      },
+      "Benevolent_Bodyguard": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Benevolent+Bodyguard&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Benevolent+Bodyguard&format=image",
+        "label": "Benevolent Bodyguard"
+      },
+      "Blacksmith_s_Skill": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Blacksmith's+Skill&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Blacksmith's+Skill&format=image",
+        "label": "Blacksmith's Skill"
+      },
+      "Celestial_Unicorn": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Celestial+Unicorn&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Celestial+Unicorn&format=image",
+        "label": "Celestial Unicorn"
+      },
+      "Inspiring_Overseer": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Inspiring+Overseer&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Inspiring+Overseer&format=image",
+        "label": "Inspiring Overseer"
+      },
+      "Journey_to_Nowhere": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Journey+to+Nowhere&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Journey+to+Nowhere&format=image",
+        "label": "Journey to Nowhere"
+      },
+      "Lunarch_Veteran____Luminous_Phantom": {
+        "artCropBack": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image&version=art_crop&face=back",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image&version=art_crop",
+        "imageBack": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image&face=back",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image",
+        "label": "Lunarch Veteran // Luminous Phantom"
+      },
+      "Plains": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Plains&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Plains&format=image",
+        "label": "Plains"
+      },
+      "Soul_Warden": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Soul+Warden&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Soul+Warden&format=image",
+        "label": "Soul Warden"
+      },
+      "Soul_s_Attendant": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Soul's+Attendant&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Soul's+Attendant&format=image",
+        "label": "Soul's Attendant"
+      },
+      "Stave_Off": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Stave+Off&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Stave+Off&format=image",
+        "label": "Stave Off"
+      },
+      "Suture_Priest": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Suture+Priest&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Suture+Priest&format=image",
+        "label": "Suture Priest"
+      },
+      "Thraben_Inspector": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Thraben+Inspector&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Thraben+Inspector&format=image",
+        "label": "Thraben Inspector"
+      }
+    },
+    "faceTemplates": [
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "height": 160,
+            "type": "image",
+            "value": "/assets/-1013412466_522053",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      },
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "dynamicProperties": {
+              "value": "imageFront"
+            },
+            "height": 160,
+            "type": "image",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      },
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "dynamicProperties": {
+              "value": "imageBack"
+            },
+            "height": 160,
+            "type": "image",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      }
+    ],
+    "hoverParent": "nd4n",
+    "id": "playerDeck1",
+    "parent": "playerDeckHolder1",
+    "rotation": -167,
+    "type": "deck",
+    "x": 24,
+    "y": 29,
+    "z": 1150
+  },
+  "playerDeck2": {
+    "cardDefaults": {
+      "clickRoutine": [
+        {
+          "condition": "${PROPERTY activeFace}",
+          "elseRoutine": [
+            {
+              "collection": "thisButton",
+              "func": "FLIP"
+            }
+          ],
+          "func": "IF",
+          "thenRoutine": [
+            "var newAngle = 90 - ${PROPERTY rotation} ",
+            {
+              "angle": "${newAngle}",
+              "collection": "thisButton",
+              "func": "ROTATE",
+              "mode": "set"
+            }
+          ]
+        }
+      ],
+      "enlarge": 5,
+      "grid": [
+        {
+          "offsetX": 0,
+          "offsetY": 0,
+          "x": 40,
+          "y": 20
+        }
+      ],
+      "width": 115
+    },
+    "cardTypes": {
+      "Cloudkin_Seer": {
+        "image": "https://api.scryfall.com/cards/named?exact=Cloudkin+Seer&format=image",
+        "label": "Cloudkin Seer"
+      },
+      "Frilled_Sea_Serpent": {
+        "image": "https://api.scryfall.com/cards/named?exact=Frilled+Sea+Serpent&format=image",
+        "label": "Frilled Sea Serpent"
+      },
+      "Glint": {
+        "image": "https://api.scryfall.com/cards/named?exact=Glint&format=image",
+        "label": "Glint"
+      },
+      "Island": {
+        "image": "https://api.scryfall.com/cards/named?exact=Island&format=image",
+        "label": "Island"
+      },
+      "Octoprophet": {
+        "image": "https://api.scryfall.com/cards/named?exact=Octoprophet&format=image",
+        "label": "Octoprophet"
+      },
+      "Overflowing_Insight": {
+        "image": "https://api.scryfall.com/cards/named?exact=Overflowing+Insight&format=image",
+        "label": "Overflowing Insight"
+      },
+      "Riddlemaster_Sphinx": {
+        "image": "https://api.scryfall.com/cards/named?exact=Riddlemaster+Sphinx&format=image",
+        "label": "Riddlemaster Sphinx"
+      },
+      "Sleep": {
+        "image": "https://api.scryfall.com/cards/named?exact=Sleep&format=image",
+        "label": "Sleep"
+      },
+      "Soulblade_Djinn": {
+        "image": "https://api.scryfall.com/cards/named?exact=Soulblade+Djinn&format=image",
+        "label": "Soulblade Djinn"
+      },
+      "Sworn_Guardian": {
+        "image": "https://api.scryfall.com/cards/named?exact=Sworn+Guardian&format=image",
+        "label": "Sworn Guardian"
+      },
+      "Unsummon": {
+        "image": "https://api.scryfall.com/cards/named?exact=Unsummon&format=image",
+        "label": "Unsummon"
+      },
+      "Wall_of_Runes": {
+        "image": "https://api.scryfall.com/cards/named?exact=Wall+of+Runes&format=image",
+        "label": "Wall of Runes"
+      },
+      "Warden_of_Evos_Isle": {
+        "image": "https://api.scryfall.com/cards/named?exact=Warden+of+Evos+Isle&format=image",
+        "label": "Warden of Evos Isle"
+      },
+      "Waterkin_Shaman": {
+        "image": "https://api.scryfall.com/cards/named?exact=Waterkin+Shaman&format=image",
+        "label": "Waterkin Shaman"
+      },
+      "Waterknot": {
+        "image": "https://api.scryfall.com/cards/named?exact=Waterknot&format=image",
+        "label": "Waterknot"
+      },
+      "Windreader_Sphinx": {
+        "image": "https://api.scryfall.com/cards/named?exact=Windreader+Sphinx&format=image",
+        "label": "Windreader Sphinx"
+      },
+      "Windstorm_Drake": {
+        "image": "https://api.scryfall.com/cards/named?exact=Windstorm+Drake&format=image",
+        "label": "Windstorm Drake"
+      },
+      "Winged_Words": {
+        "image": "https://api.scryfall.com/cards/named?exact=Winged+Words&format=image",
+        "label": "Winged Words"
+      }
+    },
+    "faceTemplates": [
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "height": 160,
+            "type": "image",
+            "value": "/assets/-1013412466_522053",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      },
+      {
+        "border": false,
+        "objects": [
+          {
+            "color": "transparent",
+            "dynamicProperties": {
+              "value": "image"
+            },
+            "height": 160,
+            "type": "image",
+            "width": 115,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "radius": 5
+      }
+    ],
+    "id": "playerDeck2",
+    "parent": "playerDeckHolder2",
+    "type": "deck",
+    "x": 12,
+    "y": 41
+  },
+  "playerDeckActions1": {
+    "borderRadius": 8,
+    "css": {
+      "background": "lightgray",
+      "border": "1px solid black",
+      "display": "block"
+    },
+    "height": 81,
+    "holderId": "playerDeckHolder1",
+    "hoverParent": "ed19",
+    "id": "playerDeckActions1",
+    "movable": false,
+    "width": 250,
+    "x": 885,
+    "y": 733,
+    "z": 151,
+    "scale": 0
+  },
+  "playerDeckActions2": {
+    "borderRadius": 8,
+    "css": {
+      "background": "lightgray",
+      "border": "1px solid black",
+      "display": "block"
+    },
+    "height": 80,
+    "holderId": "playerDeckHolder2",
+    "id": "playerDeckActions2",
+    "movable": false,
+    "width": 250,
+    "x": 852,
+    "y": 189,
+    "z": 156,
+    "scale": 0
+  },
+  "playerDeckHolder1": {
+    "dropshadow": true,
+    "height": 156,
+    "id": "playerDeckHolder1",
+    "onEnter": {
+      "activeFace": 0,
+      "rotation": 0
+    },
+    "type": "holder",
+    "width": 123,
+    "x": 928,
+    "y": 841,
+    "z": 12
+  },
+  "playerDeckHolder2": {
+    "dropShadow": true,
+    "dropTarget": {
+      "type": "card"
+    },
+    "id": "playerDeckHolder2",
+    "onEnter": {
+      "activeFace": 0,
+      "rotation": 0
+    },
+    "type": "holder",
+    "width": 123,
+    "x": 928,
+    "y": 3
+  },
+  "playerExile1": {
+    "dropShadow": true,
+    "height": 156,
+    "id": "playerExile1",
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    },
+    "type": "holder",
+    "width": 123,
+    "x": 1177,
+    "y": 843,
+    "z": 78
+  },
+  "playerExile2": {
+    "dropShadow": true,
+    "id": "playerExile2",
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    },
+    "type": "holder",
+    "width": 123,
+    "x": 1185,
+    "y": 1,
+    "z": 76
+  },
+  "playerGraveyard1": {
+    "dropShadow": true,
+    "height": 156,
+    "id": "playerGraveyard1",
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    },
+    "type": "holder",
+    "width": 123,
+    "x": 1052,
+    "y": 842,
+    "z": 3
+  },
+  "playerGraveyard2": {
+    "dropShadow": true,
+    "id": "playerGraveyard2",
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    },
+    "type": "holder",
+    "width": 123,
+    "x": 1057,
+    "y": 2,
+    "z": 75
+  },
+  "playerHand1": {
+    "childrenPerOwner": true,
+    "dropShadow": true,
+    "enterRoutine": [
+      {
+        "func": "COUNT",
+        "holder": "playerHand1"
+      },
+      {
+        "func": "LABEL",
+        "label": "handSize1",
+        "mode": "set",
+        "value": "Hand: ${COUNT}"
+      }
+    ],
+    "hidePlayerCursors": true,
+    "hoverInheritVisibleForSeat": false,
+    "id": "playerHand1",
+    "leaveRoutine": [
+      {
+        "func": "COUNT",
+        "holder": "playerHand1"
+      },
+      {
+        "func": "LABEL",
+        "label": "handSize1",
+        "mode": "set",
+        "value": "Hand: ${COUNT}"
+      }
+    ],
+    "onEnter": {
+      "activeFace": 1
+    },
+    "onLeave": {
+      "activeFace": 0
+    },
+    "onlyVisibleForSeat": "seat1",
+    "stackOffsetX": 115,
+    "type": "holder",
+    "width": 921,
+    "x": 5,
+    "y": 838,
+    "z": 28
+  },
+  "playerHand2": {
+    "childrenPerOwner": true,
+    "dropOffsetX": 10,
+    "dropOffsetY": 0,
+    "dropShadow": true,
+    "enterRoutine": [
+      {
+        "func": "COUNT",
+        "holder": "playerHand2"
+      },
+      {
+        "func": "LABEL",
+        "label": "handSize2",
+        "mode": "set",
+        "value": "Hand: ${COUNT}"
+      }
+    ],
+    "height": 156,
+    "hidePlayerCursors": true,
+    "hoverInheritVisibleForSeat": false,
+    "id": "playerHand2",
+    "leaveRoutine": [
+      {
+        "func": "COUNT",
+        "holder": "playerHand2"
+      },
+      {
+        "func": "LABEL",
+        "label": "handSize2",
+        "mode": "set",
+        "value": "Hand: ${COUNT}"
+      }
+    ],
+    "onEnter": {
+      "activeFace": 1
+    },
+    "onLeave": {
+      "activeFace": 0
+    },
+    "onlyVisibleForSeat": "seat2",
+    "stackOffsetX": 100,
+    "type": "holder",
+    "width": 921,
+    "x": 3,
+    "y": 2,
+    "z": 18
+  },
+  "playerLif": {
+    "classes": "symbols",
+    "clickRoutine": [
+      {
+        "func": "LABEL",
+        "label": "${PROPERTY parent}",
+        "mode": "inc",
+        "value": 1
+      }
+    ],
+    "css": "font-size: 28px",
+    "fixedParent": true,
+    "height": 36,
+    "id": "playerLif",
+    "movableInEdit": false,
+    "parent": "zdvr",
+    "text": "add",
+    "type": "button",
+    "width": 36,
+    "x": 15,
+    "y": -40
+  },
+  "playerLife2": {
+    "classes": "symbols",
+    "clickRoutine": [
+      {
+        "func": "LABEL",
+        "label": "${PROPERTY parent}",
+        "mode": "dec",
+        "value": 1
+      }
+    ],
+    "css": "font-size: 28px",
+    "fixedParent": true,
+    "height": 36,
+    "id": "playerLife2",
+    "movableInEdit": false,
+    "parent": "zdvr1",
+    "text": "remove",
+    "type": "button",
+    "width": 36,
+    "x": 15,
+    "y": 35
+  },
+  "playerPile1": {
+    "height": 160,
+    "id": "playerPile1",
+    "parent": "playerDeckHolder1",
+    "type": "pile",
+    "width": 115,
+    "x": 4,
+    "y": 4
+  },
+  "playerPile2": {
+    "height": 160,
+    "id": "playerPile2",
+    "parent": "playerDeckHolder2",
+    "type": "pile",
+    "width": 115,
+    "x": 4,
+    "y": 4
+  },
+  "rg7t": {
+    "clickRoutine": [
+      {
+        "arguments": {
+          "widgetId": "tokenActionsBox"
+        },
+        "func": "CALL",
+        "routine": "toggleWidgetVisRoutine",
+        "widget": "libraryButton1"
+      }
+    ],
+    "height": 20,
+    "id": "rg7t",
+    "rotation": 270,
+    "text": "Tokens/Counters",
+    "type": "button",
+    "width": 135,
+    "x": 1518,
+    "y": 563,
+    "z": 113
+  },
+  "rj6s": {
+    "activeFace": 1,
+    "cardType": "commander2",
+    "deck": "commandZoneDeck2",
+    "id": "rj6s",
+    "parent": "commandZone2",
+    "type": "card",
+    "x": 4,
+    "y": 4,
+    "z": 81036
+  },
+  "rules": {
+    "css": {
+      "background": "white"
+    },
+    "enlarge": 2,
+    "height": 200,
+    "id": "rules",
+    "text": "1. Untap and Draw\n2. Main Phase\n - (If you have any) play a land card (1 per turn)\n - Play any cards you can afford\n3. Combat Phase (Optional)\n - Declare Attackers\n - (Other player) Declare Blockers\n - Combat Damage Resolves\n 4. Main Phase (Again)\n 5. End of Your Turn\n",
+    "width": 330,
+    "x": -425,
+    "y": 431,
+    "z": 159
+  },
+  "scryBoard": {
+    "borderRadius": 8,
+    "css": {
+      "background": "gray",
+      "border": "1px solid black"
+    },
+    "height": 600,
+    "id": "scryBoard",
+    "layer": 3,
+    "movable": false,
+    "onlyVisibleForSeat": "seat999",
+    "targetPlayer": 2,
+    "width": 1100,
+    "x": 233,
+    "y": 202,
+    "z": 43
+  },
+  "scryBottom": {
+    "id": "scryBottom",
+    "inheritFrom": {
+      "scryTop": [
+        "*"
+      ]
+    },
+    "parent": "scryBoard",
+    "type": "holder",
+    "width": 123,
+    "x": 661,
+    "y": 259,
+    "z": 70
+  },
+  "scryConfirm": {
+    "clickRoutine": [
+      "var targetDeck = 'playerDeckHolder' + ${PROPERTY targetPlayer OF scryBoard}",
+      {
+        "func": "COUNT",
+        "holder": "scryHolder",
+        "variable": "scryHolderCount"
+      },
+      {
+        "elseRoutine": [
+          {
+            "collection": [
+              "scryWarning"
+            ],
+            "func": "SET",
+            "property": "scale",
+            "value": 1
+          }
+        ],
+        "func": "IF",
+        "operand1": "${scryHolderCount}",
+        "operand2": "0",
+        "relation": "==",
+        "thenRoutine": [
+          {
+            "count": 999,
+            "from": "${targetDeck}",
+            "func": "MOVE",
+            "to": "scryTempHolder"
+          },
+          {
+            "count": 999,
+            "from": "scryBottom",
+            "func": "MOVE",
+            "to": "${targetDeck}"
+          },
+          {
+            "count": 999,
+            "from": "scryTempHolder",
+            "func": "MOVE",
+            "to": "${targetDeck}"
+          },
+          {
+            "count": 999,
+            "from": "scryTop",
+            "func": "MOVE",
+            "to": "${targetDeck}"
+          },
+          {
+            "collection": [
+              "scryBoard"
+            ],
+            "func": "SET",
+            "property": "onlyVisibleForSeat",
+            "value": "seat999"
           }
         ]
       }
     ],
-    "cardDefaults": {
-      "titlesize": "24px",
-      "enlarge": 5,
-      "clickRoutine": [
-        "var newAngle = 90 - ${PROPERTY rotation} ",
-        {
-          "func": "ROTATE",
-          "collection": "thisButton",
-          "mode": "set",
-          "angle": "${newAngle}"
-        }
-      ]
-    },
-    "cardTypes": {
-      "one": {
-        "title": "Token",
-        "content": "Template",
-        "stats": "1/1",
-        "bgcolor": "#808080"
-      }
-    },
-    "z": 20626,
-    "hoverParent": "oa80",
-    "parent": "tokenHolder1",
-    "css": {
-      "_,.html": {
-        "border-radius": "5px",
-        "border": "1px solid rgba(0, 0, 0, 0.4)"
-      }
-    }
-  },
-  "xn6j": {
+    "id": "scryConfirm",
+    "parent": "scryBoard",
+    "text": "Confirm Scry",
     "type": "button",
-    "text": "Create Token",
+    "x": 501,
+    "y": 362,
+    "z": 106
+  },
+  "scryHolder": {
+    "id": "scryHolder",
+    "inheritFrom": {
+      "playerHand1": "*"
+    },
+    "onLeave": {
+      "activeFace": 1
+    },
+    "onlyVisibleForSeat": [
+      "seat1",
+      "seat2"
+    ],
+    "parent": "scryBoard",
+    "type": "holder",
+    "width": 470,
+    "x": 307,
+    "y": 74,
+    "z": 68
+  },
+  "scryLabel1": {
+    "css": {
+      "color": "white",
+      "font-size": "30px"
+    },
+    "height": 42,
+    "id": "scryLabel1",
+    "parent": "scryBoard",
+    "text": "Scry: Move these cards to either the top or bottom of your deck",
+    "type": "label",
+    "width": 900,
+    "x": 124,
+    "y": 25,
+    "z": 88
+  },
+  "scryLabel2": {
+    "css": {
+      "color": "white",
+      "font-size": "30px"
+    },
+    "height": 42,
+    "id": "scryLabel2",
+    "parent": "scryBoard",
+    "text": "The card at the top of the top pile will be the next card you draw",
+    "type": "label",
+    "width": 900,
+    "x": 131,
+    "y": 502,
+    "z": 80
+  },
+  "scryPlayer1": {
+    "clickRoutine": [
+      "var targetSeat = 'seat' + ${PROPERTY player}",
+      "var targetDeck = 'playerDeckHolder' + ${PROPERTY player}",
+      "var targetDeckActions = 'playerDeckActions' + ${PROPERTY player}",
+      {
+        "fields": [
+          {
+            "text": "Scry How Many Cards?",
+            "type": "title"
+          },
+          {
+            "label": "Number to scry",
+            "type": "number",
+            "value": "1",
+            "variable": "scryCount"
+          }
+        ],
+        "func": "INPUT"
+      },
+      {
+        "collection": [
+          "scryBoard"
+        ],
+        "func": "SET",
+        "property": "onlyVisibleForSeat",
+        "value": "${targetSeat}"
+      },
+      {
+        "collection": [
+          "scryBoard"
+        ],
+        "func": "SET",
+        "property": "targetPlayer",
+        "value": "${PROPERTY player}"
+      },
+      {
+        "count": "${scryCount}",
+        "from": "${targetDeck}",
+        "func": "MOVE",
+        "to": "scryHolder"
+      },
+      {
+        "collection": [
+          "scryWarning"
+        ],
+        "func": "SET",
+        "property": "scale",
+        "value": 0
+      },
+      {
+        "arguments": {
+          "widgetId": "${targetDeckActions}"
+        },
+        "func": "CALL",
+        "routine": "toggleWidgetVisRoutine",
+        "widget": "libraryButton1"
+      }
+    ],
+    "height": 18,
+    "id": "scryPlayer1",
+    "parent": "playerDeckActions1",
+    "player": 1,
+    "text": "Scry",
+    "type": "button",
+    "width": 50,
+    "x": 193,
+    "y": 6,
+    "z": 89
+  },
+  "scryPlayer2": {
+    "height": 20,
+    "id": "scryPlayer2",
+    "inheritFrom": {
+      "scryPlayer1": "*"
+    },
+    "movable": false,
+    "movableInEdit": true,
+    "parent": "playerDeckActions2",
+    "player": 2,
+    "text": "Scry",
+    "type": "button",
+    "width": 50,
+    "x": 198,
+    "y": 5,
+    "z": 108
+  },
+  "scryTempHolder": {
+    "id": "scryTempHolder",
+    "type": "holder",
+    "x": -235,
+    "y": 139,
+    "z": 82
+  },
+  "scryTop": {
+    "dropShadow": true,
+    "id": "scryTop",
+    "parent": "scryBoard",
+    "type": "holder",
+    "width": 123,
+    "x": 305,
+    "y": 259,
+    "z": 69
+  },
+  "scryWarning": {
+    "borderRadius": 5,
+    "css": {
+      "background": "red",
+      "color": "white",
+      "font-size": "25px"
+    },
+    "height": 100,
+    "id": "scryWarning",
+    "parent": "scryBoard",
+    "scale": 0,
+    "text": "Move all cards to Top or Bottom before confirming",
+    "type": "label",
+    "width": 280,
+    "x": 10,
+    "y": 302,
+    "z": 92
+  },
+  "seat1": {
+    "clickRoutine": [
+      "var seatStatus = ${PROPERTY occupied}",
+      {
+        "elseRoutine": [
+          {
+            "fields": [
+              {
+                "label": "Name",
+                "type": "string",
+                "value": "${playerName}",
+                "variable": "playerName"
+              }
+            ],
+            "func": "INPUT",
+            "header": "Enter your name."
+          },
+          {
+            "collection": "thisButton",
+            "func": "SET",
+            "property": "occupied",
+            "value": 1
+          },
+          {
+            "collection": "thisButton",
+            "func": "CLICK",
+            "mode": "ignoreClickRoutine"
+          },
+          {
+            "collection": "thisButton",
+            "func": "SET",
+            "property": "player",
+            "value": "${playerName}"
+          }
+        ],
+        "func": "IF",
+        "operand1": "${seatStatus}",
+        "operand2": 1,
+        "thenRoutine": [
+          {
+            "fields": [
+              {
+                "text": "Do you want to get up from your seat?",
+                "type": "text"
+              }
+            ],
+            "func": "INPUT",
+            "header": "Getting up ..."
+          },
+          {
+            "collection": "thisButton",
+            "func": "SET",
+            "property": "occupied",
+            "value": 0
+          },
+          {
+            "collection": "thisButton",
+            "func": "CLICK",
+            "mode": "ignoreClickRoutine"
+          }
+        ]
+      }
+    ],
+    "height": 25,
+    "id": "seat1",
+    "occupied": 0,
+    "type": "seat",
+    "width": 130,
+    "x": 1456,
+    "y": 958
+  },
+  "seat2": {
+    "clickRoutine": [
+      "var seatStatus = ${PROPERTY occupied}",
+      {
+        "elseRoutine": [
+          {
+            "fields": [
+              {
+                "label": "Name",
+                "type": "string",
+                "value": "${playerName}",
+                "variable": "playerName"
+              }
+            ],
+            "func": "INPUT",
+            "header": "Enter your name."
+          },
+          {
+            "collection": "thisButton",
+            "func": "SET",
+            "property": "occupied",
+            "value": 1
+          },
+          {
+            "collection": "thisButton",
+            "func": "CLICK",
+            "mode": "ignoreClickRoutine"
+          },
+          {
+            "collection": "thisButton",
+            "func": "SET",
+            "property": "player",
+            "value": "${playerName}"
+          }
+        ],
+        "func": "IF",
+        "operand1": "${seatStatus}",
+        "operand2": 1,
+        "thenRoutine": [
+          {
+            "fields": [
+              {
+                "text": "Do you want to get up from your seat?",
+                "type": "text"
+              }
+            ],
+            "func": "INPUT",
+            "header": "Getting up ..."
+          },
+          {
+            "collection": "thisButton",
+            "func": "SET",
+            "property": "occupied",
+            "value": 0
+          },
+          {
+            "collection": "thisButton",
+            "func": "CLICK",
+            "mode": "ignoreClickRoutine"
+          }
+        ]
+      }
+    ],
+    "height": 25,
+    "id": "seat2",
+    "occupied": 0,
+    "type": "seat",
+    "width": 130,
+    "x": 1454,
+    "y": 6
+  },
+  "shlu": {
+    "id": "shlu",
+    "parent": "commanderDamage1",
+    "text": "CD",
+    "type": "label",
+    "x": -32,
+    "y": -46,
+    "z": 103
+  },
+  "shlu1": {
+    "id": "shlu1",
+    "parent": "commanderDamage2",
+    "text": "CD",
+    "type": "label",
+    "x": -32,
+    "y": 47,
+    "z": 103
+  },
+  "tokenActionsBox": {
+    "borderRadius": 8,
+    "css": {
+      "background": "lightgray",
+      "border": "1px solid black",
+      "display": "block"
+    },
+    "height": 143,
+    "id": "tokenActionsBox",
+    "layer": 2,
+    "width": 230,
+    "x": 1358,
+    "y": 686,
+    "z": 170,
+    "scale": 0
+  },
+  "tokenHolder1": {
+    "dropTarget": {
+      "type": "card"
+    },
+    "id": "tokenHolder1",
+    "type": "holder",
+    "x": 1877,
+    "y": 210
+  },
+  "tokenHolder2": {
+    "css": {
+      "background": "lightgray",
+      "border": "1px solid black",
+      "display": "block"
+    },
+    "dropShadow": true,
+    "id": "tokenHolder2",
+    "layer": 1,
+    "onEnter": {
+      "rotation": 0
+    },
+    "parent": "tokenActionsBox",
+    "type": "holder",
+    "x": 76,
+    "y": -181,
+    "z": 163
+  },
+  "tyb1": {
     "clickRoutine": [
       {
-        "func": "INPUT",
+        "collection": "clones",
+        "func": "SELECT",
+        "property": "clonedFrom",
+        "relation": "!=",
+        "value": null
+      },
+      {
+        "collection": "clones",
+        "func": "DELETE"
+      }
+    ],
+    "height": 40,
+    "id": "tyb1",
+    "parent": "tokenActionsBox",
+    "text": "Delete All Tokens & Counters",
+    "type": "button",
+    "width": 155,
+    "x": 1,
+    "y": 98,
+    "z": 124
+  },
+  "tyb2": {
+    "clickRoutine": [
+      {
+        "collection": "tokensToDelete",
+        "func": "SELECT",
+        "property": "parent",
+        "relation": "==",
+        "value": "tokenHolder2"
+      },
+      {
+        "collection": "clonedCounters",
+        "func": "SELECT",
+        "property": "clonedFrom",
+        "relation": "==",
+        "value": "3kg2"
+      },
+      {
+        "collection": "tokensLeftBorder",
+        "func": "SELECT",
+        "property": "x",
+        "relation": ">=",
+        "source": "clonedCounters",
+        "type": "label",
+        "value": "1466"
+      },
+      {
+        "collection": "tokensBottomBorder",
+        "func": "SELECT",
+        "property": "y",
+        "relation": "<=",
+        "source": "tokensLeftBorder",
+        "value": "677"
+      },
+      {
+        "collection": "tokensTopBorder",
+        "func": "SELECT",
+        "property": "y",
+        "relation": ">=",
+        "source": "tokensBottomBorder",
+        "value": "519"
+      },
+      {
+        "collection": "tokensToDelete",
+        "func": "DELETE"
+      },
+      {
+        "collection": "tokensTopBorder",
+        "func": "DELETE"
+      }
+    ],
+    "height": 40,
+    "id": "tyb2",
+    "parent": "tokenActionsBox",
+    "text": "Delete Widgets in Holder",
+    "type": "button",
+    "width": 150,
+    "x": 1,
+    "y": 56,
+    "z": 123
+  },
+  "v9d3": {
+    "id": "v9d3",
+    "text": "Exile",
+    "type": "label",
+    "x": 1188,
+    "y": 820,
+    "z": 96
+  },
+  "v9d4": {
+    "id": "v9d4",
+    "text": "Exile",
+    "type": "label",
+    "x": 1198,
+    "y": 177,
+    "z": 95
+  },
+  "xn6j": {
+    "clickRoutine": [
+      {
         "css": "background-color:beige",
         "fields": [
           {
-            "type": "title",
-            "text": "Create a token card"
+            "text": "Create a token card",
+            "type": "title"
           },
           {
-            "type": "string",
             "label": "Enter the Title",
-            "variable": "title",
-            "value": ""
+            "type": "string",
+            "value": "",
+            "variable": "title"
           },
           {
-            "type": "string",
             "label": "(Optional) Enter the Body text",
-            "variable": "content",
-            "value": ""
-          },
-          {
             "type": "string",
+            "value": "",
+            "variable": "content"
+          },
+          {
             "label": "(Optional) Power/Toughness",
-            "variable": "stats",
-            "value": ""
+            "type": "string",
+            "value": "",
+            "variable": "stats"
           },
           {
-            "type": "number",
             "label": "Number to create",
-            "variable": "tokenCount",
-            "value": "1"
+            "type": "number",
+            "value": "1",
+            "variable": "tokenCount"
           },
           {
-            "type": "palette",
-            "label": "(Optional) Choose color",
             "colors": [
               "#808080",
               "#fceaba",
@@ -416,2057 +3857,115 @@
               "#607d8b",
               "#000000"
             ],
-            "variable": "color",
-            "value": "#808080"
+            "label": "(Optional) Choose color",
+            "type": "palette",
+            "value": "#808080",
+            "variable": "color"
           }
-        ]
+        ],
+        "func": "INPUT"
       },
       {
+        "count": "${tokenCount}",
         "func": "CLONE",
-        "source": [
-          "ex51"
-        ],
         "properties": {
-          "title": "${title}",
+          "activeFace": 1,
+          "bgcolor": "${color}",
+          "collection": "tokenCards",
           "content": "${content}",
           "stats": "${stats}",
-          "collection": "tokenCards",
-          "activeFace": 1,
-          "bgcolor": "${color}"
+          "title": "${title}"
         },
-        "count": "${tokenCount}"
+        "source": [
+          "ex51"
+        ]
       },
       {
-        "func": "MOVE",
+        "count": "${tokenCount}",
         "from": "tokenHolder1",
-        "to": "tokenHolder2",
-        "count": "${tokenCount}"
+        "func": "MOVE",
+        "to": "tokenHolder2"
       }
     ],
+    "height": 25,
+    "id": "xn6j",
+    "parent": "tokenActionsBox",
+    "text": "Create Token",
+    "type": "button",
+    "width": 120,
     "x": 1,
     "y": 29,
-    "z": 122,
-    "id": "xn6j",
-    "height": 25,
-    "width": 120,
-    "parent": "tokenActionsBox"
-  },
-  "ex51": {
-    "deck": "oa80D",
-    "type": "card",
-    "cardType": "one",
-    "id": "ex51",
-    "z": 41864,
-    "activeFace": 1,
-    "parent": "tokenHolder1",
-    "x": 4,
-    "y": 4
-  },
-  "0feq": {
-    "type": "button",
-    "text": "Search Deck",
-    "clickRoutine": [
-      {
-        "func": "INPUT",
-        "fields": [
-          {
-            "type": "title",
-            "text": "Player 1 Library"
-          },
-          {
-            "type": "subtitle",
-            "text": "Selected cards will be placed in your hand"
-          },
-          {
-            "type": "choose",
-            "holder": [
-              "playerDeckHolder1"
-            ],
-            "collection": "thisCollection",
-            "variable": "chosenCard",
-            "max": 200,
-            "propertyOverride": {
-              "activeFace": 1
-            }
-          }
-        ],
-        "confirmButtonText": "Confirm and shuffle deck"
-      },
-      {
-        "func": "MOVE",
-        "collection": "thisCollection",
-        "to": "playerHand1"
-      },
-      {
-        "func": "SHUFFLE",
-        "holder": "playerDeckHolder1"
-      }
-    ],
-    "z": 25,
-    "id": "0feq",
-    "width": 120,
-    "height": 20,
-    "parent": "playerDeckActions1",
-    "x": 5,
-    "y": 5
-  },
-  "playerDeckHolder1": {
-    "type": "holder",
-    "id": "playerDeckHolder1",
-    "x": 928,
-    "y": 841,
-    "width": 123,
-    "height": 156,
-    "z": 12,
-    "onEnter": {
-      "activeFace": 0,
-      "rotation": 0
-    },
-    "dropshadow": true
-  },
-  "playerDeckHolder2": {
-    "type": "holder",
-    "id": "playerDeckHolder2",
-    "x": 928,
-    "y": 3,
-    "dropTarget": {
-      "type": "card"
-    },
-    "onEnter": {
-      "rotation": 0,
-      "activeFace": 0
-    },
-    "width": 123,
-    "dropShadow": true
-  },
-  "playerDeckActions1": {
-    "id": "playerDeckActions1",
-    "width": 250,
-    "borderRadius": 8,
-    "z": 151,
-    "css": {
-      "display": "block",
-      "background": "lightgray",
-      "border": "1px solid black"
-    },
-    "holderId": "playerDeckHolder1",
-    "height": 81,
-    "hoverParent": "ed19",
-    "x": 885,
-    "y": 733,
-    "movable": false
-  },
-  "izon5": {
-    "type": "button",
-    "text": "Recall & Shuffle",
-    "clickRoutine": [
-      "var holder = 'playerDeckHolder1'",
-      {
-        "func": "RECALL",
-        "holder": "${holder}"
-      },
-      {
-        "func": "FLIP",
-        "holder": "${holder}",
-        "face": 0
-      },
-      {
-        "func": "ROTATE",
-        "holder": "${holder}",
-        "mode": "set",
-        "angle": 0,
-        "count": 0
-      },
-      {
-        "func": "SHUFFLE",
-        "holder": "${holder}"
-      }
-    ],
-    "x": 71,
-    "z": 18,
-    "id": "izon5",
-    "width": 120,
-    "height": 25,
-    "parent": "playerDeckActions1",
-    "y": 30
-  },
-  "izon1": {
-    "type": "button",
-    "text": "Shuffle",
-    "clickRoutine": [
-      {
-        "func": "SHUFFLE",
-        "holder": "playerDeckHolder1"
-      }
-    ],
-    "x": 70,
-    "z": 18,
-    "id": "izon1",
-    "width": 60,
-    "height": 20,
-    "parent": "playerDeckActions1",
-    "y": 58
-  },
-  "izon6": {
-    "type": "button",
-    "text": "Untap",
-    "clickRoutine": [
-      {
-        "func": "SELECT",
-        "property": "y",
-        "value": 470,
-        "relation": ">=",
-        "collection": "bottomCollection",
-        "type": "card"
-      },
-      {
-        "func": "SELECT",
-        "source": "bottomCollection",
-        "collection": "bottomCards"
-      },
-      {
-        "func": "ROTATE",
-        "collection": "bottomCards",
-        "mode": "set",
-        "angle": 0,
-        "count": 0
-      }
-    ],
-    "z": 18,
-    "id": "izon6",
-    "width": 60,
-    "height": 20,
-    "parent": "playerDeckActions1",
-    "y": 6,
-    "x": 131
-  },
-  "3kg2": {
-    "type": "label",
-    "text": 0,
-    "id": "3kg2",
-    "x": 1651,
-    "y": 590,
-    "width": 45,
-    "css": "font-size: 20px;",
-    "editable": true,
-    "z": 32,
-    "movable": true
-  },
-  "3kg2D": {
-    "id": "3kg2D",
-    "parent": "3kg2",
-    "fixedParent": true,
-    "y": 1,
-    "width": 18,
-    "height": 18,
-    "type": "button",
-    "movableInEdit": false,
-    "classes": "symbols",
-    "css": "font-size: 14px",
-    "text": "remove",
-    "clickRoutine": [
-      {
-        "func": "LABEL",
-        "label": "${PROPERTY parent}",
-        "mode": "dec",
-        "value": 1
-      }
-    ],
-    "x": -16
-  },
-  "3kg2U": {
-    "id": "3kg2U",
-    "parent": "3kg2",
-    "fixedParent": true,
-    "x": 41,
-    "y": 1,
-    "width": 18,
-    "height": 18,
-    "type": "button",
-    "movableInEdit": false,
-    "classes": "symbols",
-    "css": "font-size: 14px",
-    "text": "add",
-    "clickRoutine": [
-      {
-        "func": "LABEL",
-        "label": "${PROPERTY parent}",
-        "mode": "inc",
-        "value": 1
-      }
-    ]
-  },
-  "cclf": {
-    "type": "button",
-    "text": "Create Counter",
-    "clickRoutine": [
-      "var mouseX = ${PROPERTY $mouseCoords }",
-      "var xCord = ${PROPERTY x} // sets a to the x value of this widget",
-      "var yCord = ${PROPERTY y} // sets a to the x value of this widget",
-      {
-        "func": "CLONE",
-        "source": [
-          "3kg2"
-        ],
-        "recursive": true,
-        "properties": {
-          "x": 1513,
-          "y": 575,
-          "parent": "tokenHolder2"
-        }
-      }
-    ],
-    "y": 5,
-    "z": 44,
-    "id": "cclf",
-    "height": 20,
-    "width": 120,
-    "parent": "tokenActionsBox",
-    "x": 1
-  },
-  "playerDeckActions2": {
-    "id": "playerDeckActions2",
-    "y": 189,
-    "width": 250,
-    "borderRadius": 8,
-    "z": 156,
-    "css": {
-      "display": "block",
-      "background": "lightgray",
-      "border": "1px solid black"
-    },
-    "holderId": "playerDeckHolder2",
-    "height": 80,
-    "movable": false,
-    "x": 852
-  },
-  "izon7": {
-    "type": "button",
-    "text": "Draw 1",
-    "clickRoutine": [
-      {
-        "func": "MOVE",
-        "count": 1,
-        "from": "playerDeckHolder2",
-        "to": "playerHand2"
-      }
-    ],
-    "z": 18,
-    "id": "izon7",
-    "width": 60,
-    "height": 20,
-    "parent": "playerDeckActions2",
-    "y": 30,
-    "x": 3
-  },
-  "1feq": {
-    "type": "button",
-    "text": "Search Deck",
-    "clickRoutine": [
-      {
-        "func": "INPUT",
-        "fields": [
-          {
-            "type": "title",
-            "text": "Player 2 Library"
-          },
-          {
-            "type": "subtitle",
-            "text": "Selected cards will be placed in your hand"
-          },
-          {
-            "type": "choose",
-            "holder": [
-              "playerDeckHolder2"
-            ],
-            "collection": "thisCollection",
-            "variable": "chosenCard",
-            "max": 200,
-            "propertyOverride": {
-              "activeFace": 1
-            }
-          }
-        ],
-        "confirmButtonText": "Confirm and shuffle deck"
-      },
-      {
-        "func": "MOVE",
-        "collection": "thisCollection",
-        "to": "playerHand2"
-      },
-      {
-        "func": "SHUFFLE",
-        "holder": "playerDeckHolder2"
-      }
-    ],
-    "x": 5,
-    "y": 5,
-    "z": 25,
-    "id": "1feq",
-    "width": 120,
-    "height": 20,
-    "parent": "playerDeckActions2"
-  },
-  "izon8": {
-    "type": "button",
-    "text": "Draw 7",
-    "clickRoutine": [
-      {
-        "func": "MOVE",
-        "count": 7,
-        "from": "playerDeckHolder2",
-        "to": "playerHand2"
-      }
-    ],
-    "z": 18,
-    "id": "izon8",
-    "width": 60,
-    "height": 20,
-    "parent": "playerDeckActions2",
-    "y": 58,
-    "x": 3
-  },
-  "izon9": {
-    "type": "button",
-    "text": "Recall & Shuffle",
-    "clickRoutine": [
-      "var holder = 'playerDeckHolder2'",
-      {
-        "func": "RECALL",
-        "holder": "${holder}"
-      },
-      {
-        "func": "FLIP",
-        "holder": "${holder}",
-        "face": 0
-      },
-      {
-        "func": "ROTATE",
-        "holder": "${holder}",
-        "mode": "set",
-        "angle": 0,
-        "count": 0
-      },
-      {
-        "func": "SHUFFLE",
-        "holder": "${holder}"
-      }
-    ],
-    "x": 71,
-    "z": 18,
-    "id": "izon9",
-    "width": 120,
-    "height": 25,
-    "parent": "playerDeckActions2",
-    "y": 30
-  },
-  "izon10": {
-    "type": "button",
-    "text": "Shuffle",
-    "clickRoutine": [
-      {
-        "func": "SHUFFLE",
-        "holder": "playerDeckHolder2"
-      }
-    ],
-    "x": 70,
-    "z": 18,
-    "id": "izon10",
-    "width": 60,
-    "height": 20,
-    "parent": "playerDeckActions2",
-    "y": 58
-  },
-  "izon11": {
-    "type": "button",
-    "text": "Untap",
-    "clickRoutine": [
-      {
-        "func": "SELECT",
-        "property": "y",
-        "value": 375,
-        "relation": "<=",
-        "collection": "bottomCollection",
-        "type": "card"
-      },
-      {
-        "func": "SELECT",
-        "source": "bottomCollection",
-        "collection": "bottomCards"
-      },
-      {
-        "func": "ROTATE",
-        "collection": "bottomCards",
-        "mode": "set",
-        "angle": 0,
-        "count": 0
-      }
-    ],
-    "z": 109,
-    "id": "izon11",
-    "width": 60,
-    "height": 20,
-    "parent": "playerDeckActions2",
-    "y": 5,
-    "x": 129
-  },
-  "tyb1": {
-    "type": "button",
-    "clickRoutine": [
-      {
-        "func": "SELECT",
-        "property": "clonedFrom",
-        "relation": "!=",
-        "value": null,
-        "collection": "clones"
-      },
-      {
-        "func": "DELETE",
-        "collection": "clones"
-      }
-    ],
-    "y": 98,
-    "z": 124,
-    "id": "tyb1",
-    "text": "Delete All Tokens & Counters",
-    "width": 155,
-    "height": 40,
-    "parent": "tokenActionsBox",
-    "x": 1
-  },
-  "tokenActionsBox": {
-    "id": "tokenActionsBox",
-    "x": 1360,
-    "y": 685,
-    "width": 230,
-    "height": 143,
-    "borderRadius": 8,
-    "css": {
-      "display": "block",
-      "background": "lightgray",
-      "border": "1px solid black"
-    },
-    "z": 167,
-    "layer": 2
-  },
-  "playerHand2": {
-    "type": "holder",
-    "id": "playerHand2",
-    "x": 3,
-    "width": 921,
-    "height": 156,
-    "z": 18,
-    "childrenPerOwner": true,
-    "dropOffsetX": 10,
-    "dropShadow": true,
-    "hidePlayerCursors": true,
-    "onEnter": {
-      "activeFace": 1
-    },
-    "onLeave": {
-      "activeFace": 0
-    },
-    "stackOffsetX": 100,
-    "dropOffsetY": 0,
-    "hoverInheritVisibleForSeat": false,
-    "y": 2,
-    "onlyVisibleForSeat": "seat2",
-    "enterRoutine": [
-      {
-        "func": "COUNT",
-        "holder": "playerHand2"
-      },
-      {
-        "func": "LABEL",
-        "label": "handSize2",
-        "mode": "set",
-        "value": "Hand: ${COUNT}"
-      }
-    ],
-    "leaveRoutine": [
-      {
-        "func": "COUNT",
-        "holder": "playerHand2"
-      },
-      {
-        "func": "LABEL",
-        "label": "handSize2",
-        "mode": "set",
-        "value": "Hand: ${COUNT}"
-      }
-    ]
-  },
-  "seat2": {
-    "type": "seat",
-    "id": "seat2",
-    "x": 1454,
-    "y": 6,
-    "occupied": 0,
-    "clickRoutine": [
-      "var seatStatus = ${PROPERTY occupied}",
-      {
-        "func": "IF",
-        "operand1": "${seatStatus}",
-        "operand2": 1,
-        "thenRoutine": [
-          {
-            "func": "INPUT",
-            "header": "Getting up ...",
-            "fields": [
-              {
-                "type": "text",
-                "text": "Do you want to get up from your seat?"
-              }
-            ]
-          },
-          {
-            "func": "SET",
-            "collection": "thisButton",
-            "property": "occupied",
-            "value": 0
-          },
-          {
-            "func": "CLICK",
-            "collection": "thisButton",
-            "mode": "ignoreClickRoutine"
-          }
-        ],
-        "elseRoutine": [
-          {
-            "func": "INPUT",
-            "header": "Enter your name.",
-            "fields": [
-              {
-                "type": "string",
-                "label": "Name",
-                "variable": "playerName",
-                "value": "${playerName}"
-              }
-            ]
-          },
-          {
-            "func": "SET",
-            "collection": "thisButton",
-            "property": "occupied",
-            "value": 1
-          },
-          {
-            "func": "CLICK",
-            "collection": "thisButton",
-            "mode": "ignoreClickRoutine"
-          },
-          {
-            "func": "SET",
-            "collection": "thisButton",
-            "property": "player",
-            "value": "${playerName}"
-          }
-        ]
-      }
-    ],
-    "width": 130,
-    "height": 25
-  },
-  "playerDeck2": {
-    "type": "deck",
-    "id": "playerDeck2",
-    "parent": "playerDeckHolder2",
-    "x": 12,
-    "y": 41,
-    "cardDefaults": {
-      "grid": [
-        {
-          "x": 40,
-          "y": 20,
-          "offsetX": 0,
-          "offsetY": 0
-        }
-      ],
-      "width": 115,
-      "enlarge": 5,
-      "clickRoutine": [
-        {
-          "func": "IF",
-          "condition": "${PROPERTY activeFace}",
-          "elseRoutine": [
-            {
-              "func": "FLIP",
-              "collection": "thisButton"
-            }
-          ],
-          "thenRoutine": [
-            "var newAngle = 90 - ${PROPERTY rotation} ",
-            {
-              "func": "ROTATE",
-              "collection": "thisButton",
-              "angle": "${newAngle}",
-              "mode": "set"
-            }
-          ]
-        }
-      ]
-    },
-    "cardTypes": {
-      "Island": {
-        "label": "Island",
-        "image": "https://api.scryfall.com/cards/named?exact=Island&format=image"
-      },
-      "Cloudkin_Seer": {
-        "label": "Cloudkin Seer",
-        "image": "https://api.scryfall.com/cards/named?exact=Cloudkin+Seer&format=image"
-      },
-      "Frilled_Sea_Serpent": {
-        "label": "Frilled Sea Serpent",
-        "image": "https://api.scryfall.com/cards/named?exact=Frilled+Sea+Serpent&format=image"
-      },
-      "Glint": {
-        "label": "Glint",
-        "image": "https://api.scryfall.com/cards/named?exact=Glint&format=image"
-      },
-      "Sleep": {
-        "label": "Sleep",
-        "image": "https://api.scryfall.com/cards/named?exact=Sleep&format=image"
-      },
-      "Warden_of_Evos_Isle": {
-        "label": "Warden of Evos Isle",
-        "image": "https://api.scryfall.com/cards/named?exact=Warden+of+Evos+Isle&format=image"
-      },
-      "Overflowing_Insight": {
-        "label": "Overflowing Insight",
-        "image": "https://api.scryfall.com/cards/named?exact=Overflowing+Insight&format=image"
-      },
-      "Waterknot": {
-        "label": "Waterknot",
-        "image": "https://api.scryfall.com/cards/named?exact=Waterknot&format=image"
-      },
-      "Wall_of_Runes": {
-        "label": "Wall of Runes",
-        "image": "https://api.scryfall.com/cards/named?exact=Wall+of+Runes&format=image"
-      },
-      "Unsummon": {
-        "label": "Unsummon",
-        "image": "https://api.scryfall.com/cards/named?exact=Unsummon&format=image"
-      },
-      "Octoprophet": {
-        "label": "Octoprophet",
-        "image": "https://api.scryfall.com/cards/named?exact=Octoprophet&format=image"
-      },
-      "Riddlemaster_Sphinx": {
-        "label": "Riddlemaster Sphinx",
-        "image": "https://api.scryfall.com/cards/named?exact=Riddlemaster+Sphinx&format=image"
-      },
-      "Waterkin_Shaman": {
-        "label": "Waterkin Shaman",
-        "image": "https://api.scryfall.com/cards/named?exact=Waterkin+Shaman&format=image"
-      },
-      "Winged_Words": {
-        "label": "Winged Words",
-        "image": "https://api.scryfall.com/cards/named?exact=Winged+Words&format=image"
-      },
-      "Soulblade_Djinn": {
-        "label": "Soulblade Djinn",
-        "image": "https://api.scryfall.com/cards/named?exact=Soulblade+Djinn&format=image"
-      },
-      "Windstorm_Drake": {
-        "label": "Windstorm Drake",
-        "image": "https://api.scryfall.com/cards/named?exact=Windstorm+Drake&format=image"
-      },
-      "Windreader_Sphinx": {
-        "label": "Windreader Sphinx",
-        "image": "https://api.scryfall.com/cards/named?exact=Windreader+Sphinx&format=image"
-      },
-      "Sworn_Guardian": {
-        "label": "Sworn Guardian",
-        "image": "https://api.scryfall.com/cards/named?exact=Sworn+Guardian&format=image"
-      }
-    },
-    "faceTemplates": [
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "value": "/assets/-1013412466_522053"
-          }
-        ]
-      },
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "dynamicProperties": {
-              "value": "image"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "playerDeck1": {
-    "type": "deck",
-    "id": "playerDeck1",
-    "parent": "playerDeckHolder1",
-    "x": 24,
-    "y": 29,
-    "rotation": -167,
-    "z": 1150,
-    "cardDefaults": {
-      "grid": [
-        {
-          "x": 40,
-          "y": 20,
-          "offsetX": 0,
-          "offsetY": 0
-        }
-      ],
-      "width": 115,
-      "enlarge": 5,
-      "clickRoutine": [
-        {
-          "func": "IF",
-          "condition": "${PROPERTY activeFace}",
-          "elseRoutine": [
-            {
-              "func": "FLIP",
-              "collection": "thisButton"
-            }
-          ],
-          "thenRoutine": [
-            "var newAngle = 90 - ${PROPERTY rotation} ",
-            {
-              "func": "ROTATE",
-              "collection": "thisButton",
-              "angle": "${newAngle}",
-              "mode": "set"
-            }
-          ]
-        }
-      ]
-    },
-    "cardTypes": {
-      "Witch_s_Cottage": {
-        "label": "Witch's Cottage",
-        "image": "https://api.scryfall.com/cards/named?exact=Witch's+Cottage&format=image"
-      },
-      "Gempalm_Polluter": {
-        "label": "Gempalm Polluter",
-        "image": "https://api.scryfall.com/cards/named?exact=Gempalm+Polluter&format=image"
-      },
-      "Gray_Merchant_of_Asphodel": {
-        "label": "Gray Merchant of Asphodel",
-        "image": "https://api.scryfall.com/cards/named?exact=Gray+Merchant+of+Asphodel&format=image"
-      },
-      "Snow_Covered_Swamp": {
-        "label": "Snow-Covered Swamp",
-        "image": "https://api.scryfall.com/cards/named?exact=Snow-Covered+Swamp&format=image"
-      },
-      "Fleshbag_Marauder": {
-        "label": "Fleshbag Marauder",
-        "image": "https://api.scryfall.com/cards/named?exact=Fleshbag+Marauder&format=image"
-      },
-      "Lazotep_Reaver": {
-        "label": "Lazotep Reaver",
-        "image": "https://api.scryfall.com/cards/named?exact=Lazotep+Reaver&format=image"
-      },
-      "Putrid_Goblin": {
-        "label": "Putrid Goblin",
-        "image": "https://api.scryfall.com/cards/named?exact=Putrid+Goblin&format=image"
-      },
-      "Ghoulraiser": {
-        "label": "Ghoulraiser",
-        "image": "https://api.scryfall.com/cards/named?exact=Ghoulraiser&format=image"
-      },
-      "Priest_of_the_Haunted_Edge": {
-        "label": "Priest of the Haunted Edge",
-        "image": "https://api.scryfall.com/cards/named?exact=Priest+of+the+Haunted+Edge&format=image"
-      },
-      "Shambling_Ghast": {
-        "label": "Shambling Ghast",
-        "image": "https://api.scryfall.com/cards/named?exact=Shambling+Ghast&format=image"
-      },
-      "Deadly_Dispute": {
-        "label": "Deadly Dispute",
-        "image": "https://api.scryfall.com/cards/named?exact=Deadly+Dispute&format=image"
-      },
-      "A_Sepulcher_Ghoul": {
-        "label": "A-Sepulcher Ghoul",
-        "image": "https://api.scryfall.com/cards/named?exact=A-Sepulcher+Ghoul&format=image"
-      },
-      "A_Hobbling_Zombie": {
-        "label": "A-Hobbling Zombie",
-        "image": "https://api.scryfall.com/cards/named?exact=A-Hobbling+Zombie&format=image"
-      },
-      "Writhing_Necromass": {
-        "label": "Writhing Necromass",
-        "image": "https://api.scryfall.com/cards/named?exact=Writhing+Necromass&format=image"
-      }
-    },
-    "faceTemplates": [
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "value": "/assets/-1013412466_522053"
-          }
-        ]
-      },
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "dynamicProperties": {
-              "value": "imageFront"
-            }
-          }
-        ]
-      },
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "dynamicProperties": {
-              "value": "imageBack"
-            }
-          }
-        ]
-      }
-    ],
-    "hoverParent": "nd4n"
-  },
-  "seat1": {
-    "type": "seat",
-    "id": "seat1",
-    "x": 1456,
-    "y": 958,
-    "occupied": 0,
-    "clickRoutine": [
-      "var seatStatus = ${PROPERTY occupied}",
-      {
-        "func": "IF",
-        "operand1": "${seatStatus}",
-        "operand2": 1,
-        "thenRoutine": [
-          {
-            "func": "INPUT",
-            "header": "Getting up ...",
-            "fields": [
-              {
-                "type": "text",
-                "text": "Do you want to get up from your seat?"
-              }
-            ]
-          },
-          {
-            "func": "SET",
-            "collection": "thisButton",
-            "property": "occupied",
-            "value": 0
-          },
-          {
-            "func": "CLICK",
-            "collection": "thisButton",
-            "mode": "ignoreClickRoutine"
-          }
-        ],
-        "elseRoutine": [
-          {
-            "func": "INPUT",
-            "header": "Enter your name.",
-            "fields": [
-              {
-                "type": "string",
-                "label": "Name",
-                "variable": "playerName",
-                "value": "${playerName}"
-              }
-            ]
-          },
-          {
-            "func": "SET",
-            "collection": "thisButton",
-            "property": "occupied",
-            "value": 1
-          },
-          {
-            "func": "CLICK",
-            "collection": "thisButton",
-            "mode": "ignoreClickRoutine"
-          },
-          {
-            "func": "SET",
-            "collection": "thisButton",
-            "property": "player",
-            "value": "${playerName}"
-          }
-        ]
-      }
-    ],
-    "height": 25,
-    "width": 130
-  },
-  "playerGraveyard2": {
-    "type": "holder",
-    "id": "playerGraveyard2",
-    "x": 1057,
-    "y": 2,
-    "z": 75,
-    "onEnter": {
-      "rotation": 0,
-      "activeFace": 1
-    },
-    "width": 123,
-    "dropShadow": true
-  },
-  "playerExile2": {
-    "type": "holder",
-    "id": "playerExile2",
-    "x": 1185,
-    "y": 1,
-    "z": 76,
-    "onEnter": {
-      "rotation": 0,
-      "activeFace": 1
-    },
-    "width": 123,
-    "dropShadow": true
-  },
-  "playerGraveyard1": {
-    "type": "holder",
-    "id": "playerGraveyard1",
-    "x": 1052,
-    "y": 842,
-    "height": 156,
-    "z": 3,
-    "onEnter": {
-      "rotation": 0,
-      "activeFace": 1
-    },
-    "width": 123,
-    "dropShadow": true
-  },
-  "playerExile1": {
-    "type": "holder",
-    "id": "playerExile1",
-    "x": 1177,
-    "y": 843,
-    "height": 156,
-    "z": 78,
-    "onEnter": {
-      "rotation": 0,
-      "activeFace": 1
-    },
-    "width": 123,
-    "dropShadow": true
-  },
-  "tokenHolder2": {
-    "type": "holder",
-    "id": "tokenHolder2",
-    "x": 76,
-    "y": -181,
-    "z": 163,
-    "css": {
-      "display": "block",
-      "background": "lightgray",
-      "border": "1px solid black"
-    },
-    "onEnter": {
-      "rotation": 0
-    },
-    "layer": 1,
-    "dropShadow": true,
-    "parent": "tokenActionsBox"
-  },
-  "tokenHolder1": {
-    "type": "holder",
-    "id": "tokenHolder1",
-    "x": 1877,
-    "y": 210,
-    "dropTarget": {
-      "type": "card"
-    }
-  },
-  "draw1-1": {
-    "type": "button",
-    "id": "draw1-1",
-    "parent": "playerDeckActions1",
-    "x": 3,
-    "y": 30,
-    "width": 60,
-    "height": 20,
-    "z": 18,
-    "text": "Draw 1",
-    "clickRoutine": [
-      {
-        "func": "MOVE",
-        "count": 1,
-        "from": "playerDeckHolder1",
-        "to": "playerHand1"
-      }
-    ]
-  },
-  "draw7-1": {
-    "type": "button",
-    "id": "draw7-1",
-    "parent": "playerDeckActions1",
-    "x": 3,
-    "y": 58,
-    "width": 60,
-    "height": 20,
-    "z": 18,
-    "text": "Draw 7",
-    "clickRoutine": [
-      {
-        "func": "MOVE",
-        "count": 7,
-        "from": "playerDeckHolder1",
-        "to": "playerHand1"
-      }
-    ]
-  },
-  "tyb2": {
-    "type": "button",
-    "clickRoutine": [
-      {
-        "func": "SELECT",
-        "property": "parent",
-        "relation": "==",
-        "value": "tokenHolder2",
-        "collection": "tokensToDelete"
-      },
-      {
-        "func": "SELECT",
-        "property": "clonedFrom",
-        "relation": "==",
-        "value": "3kg2",
-        "collection": "clonedCounters"
-      },
-      {
-        "func": "SELECT",
-        "type": "label",
-        "source": "clonedCounters",
-        "property": "x",
-        "relation": ">=",
-        "value": "1466",
-        "collection": "tokensLeftBorder"
-      },
-      {
-        "func": "SELECT",
-        "source": "tokensLeftBorder",
-        "property": "y",
-        "relation": "<=",
-        "value": "677",
-        "collection": "tokensBottomBorder"
-      },
-      {
-        "func": "SELECT",
-        "source": "tokensBottomBorder",
-        "property": "y",
-        "relation": ">=",
-        "value": "519",
-        "collection": "tokensTopBorder"
-      },
-      {
-        "func": "DELETE",
-        "collection": "tokensToDelete"
-      },
-      {
-        "func": "DELETE",
-        "collection": "tokensTopBorder"
-      }
-    ],
-    "y": 56,
-    "z": 123,
-    "id": "tyb2",
-    "text": "Delete Widgets in Holder",
-    "width": 150,
-    "height": 40,
-    "parent": "tokenActionsBox",
-    "x": 1
-  },
-  "rg7t": {
-    "type": "button",
-    "text": "Tokens/Counters",
-    "clickRoutine": [
-      {
-        "func": "CALL",
-        "routine": "toggleWidgetVisRoutine",
-        "widget": "libraryButton1",
-        "arguments": {
-          "widgetId": "tokenActionsBox"
-        }
-      }
-    ],
-    "z": 113,
-    "id": "rg7t",
-    "height": 20,
-    "x": 1518,
-    "width": 135,
-    "y": 563,
-    "rotation": 270
-  },
-  "loadingAlert": {
-    "id": "loadingAlert",
-    "width": 800,
-    "height": 300,
-    "css": {
-      "": {
-        "font-size": "95px",
-        "text-align": "center",
-        "background": "lightblue",
-        "animation": "anim2 3s forwards",
-        "line-height": "3em"
-      },
-      "@keyframes anim2": {
-        "0%": {
-          "opacity": "1",
-          "visibility": "visible"
-        },
-        "99%": {
-          "opacity": "0",
-          "visibility": "visible"
-        },
-        "100%": {
-          "opacity": "0",
-          "visibility": "hidden"
-        }
-      }
-    },
-    "text": "Deck Loaded",
-    "z": 154,
-    "x": 337,
-    "y": 348
-  },
-  "importDeck1": {
-    "type": "button",
-    "id": "importDeck1",
-    "parent": "playerDeckActions1",
-    "x": 132,
-    "y": 61,
-    "width": 100,
-    "height": 18,
-    "z": 57,
-    "text": "Import Deck",
-    "clickRoutine": [
-      {
-        "func": "INPUT",
-        "css": "background-color:beige",
-        "fields": [
-          {
-            "type": "title",
-            "text": "Import deck from Moxfield.com"
-          },
-          {
-            "type": "subtitle",
-            "text": "May take 30~ seconds"
-          },
-          {
-            "type": "string",
-            "label": "Moxfield URL",
-            "variable": "moxfieldUrl",
-            "value": ""
-          },
-          {
-            "type": "string",
-            "label": "Current Room ID (virtualtabletop.io/<Room ID>)",
-            "variable": "roomID",
-            "value": ""
-          }
-        ]
-      },
-      "var playerNumber = 1",
-      "var parsedMoxfieldArray = ${moxfieldUrl} split 'https://www.moxfield.com/decks/'",
-      "var moxfieldId = ${parsedMoxfieldArray.1}",
-      "var glitchURL = 'https://balsam-incandescent-year.glitch.me/' + ${roomID}",
-      "var glitchURL = ${glitchURL} + '/'",
-      "var glitchURL = ${glitchURL} + ${moxfieldId}",
-      "var glitchURL = ${glitchURL} + '/'",
-      "var glitchURL = ${glitchURL} + ${playerNumber}",
-      "var json = fetch ${glitchURL}",
-      {
-        "func": "SELECT",
-        "property": "id",
-        "value": "outputBox"
-      },
-      {
-        "func": "SET",
-        "property": "text",
-        "value": "${json}"
-      }
-    ]
-  },
-  "importDeck2": {
-    "type": "button",
-    "id": "importDeck2",
-    "parent": "playerDeckActions2",
-    "x": 137,
-    "y": 58,
-    "width": 100,
-    "height": 18,
-    "z": 56,
-    "text": "Import Deck",
-    "clickRoutine": [
-      {
-        "func": "INPUT",
-        "css": "background-color:beige",
-        "fields": [
-          {
-            "type": "title",
-            "text": "Import deck from Moxfield.com"
-          },
-          {
-            "type": "string",
-            "label": "Moxfield URL",
-            "variable": "moxfieldUrl",
-            "value": ""
-          },
-          {
-            "type": "string",
-            "label": "Room ID",
-            "variable": "roomID",
-            "value": ""
-          }
-        ]
-      },
-      "var playerNumber = 2",
-      "var parsedMoxfieldArray = ${moxfieldUrl} split 'https://www.moxfield.com/decks/'",
-      "var moxfieldId = ${parsedMoxfieldArray.1}",
-      "var glitchURL = 'https://balsam-incandescent-year.glitch.me/' + ${roomID}",
-      "var glitchURL = ${glitchURL} + '/'",
-      "var glitchURL = ${glitchURL} + ${moxfieldId}",
-      "var glitchURL = ${glitchURL} + '/'",
-      "var glitchURL = ${glitchURL} + ${playerNumber}",
-      "var json = fetch ${glitchURL}",
-      {
-        "func": "SELECT",
-        "property": "id",
-        "value": "outputBox"
-      },
-      {
-        "func": "SET",
-        "property": "text",
-        "value": "${json}"
-      }
-    ]
-  },
-  "handSize2": {
-    "type": "label",
-    "id": "handSize2",
-    "x": 818,
-    "y": 157,
-    "z": 44,
-    "text": "Hand: 0",
-    "height": 25,
-    "css": "font-size: 16px"
-  },
-  "playerHand1": {
-    "type": "holder",
-    "id": "playerHand1",
-    "y": 838,
-    "width": 921,
-    "z": 28,
-    "childrenPerOwner": true,
-    "dropShadow": true,
-    "hidePlayerCursors": true,
-    "hoverInheritVisibleForSeat": false,
-    "onEnter": {
-      "activeFace": 1
-    },
-    "onLeave": {
-      "activeFace": 0
-    },
-    "onlyVisibleForSeat": "seat1",
-    "stackOffsetX": 115,
-    "enterRoutine": [
-      {
-        "func": "COUNT",
-        "holder": "playerHand1"
-      },
-      {
-        "func": "LABEL",
-        "label": "handSize1",
-        "mode": "set",
-        "value": "Hand: ${COUNT}"
-      }
-    ],
-    "leaveRoutine": [
-      {
-        "func": "COUNT",
-        "holder": "playerHand1"
-      },
-      {
-        "func": "LABEL",
-        "label": "handSize1",
-        "mode": "set",
-        "value": "Hand: ${COUNT}"
-      }
-    ],
-    "x": 5
-  },
-  "handSize1": {
-    "type": "label",
-    "id": "handSize1",
-    "x": 842,
-    "height": 25,
-    "z": 101,
-    "css": "font-size: 16px",
-    "text": "Hand: 0",
-    "y": 821
-  },
-  "scryPlayer1": {
-    "type": "button",
-    "id": "scryPlayer1",
-    "z": 89,
-    "text": "Scry",
-    "clickRoutine": [
-      "var targetSeat = 'seat' + ${PROPERTY player}",
-      "var targetDeck = 'playerDeckHolder' + ${PROPERTY player}",
-      "var targetDeckActions = 'playerDeckActions' + ${PROPERTY player}",
-      {
-        "func": "INPUT",
-        "fields": [
-          {
-            "type": "title",
-            "text": "Scry How Many Cards?"
-          },
-          {
-            "type": "number",
-            "label": "Number to scry",
-            "variable": "scryCount",
-            "value": "1"
-          }
-        ]
-      },
-      {
-        "func": "SET",
-        "collection": [
-          "scryBoard"
-        ],
-        "property": "onlyVisibleForSeat",
-        "value": "${targetSeat}"
-      },
-      {
-        "func": "SET",
-        "collection": [
-          "scryBoard"
-        ],
-        "property": "targetPlayer",
-        "value": "${PROPERTY player}"
-      },
-      {
-        "func": "MOVE",
-        "count": "${scryCount}",
-        "from": "${targetDeck}",
-        "to": "scryHolder"
-      },
-      {
-        "func": "SET",
-        "collection": [
-          "scryWarning"
-        ],
-        "property": "scale",
-        "value": 0
-      },
-      {
-        "func": "CALL",
-        "routine": "toggleWidgetVisRoutine",
-        "widget": "libraryButton1",
-        "arguments": {
-          "widgetId": "${targetDeckActions}"
-        }
-      }
-    ],
-    "height": 18,
-    "width": 50,
-    "parent": "playerDeckActions1",
-    "x": 193,
-    "player": 1,
-    "y": 6
-  },
-  "scryBoard": {
-    "id": "scryBoard",
-    "y": 202,
-    "height": 600,
-    "layer": 3,
-    "css": {
-      "background": "gray",
-      "border": "1px solid black"
-    },
-    "z": 43,
-    "onlyVisibleForSeat": "seat999",
-    "targetPlayer": 2,
-    "borderRadius": 8,
-    "x": 233,
-    "width": 1100,
-    "movable": false
-  },
-  "scryTop": {
-    "type": "holder",
-    "id": "scryTop",
-    "parent": "scryBoard",
-    "x": 305,
-    "y": 259,
-    "z": 69,
-    "dropShadow": true,
-    "width": 123
-  },
-  "g8g7": {
-    "type": "label",
-    "text": "Top",
-    "css": {
-      "font-size": "30px",
-      "color": "white"
-    },
-    "height": 42,
-    "width": 200,
-    "x": 257,
-    "y": 426,
-    "z": 85,
-    "id": "g8g7",
-    "parent": "scryBoard"
-  },
-  "g8g8": {
-    "type": "label",
-    "text": "Bottom",
-    "css": {
-      "font-size": "30px",
-      "color": "white"
-    },
-    "height": 42,
-    "width": 200,
-    "x": 625,
-    "y": 425,
-    "z": 83,
-    "id": "g8g8",
-    "parent": "scryBoard"
-  },
-  "scryHolder": {
-    "type": "holder",
-    "id": "scryHolder",
-    "parent": "scryBoard",
-    "x": 307,
-    "y": 74,
-    "width": 470,
-    "z": 68,
-    "inheritFrom": {
-      "playerHand1": "*"
-    },
-    "onLeave": {
-      "activeFace": 1
-    },
-    "onlyVisibleForSeat": [
-      "seat1",
-      "seat2"
-    ]
-  },
-  "scryBottom": {
-    "type": "holder",
-    "id": "scryBottom",
-    "parent": "scryBoard",
-    "x": 661,
-    "y": 259,
-    "z": 70,
-    "inheritFrom": {
-      "scryTop": [
-        "*"
-      ]
-    },
-    "width": 123
-  },
-  "scryConfirm": {
-    "type": "button",
-    "id": "scryConfirm",
-    "parent": "scryBoard",
-    "x": 501,
-    "y": 362,
-    "z": 106,
-    "text": "Confirm Scry",
-    "clickRoutine": [
-      "var targetDeck = 'playerDeckHolder' + ${PROPERTY targetPlayer OF scryBoard}",
-      {
-        "func": "COUNT",
-        "holder": "scryHolder",
-        "variable": "scryHolderCount"
-      },
-      {
-        "func": "IF",
-        "operand1": "${scryHolderCount}",
-        "relation": "==",
-        "operand2": "0",
-        "thenRoutine": [
-          {
-            "func": "MOVE",
-            "count": 999,
-            "from": "${targetDeck}",
-            "to": "scryTempHolder"
-          },
-          {
-            "func": "MOVE",
-            "count": 999,
-            "from": "scryBottom",
-            "to": "${targetDeck}"
-          },
-          {
-            "func": "MOVE",
-            "count": 999,
-            "from": "scryTempHolder",
-            "to": "${targetDeck}"
-          },
-          {
-            "func": "MOVE",
-            "count": 999,
-            "from": "scryTop",
-            "to": "${targetDeck}"
-          },
-          {
-            "func": "SET",
-            "collection": [
-              "scryBoard"
-            ],
-            "property": "onlyVisibleForSeat",
-            "value": "seat999"
-          }
-        ],
-        "elseRoutine": [
-          {
-            "func": "SET",
-            "collection": [
-              "scryWarning"
-            ],
-            "property": "scale",
-            "value": 1
-          }
-        ]
-      }
-    ]
+    "z": 122
   },
   "ybeh": {
-    "type": "button",
-    "text": "Cancel Scry",
     "clickRoutine": [
       "var targetDeck = 'playerDeckHolder' + ${PROPERTY targetPlayer OF scryBoard}",
       {
-        "func": "MOVE",
         "count": 999,
         "from": "scryTop",
+        "func": "MOVE",
         "to": "scryHolder"
       },
       {
-        "func": "MOVE",
         "count": 999,
         "from": "scryBottom",
+        "func": "MOVE",
         "to": "scryHolder"
       },
       {
-        "func": "MOVE",
         "count": 999,
         "from": "scryHolder",
+        "func": "MOVE",
         "to": "${targetDeck}"
       },
       {
-        "func": "SET",
         "collection": [
           "scryBoard"
         ],
+        "func": "SET",
         "property": "onlyVisibleForSeat",
         "value": "seat999"
       }
     ],
-    "x": 500,
-    "y": 259,
-    "z": 105,
+    "css": {
+      "background": "red"
+    },
     "id": "ybeh",
     "parent": "scryBoard",
-    "css": {
-      "background": "red"
-    }
-  },
-  "scryLabel2": {
-    "type": "label",
-    "id": "scryLabel2",
-    "parent": "scryBoard",
-    "x": 131,
-    "y": 502,
-    "width": 900,
-    "height": 42,
-    "z": 80,
-    "css": {
-      "font-size": "30px",
-      "color": "white"
-    },
-    "text": "The card at the top of the top pile will be the next card you draw"
-  },
-  "scryLabel1": {
-    "type": "label",
-    "id": "scryLabel1",
-    "parent": "scryBoard",
-    "x": 124,
-    "y": 25,
-    "width": 900,
-    "height": 42,
-    "z": 88,
-    "css": {
-      "font-size": "30px",
-      "color": "white"
-    },
-    "text": "Scry: Move these cards to either the top or bottom of your deck"
-  },
-  "scryWarning": {
-    "type": "label",
-    "id": "scryWarning",
-    "parent": "scryBoard",
-    "x": 10,
-    "y": 302,
-    "height": 100,
-    "z": 92,
-    "css": {
-      "font-size": "25px",
-      "color": "white",
-      "background": "red"
-    },
-    "text": "Move all cards to Top or Bottom before confirming",
-    "width": 280,
-    "borderRadius": 5,
-    "scale": 0
-  },
-  "scryPlayer2": {
+    "text": "Cancel Scry",
     "type": "button",
-    "id": "scryPlayer2",
-    "x": 198,
-    "y": 5,
-    "width": 50,
-    "height": 20,
-    "z": 108,
-    "movable": false,
-    "movableInEdit": true,
-    "text": "Scry",
-    "inheritFrom": {
-      "scryPlayer1": "*"
-    },
-    "parent": "playerDeckActions2",
-    "player": 2
+    "x": 500,
+    "y": 259,
+    "z": 105
   },
-  "commandZone1": {
-    "type": "holder",
-    "id": "commandZone1",
-    "x": 373,
-    "y": 0,
-    "width": 123,
-    "height": 156,
-    "z": 3,
-    "dropShadow": true,
-    "inheritFrom": {
-      "playerDeck1": [
-        "*"
-      ]
-    },
-    "onEnter": {
-      "rotation": 0,
-      "activeFace": 1
-    },
-    "rotation": 0,
-    "scale": 0
-  },
-  "commandZone2": {
-    "type": "holder",
-    "id": "commandZone2",
-    "x": 382,
-    "y": -2,
-    "z": 3,
-    "dropShadow": true,
-    "inheritFrom": {
-      "playerDeck2": [
-        "*"
-      ]
-    },
-    "onEnter": {
-      "rotation": 0,
-      "activeFace": 1
-    },
-    "scale": 0
-  },
-  "commandZoneDeck1": {
-    "type": "deck",
-    "id": "commandZoneDeck1",
-    "parent": "commandZone1",
-    "x": 19,
-    "y": 32,
-    "rotation": -167,
-    "z": 1150,
-    "cardDefaults": {
-      "width": 115,
-      "enlarge": 5,
-      "clickRoutine": [
-        {
-          "func": "IF",
-          "condition": "${PROPERTY activeFace}",
-          "elseRoutine": [
-            {
-              "func": "FLIP",
-              "collection": "thisButton"
-            }
-          ],
-          "thenRoutine": [
-            "var newAngle = 90 - ${PROPERTY rotation} ",
-            {
-              "func": "ROTATE",
-              "collection": "thisButton",
-              "angle": "${newAngle}",
-              "mode": "set"
-            }
-          ]
-        }
-      ]
-    },
-    "cardTypes": {
-      "commander1": {
-        "label": "commander1",
-        "image": "https://api.scryfall.com/cards/named?exact=jasmine+boreal+of+the+seven&format=image"
-      }
-    },
-    "faceTemplates": [
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "value": "/assets/-1013412466_522053"
-          }
-        ]
-      },
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "dynamicProperties": {
-              "value": "image"
-            }
-          }
-        ]
-      }
-    ],
-    "hoverParent": "nd4n"
-  },
-  "m2w9": {
-    "deck": "commandZoneDeck1",
-    "type": "card",
-    "cardType": "Temple_of_Enlightenment",
-    "id": "m2w9",
-    "z": 55456,
-    "parent": "commandZone1",
-    "y": -295,
-    "activeFace": 1,
-    "x": -139
-  },
-  "commandZoneDeck2": {
-    "type": "deck",
-    "id": "commandZoneDeck2",
-    "parent": "commandZone2",
-    "x": 12,
-    "y": 32,
-    "rotation": -167,
-    "z": 1150,
-    "cardDefaults": {
-      "width": 115,
-      "enlarge": 5,
-      "clickRoutine": [
-        {
-          "func": "IF",
-          "condition": "${PROPERTY activeFace}",
-          "elseRoutine": [
-            {
-              "func": "FLIP",
-              "collection": "thisButton"
-            }
-          ],
-          "thenRoutine": [
-            "var newAngle = 90 - ${PROPERTY rotation} ",
-            {
-              "func": "ROTATE",
-              "collection": "thisButton",
-              "angle": "${newAngle}",
-              "mode": "set"
-            }
-          ]
-        }
-      ]
-    },
-    "cardTypes": {
-      "commander2": {
-        "label": "commander2",
-        "image": "https://api.scryfall.com/cards/named?exact=thalisse+reverent+medium&format=image"
-      }
-    },
-    "faceTemplates": [
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "value": "/assets/-1013412466_522053"
-          }
-        ]
-      },
-      {
-        "border": false,
-        "radius": 5,
-        "objects": [
-          {
-            "type": "image",
-            "x": 0,
-            "y": 0,
-            "width": 115,
-            "height": 160,
-            "color": "transparent",
-            "dynamicProperties": {
-              "value": "image"
-            }
-          }
-        ]
-      }
-    ],
-    "hoverParent": "nd4n"
-  },
-  "libraryButton1": {
-    "type": "button",
-    "id": "libraryButton1",
-    "x": 959,
-    "y": 821,
-    "width": 60,
-    "height": 20,
-    "z": 28,
-    "text": "Library",
-    "clickRoutine": [
-      {
-        "func": "CALL",
-        "routine": "toggleWidgetVisBulkRoutine",
-        "arguments": {
-          "widgetIds": [
-            "playerDeckActions1"
-          ]
-        }
-      }
-    ],
-    "toggleWidgetVisBulkRoutine": [
-      {
-        "func": "FOREACH",
-        "in": "${widgetIds}",
-        "loopRoutine": [
-          {
-            "func": "CALL",
-            "routine": "toggleWidgetVisRoutine",
-            "arguments": {
-              "widgetId": "${value}"
-            }
-          }
-        ]
-      }
-    ],
-    "toggleWidgetVisRoutine": [
-      "var newScale = 1 - ${PROPERTY scale OF $widgetId}",
-      {
-        "func": "SET",
-        "collection": [
-          "${widgetId}"
-        ],
-        "property": "scale",
-        "value": "${newScale}"
-      }
-    ]
-  },
-  "scryTempHolder": {
-    "type": "holder",
-    "id": "scryTempHolder",
-    "x": -235,
-    "y": 139,
-    "z": 82
-  },
-  "gm5f": {
+  "zdvr": {
+    "css": "font-size: 30px;",
+    "editable": true,
+    "height": 40,
+    "id": "zdvr",
+    "movable": true,
+    "text": 25,
     "type": "label",
-    "text": "scryTempHolder",
-    "css": {
-      "font-size": "30px",
-      "background": "white"
-    },
-    "height": 42,
-    "width": 200,
-    "x": -278,
-    "y": 326,
-    "z": 100,
-    "id": "gm5f"
+    "width": 65,
+    "x": 1518,
+    "y": 882,
+    "z": 109
   },
-  "h8y3": {
+  "zdvr1": {
+    "css": "font-size: 30px;",
+    "editable": true,
+    "height": 40,
+    "id": "zdvr1",
+    "movable": true,
+    "text": 25,
     "type": "label",
-    "text": "HP",
-    "x": 1501,
-    "y": 819,
-    "z": 102,
-    "id": "h8y3"
+    "width": 65,
+    "x": 1516,
+    "y": 84,
+    "z": 112
   },
-  "50atD": {
-    "id": "50atD",
-    "parent": "commanderDamage1",
-    "fixedParent": true,
-    "y": 23,
-    "width": 20,
-    "height": 20,
-    "type": "button",
-    "movableInEdit": false,
+  "zdvrD": {
     "classes": "symbols",
-    "css": "font-size: 20px",
-    "text": "remove",
     "clickRoutine": [
       {
         "func": "LABEL",
@@ -2475,209 +3974,21 @@
         "value": 1
       }
     ],
-    "x": 10
-  },
-  "50atU": {
-    "id": "50atU",
-    "parent": "commanderDamage1",
+    "css": "font-size: 28px",
     "fixedParent": true,
-    "x": 10,
-    "y": -22,
-    "width": 20,
-    "height": 20,
-    "type": "button",
+    "height": 36,
+    "id": "zdvrD",
     "movableInEdit": false,
-    "classes": "symbols",
-    "css": "font-size: 20px",
-    "text": "add",
-    "clickRoutine": [
-      {
-        "func": "LABEL",
-        "label": "${PROPERTY parent}",
-        "mode": "inc",
-        "value": 1
-      }
-    ]
-  },
-  "shlu": {
-    "type": "label",
-    "text": "CD",
-    "z": 103,
-    "id": "shlu",
-    "parent": "commanderDamage1",
-    "x": -32,
-    "y": -46
-  },
-  "51atD": {
-    "id": "51atD",
-    "parent": "commanderDamage2",
-    "fixedParent": true,
-    "y": 23,
-    "width": 20,
-    "height": 20,
-    "type": "button",
-    "movableInEdit": false,
-    "classes": "symbols",
-    "css": "font-size: 20px",
+    "parent": "zdvr",
     "text": "remove",
-    "clickRoutine": [
-      {
-        "func": "LABEL",
-        "label": "${PROPERTY parent}",
-        "mode": "dec",
-        "value": 1
-      }
-    ],
-    "x": 10
-  },
-  "51atU": {
-    "id": "51atU",
-    "parent": "commanderDamage2",
-    "fixedParent": true,
-    "x": 10,
-    "y": -22,
-    "width": 20,
-    "height": 20,
     "type": "button",
-    "movableInEdit": false,
-    "classes": "symbols",
-    "css": "font-size: 20px",
-    "text": "add",
-    "clickRoutine": [
-      {
-        "func": "LABEL",
-        "label": "${PROPERTY parent}",
-        "mode": "inc",
-        "value": 1
-      }
-    ]
-  },
-  "h8y4": {
-    "type": "label",
-    "text": "HP",
-    "x": 1499,
-    "y": 162,
-    "z": 102,
-    "id": "h8y4"
-  },
-  "shlu1": {
-    "type": "label",
-    "text": "CD",
-    "y": 47,
-    "z": 103,
-    "id": "shlu1",
-    "parent": "commanderDamage2",
-    "x": -32
-  },
-  "h06d": {
-    "deck": "commandZoneDeck1",
-    "type": "card",
-    "cardType": "commander1",
-    "id": "h06d",
-    "z": 81489,
-    "x": 4,
-    "y": 4,
-    "activeFace": 1,
-    "hoverParent": "commandZone1",
-    "parent": "commandZone1"
-  },
-  "rj6s": {
-    "deck": "commandZoneDeck2",
-    "type": "card",
-    "cardType": "commander2",
-    "id": "rj6s",
-    "z": 81036,
-    "x": 4,
-    "activeFace": 1,
-    "y": 4,
-    "parent": "commandZone2"
-  },
-  "libraryButton2": {
-    "type": "button",
-    "id": "libraryButton2",
-    "x": 957,
-    "y": 169,
-    "width": 60,
-    "height": 20,
-    "z": 114,
-    "text": "Library",
-    "clickRoutine": [
-      {
-        "func": "CALL",
-        "routine": "toggleWidgetVisRoutine",
-        "widget": "libraryButton1",
-        "arguments": {
-          "widgetId": "playerDeckActions2"
-        }
-      }
-    ]
-  },
-  "playerPile1": {
-    "type": "pile",
-    "parent": "playerDeckHolder1",
-    "x": 4,
-    "y": 4,
-    "width": 115,
-    "height": 160,
-    "id": "playerPile1"
-  },
-  "rules": {
-    "id": "rules",
-    "x": -425,
-    "y": 431,
-    "width": 330,
-    "height": 200,
-    "css": {
-      "background": "white"
-    },
-    "enlarge": 2,
-    "text": "1. Untap and Draw\n2. Main Phase\n - (If you have any) play a land card (1 per turn)\n - Play any cards you can afford\n3. Combat Phase (Optional)\n - Declare Attackers\n - (Other player) Declare Blockers\n - Combat Damage Resolves\n 4. Main Phase (Again)\n 5. End of Your Turn\n",
-    "z": 159
-  },
-  "playerPile2": {
-    "type": "pile",
-    "parent": "playerDeckHolder2",
-    "x": 4,
-    "y": 4,
-    "width": 115,
-    "height": 160,
-    "id": "playerPile2"
-  },
-  "playerLife2": {
-    "type": "button",
-    "id": "playerLife2",
-    "parent": "zdvr1",
-    "fixedParent": true,
+    "width": 36,
     "x": 15,
     "y": 35,
-    "width": 36,
-    "height": 36,
-    "movableInEdit": false,
-    "classes": "symbols",
-    "css": "font-size: 28px",
-    "text": "remove",
-    "clickRoutine": [
-      {
-        "func": "LABEL",
-        "label": "${PROPERTY parent}",
-        "mode": "dec",
-        "value": 1
-      }
-    ]
+    "z": 1
   },
-  "playerLif": {
-    "type": "button",
-    "id": "playerLif",
-    "parent": "zdvr",
-    "fixedParent": true,
-    "x": 15,
-    "y": -40,
-    "width": 36,
-    "height": 36,
-    "movableInEdit": false,
+  "zdvrU1": {
     "classes": "symbols",
-    "css": "font-size: 28px",
-    "text": "add",
     "clickRoutine": [
       {
         "func": "LABEL",
@@ -2685,1170 +3996,17 @@
         "mode": "inc",
         "value": 1
       }
-    ]
-  },
-  "commanderDamage2": {
-    "type": "label",
-    "id": "commanderDamage2",
-    "x": 1565,
-    "y": 71,
-    "width": 40,
-    "css": "font-size: 20px;",
-    "editable": true,
-    "text": 0,
-    "widgetType": "commanderDamage",
-    "scale": 0
-  },
-  "commanderDamage1": {
-    "type": "label",
-    "id": "commanderDamage1",
-    "widgetType": "commanderDamage",
-    "x": 1569,
-    "y": 906,
-    "width": 40,
-    "css": "font-size: 20px;",
-    "editable": true,
-    "text": 0,
-    "scale": 0
-  },
-  "9wmd": {
-    "type": "button",
-    "clickRoutine": [
-      {
-        "func": "INPUT",
-        "fields": [
-          {
-            "type": "title",
-            "text": "Room Options"
-          },
-          {
-            "type": "subtitle",
-            "text": "Commander"
-          },
-          {
-            "type": "checkbox",
-            "label": "Show Commander Damage (uncheck to hide)?",
-            "variable": "showCD",
-            "value": "${PROPERTY showCD}"
-          },
-          {
-            "type": "checkbox",
-            "label": "Show Command Zone (uncheck to hide)?",
-            "variable": "showCZ",
-            "value": "${PROPERTY showCZ}"
-          }
-        ]
-      },
-      {
-        "func": "SET",
-        "collection": "thisButton",
-        "property": "showCD",
-        "value": "${showCD}"
-      },
-      {
-        "func": "SET",
-        "collection": "thisButton",
-        "property": "showCZ",
-        "value": "${showCZ}"
-      }
     ],
-    "x": 1569,
-    "y": 467,
-    "z": 114,
-    "id": "9wmd",
-    "text": "settings",
-    "classes": "material-icons",
-    "color": "white",
-    "css": {
-      "font-size": "15px",
-      "--wcMain": "black",
-      "--wcBorder": "white",
-      "--wcMainOH": "grey",
-      "--wcBorderOH": "black",
-      "line-height": "1.4"
-    },
-    "width": 30,
-    "height": 30,
-    "dragging": "Carl",
-    "showCD": false,
-    "showCZ": false,
-    "showCDChangeRoutine": [
-      {
-        "func": "CALL",
-        "routine": "toggleWidgetVisBulkRoutine",
-        "widget": "libraryButton1",
-        "arguments": {
-          "widgetIds": [
-            "commanderDamage2",
-            "commanderDamage1"
-          ],
-          "newScale": "${showCD}"
-        }
-      }
-    ],
-    "showCZChangeRoutine": [
-      {
-        "func": "CALL",
-        "routine": "toggleWidgetVisBulkRoutine",
-        "widget": "libraryButton1",
-        "arguments": {
-          "widgetIds": [
-            "commandZone1",
-            "commandZone2"
-          ],
-          "newScale": "${showCZ}"
-        }
-      }
-    ]
-  },
-  "commandZoneLabel1": {
-    "type": "label",
-    "id": "commandZoneLabel1",
-    "z": 113,
-    "css": {
-      "font-size": "80%"
-    },
-    "text": "Command Zone",
-    "x": 11,
-    "parent": "commandZone1",
-    "y": -19
-  },
-  "commandZoneLabel2": {
-    "type": "label",
-    "id": "commandZoneLabel2",
-    "x": 10,
-    "z": 114,
-    "css": {
-      "font-size": "80%"
-    },
-    "text": "Command Zone",
-    "y": 167,
-    "parent": "commandZone2"
-  },
-  "HoverSample": {
-    "id": "HoverSample",
-    "x": -352,
-    "y": 708,
-    "z": 79186,
-    "css": {
-      "default": {
-        "border": "1px solid black",
-        "cursor": "pointer",
-        "display": "flex",
-        "justify-content": "center",
-        "align-items": "center",
-        "background": "red"
-      },
-      ":hover": {
-        "background": "${PROPERTY bgColor}80",
-        "border": "1px solid ${PROPERTY bgColor}"
-      },
-      "::after": {
-        "content": "\"${PROPERTY hoverText}\"",
-        "display": "none",
-        "position": "absolute",
-        "margin-left": "260px",
-        "color": "white",
-        "background-color": "grey",
-        "width": "145px",
-        "text-align": "center",
-        "border-radius": "4px",
-        "font-size": "20px"
-      },
-      ":hover::after": {
-        "display": "block"
-      }
-    },
-    "text": "Hover over me",
-    "hoverText": "Clone the current card"
-  },
-  "Witch_s_Cottage-mvad": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Witch_s_Cottage",
-    "id": "Witch_s_Cottage-mvad",
-    "parent": "playerPile1"
-  },
-  "Witch_s_Cottage-p87f": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Witch_s_Cottage",
-    "id": "Witch_s_Cottage-p87f",
-    "parent": "playerPile1"
-  },
-  "Gempalm_Polluter-tbeq": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gempalm_Polluter",
-    "id": "Gempalm_Polluter-tbeq",
-    "parent": "playerPile1"
-  },
-  "Gempalm_Polluter-yrvq": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gempalm_Polluter",
-    "id": "Gempalm_Polluter-yrvq",
-    "parent": "playerPile1"
-  },
-  "Gempalm_Polluter-gfb6": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gempalm_Polluter",
-    "id": "Gempalm_Polluter-gfb6",
-    "parent": "playerPile1"
-  },
-  "Gempalm_Polluter-udc5": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gempalm_Polluter",
-    "id": "Gempalm_Polluter-udc5",
-    "parent": "playerPile1"
-  },
-  "Gray_Merchant_of_Asphodel-8npp": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gray_Merchant_of_Asphodel",
-    "id": "Gray_Merchant_of_Asphodel-8npp",
-    "parent": "playerPile1"
-  },
-  "Gray_Merchant_of_Asphodel-ee41": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gray_Merchant_of_Asphodel",
-    "id": "Gray_Merchant_of_Asphodel-ee41",
-    "parent": "playerPile1"
-  },
-  "Gray_Merchant_of_Asphodel-yt56": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gray_Merchant_of_Asphodel",
-    "id": "Gray_Merchant_of_Asphodel-yt56",
-    "parent": "playerPile1"
-  },
-  "Gray_Merchant_of_Asphodel-m06j": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Gray_Merchant_of_Asphodel",
-    "id": "Gray_Merchant_of_Asphodel-m06j",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-8j26": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-8j26",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-23zh": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-23zh",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-blxq": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-blxq",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-jwps": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-jwps",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-idr2": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-idr2",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-5rgr": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-5rgr",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-j9mx": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-j9mx",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-f257": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-f257",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-chg7": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-chg7",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-qoke": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-qoke",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-hdsk": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-hdsk",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-qa9m": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-qa9m",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-01mb": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-01mb",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-xlz8": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-xlz8",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-61c4": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-61c4",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-omlx": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-omlx",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-sv74": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-sv74",
-    "parent": "playerPile1"
-  },
-  "Snow_Covered_Swamp-m0po": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Snow_Covered_Swamp",
-    "id": "Snow_Covered_Swamp-m0po",
-    "parent": "playerPile1"
-  },
-  "Fleshbag_Marauder-br9k": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Fleshbag_Marauder",
-    "id": "Fleshbag_Marauder-br9k",
-    "parent": "playerPile1"
-  },
-  "Fleshbag_Marauder-beki": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Fleshbag_Marauder",
-    "id": "Fleshbag_Marauder-beki",
-    "parent": "playerPile1"
-  },
-  "Lazotep_Reaver-10y2": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Lazotep_Reaver",
-    "id": "Lazotep_Reaver-10y2",
-    "parent": "playerPile1"
-  },
-  "Lazotep_Reaver-u85x": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Lazotep_Reaver",
-    "id": "Lazotep_Reaver-u85x",
-    "parent": "playerPile1"
-  },
-  "Lazotep_Reaver-ljn1": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Lazotep_Reaver",
-    "id": "Lazotep_Reaver-ljn1",
-    "parent": "playerPile1"
-  },
-  "Lazotep_Reaver-p8o4": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Lazotep_Reaver",
-    "id": "Lazotep_Reaver-p8o4",
-    "parent": "playerPile1"
-  },
-  "Putrid_Goblin-2c7q": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Putrid_Goblin",
-    "id": "Putrid_Goblin-2c7q",
-    "parent": "playerPile1"
-  },
-  "Putrid_Goblin-uxsr": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Putrid_Goblin",
-    "id": "Putrid_Goblin-uxsr",
-    "parent": "playerPile1"
-  },
-  "Putrid_Goblin-7cra": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Putrid_Goblin",
-    "id": "Putrid_Goblin-7cra",
-    "parent": "playerPile1"
-  },
-  "Putrid_Goblin-zc8q": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Putrid_Goblin",
-    "id": "Putrid_Goblin-zc8q",
-    "parent": "playerPile1"
-  },
-  "Ghoulraiser-9cow": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Ghoulraiser",
-    "id": "Ghoulraiser-9cow",
-    "parent": "playerPile1"
-  },
-  "Ghoulraiser-fyh6": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Ghoulraiser",
-    "id": "Ghoulraiser-fyh6",
-    "parent": "playerPile1"
-  },
-  "Ghoulraiser-gdav": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Ghoulraiser",
-    "id": "Ghoulraiser-gdav",
-    "parent": "playerPile1"
-  },
-  "Priest_of_the_Haunted_Edge-bm3d": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Priest_of_the_Haunted_Edge",
-    "id": "Priest_of_the_Haunted_Edge-bm3d",
-    "parent": "playerPile1"
-  },
-  "Priest_of_the_Haunted_Edge-m8sy": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Priest_of_the_Haunted_Edge",
-    "id": "Priest_of_the_Haunted_Edge-m8sy",
-    "parent": "playerPile1"
-  },
-  "Shambling_Ghast-1xxd": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Shambling_Ghast",
-    "id": "Shambling_Ghast-1xxd",
-    "parent": "playerPile1"
-  },
-  "Shambling_Ghast-34dp": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Shambling_Ghast",
-    "id": "Shambling_Ghast-34dp",
-    "parent": "playerPile1"
-  },
-  "Shambling_Ghast-2365": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Shambling_Ghast",
-    "id": "Shambling_Ghast-2365",
-    "parent": "playerPile1"
-  },
-  "Shambling_Ghast-nz3r": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Shambling_Ghast",
-    "id": "Shambling_Ghast-nz3r",
-    "parent": "playerPile1"
-  },
-  "Deadly_Dispute-tx5l": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Deadly_Dispute",
-    "id": "Deadly_Dispute-tx5l",
-    "parent": "playerPile1"
-  },
-  "Deadly_Dispute-2s36": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Deadly_Dispute",
-    "id": "Deadly_Dispute-2s36",
-    "parent": "playerPile1"
-  },
-  "Deadly_Dispute-nse1": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Deadly_Dispute",
-    "id": "Deadly_Dispute-nse1",
-    "parent": "playerPile1"
-  },
-  "Deadly_Dispute-h4ox": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Deadly_Dispute",
-    "id": "Deadly_Dispute-h4ox",
-    "parent": "playerPile1"
-  },
-  "A_Sepulcher_Ghoul-4l74": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "A_Sepulcher_Ghoul",
-    "id": "A_Sepulcher_Ghoul-4l74",
-    "parent": "playerPile1"
-  },
-  "A_Sepulcher_Ghoul-rcet": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "A_Sepulcher_Ghoul",
-    "id": "A_Sepulcher_Ghoul-rcet",
-    "parent": "playerPile1"
-  },
-  "A_Sepulcher_Ghoul-vtcl": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "A_Sepulcher_Ghoul",
-    "id": "A_Sepulcher_Ghoul-vtcl",
-    "parent": "playerPile1"
-  },
-  "A_Hobbling_Zombie-ett9": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "A_Hobbling_Zombie",
-    "id": "A_Hobbling_Zombie-ett9",
-    "parent": "playerPile1"
-  },
-  "A_Hobbling_Zombie-2cqa": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "A_Hobbling_Zombie",
-    "id": "A_Hobbling_Zombie-2cqa",
-    "parent": "playerPile1"
-  },
-  "A_Hobbling_Zombie-hw7s": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "A_Hobbling_Zombie",
-    "id": "A_Hobbling_Zombie-hw7s",
-    "parent": "playerPile1"
-  },
-  "A_Hobbling_Zombie-opuj": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "A_Hobbling_Zombie",
-    "id": "A_Hobbling_Zombie-opuj",
-    "parent": "playerPile1"
-  },
-  "Writhing_Necromass-1efr": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Writhing_Necromass",
-    "id": "Writhing_Necromass-1efr",
-    "parent": "playerPile1"
-  },
-  "Writhing_Necromass-u8y9": {
-    "deck": "playerDeck1",
-    "type": "card",
-    "cardType": "Writhing_Necromass",
-    "id": "Writhing_Necromass-u8y9",
-    "z": 81499,
-    "parent": "playerPile1"
-  },
-  "Island-f0ix": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-f0ix",
-    "parent": "playerPile2"
-  },
-  "Island-ebmn": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-ebmn",
-    "parent": "playerPile2"
-  },
-  "Island-xfx6": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-xfx6",
-    "parent": "playerPile2"
-  },
-  "Island-6g0m": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-6g0m",
-    "parent": "playerPile2"
-  },
-  "Island-t44e": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-t44e",
-    "parent": "playerPile2"
-  },
-  "Island-1c0v": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-1c0v",
-    "parent": "playerPile2"
-  },
-  "Island-t6yt": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-t6yt",
-    "parent": "playerPile2"
-  },
-  "Island-6gud": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-6gud",
-    "parent": "playerPile2"
-  },
-  "Island-wdan": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-wdan",
-    "parent": "playerPile2"
-  },
-  "Island-1jqe": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-1jqe",
-    "parent": "playerPile2"
-  },
-  "Island-bgt8": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-bgt8",
-    "parent": "playerPile2"
-  },
-  "Island-aegg": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-aegg",
-    "parent": "playerPile2"
-  },
-  "Island-508f": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-508f",
-    "parent": "playerPile2"
-  },
-  "Island-0mly": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-0mly",
-    "parent": "playerPile2"
-  },
-  "Island-2iq3": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-2iq3",
-    "parent": "playerPile2"
-  },
-  "Island-aog7": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-aog7",
-    "parent": "playerPile2"
-  },
-  "Island-ssuq": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-ssuq",
-    "parent": "playerPile2"
-  },
-  "Island-d79v": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-d79v",
-    "parent": "playerPile2"
-  },
-  "Island-14yq": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-14yq",
-    "parent": "playerPile2"
-  },
-  "Island-1cas": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-1cas",
-    "parent": "playerPile2"
-  },
-  "Island-vx1n": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-vx1n",
-    "parent": "playerPile2"
-  },
-  "Island-7rh1": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-7rh1",
-    "parent": "playerPile2"
-  },
-  "Island-h30i": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-h30i",
-    "parent": "playerPile2"
-  },
-  "Island-fvmu": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-fvmu",
-    "parent": "playerPile2"
-  },
-  "Island-y481": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Island",
-    "id": "Island-y481",
-    "parent": "playerPile2"
-  },
-  "Cloudkin_Seer-do4r": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Cloudkin_Seer",
-    "id": "Cloudkin_Seer-do4r",
-    "parent": "playerPile2"
-  },
-  "Cloudkin_Seer-ljf2": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Cloudkin_Seer",
-    "id": "Cloudkin_Seer-ljf2",
-    "parent": "playerPile2"
-  },
-  "Cloudkin_Seer-hqrt": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Cloudkin_Seer",
-    "id": "Cloudkin_Seer-hqrt",
-    "parent": "playerPile2"
-  },
-  "Frilled_Sea_Serpent-lc98": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Frilled_Sea_Serpent",
-    "id": "Frilled_Sea_Serpent-lc98",
-    "parent": "playerPile2"
-  },
-  "Glint-wrb5": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Glint",
-    "id": "Glint-wrb5",
-    "parent": "playerPile2"
-  },
-  "Glint-jxzf": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Glint",
-    "id": "Glint-jxzf",
-    "parent": "playerPile2"
-  },
-  "Sleep-d3cc": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Sleep",
-    "id": "Sleep-d3cc",
-    "parent": "playerPile2"
-  },
-  "Warden_of_Evos_Isle-mbfn": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Warden_of_Evos_Isle",
-    "id": "Warden_of_Evos_Isle-mbfn",
-    "parent": "playerPile2"
-  },
-  "Warden_of_Evos_Isle-einj": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Warden_of_Evos_Isle",
-    "id": "Warden_of_Evos_Isle-einj",
-    "parent": "playerPile2"
-  },
-  "Warden_of_Evos_Isle-a44p": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Warden_of_Evos_Isle",
-    "id": "Warden_of_Evos_Isle-a44p",
-    "parent": "playerPile2"
-  },
-  "Overflowing_Insight-v1mx": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Overflowing_Insight",
-    "id": "Overflowing_Insight-v1mx",
-    "parent": "playerPile2"
-  },
-  "Waterknot-0hol": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Waterknot",
-    "id": "Waterknot-0hol",
-    "parent": "playerPile2"
-  },
-  "Waterknot-kbxu": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Waterknot",
-    "id": "Waterknot-kbxu",
-    "parent": "playerPile2"
-  },
-  "Waterknot-g0m1": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Waterknot",
-    "id": "Waterknot-g0m1",
-    "parent": "playerPile2"
-  },
-  "Wall_of_Runes-gf4m": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Wall_of_Runes",
-    "id": "Wall_of_Runes-gf4m",
-    "parent": "playerPile2"
-  },
-  "Wall_of_Runes-x1ep": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Wall_of_Runes",
-    "id": "Wall_of_Runes-x1ep",
-    "parent": "playerPile2"
-  },
-  "Unsummon-sujz": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Unsummon",
-    "id": "Unsummon-sujz",
-    "parent": "playerPile2"
-  },
-  "Unsummon-q6gx": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Unsummon",
-    "id": "Unsummon-q6gx",
-    "parent": "playerPile2"
-  },
-  "Unsummon-j9hw": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Unsummon",
-    "id": "Unsummon-j9hw",
-    "parent": "playerPile2"
-  },
-  "Octoprophet-7asp": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Octoprophet",
-    "id": "Octoprophet-7asp",
-    "parent": "playerPile2"
-  },
-  "Octoprophet-n1ve": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Octoprophet",
-    "id": "Octoprophet-n1ve",
-    "parent": "playerPile2"
-  },
-  "Riddlemaster_Sphinx-17fw": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Riddlemaster_Sphinx",
-    "id": "Riddlemaster_Sphinx-17fw",
-    "parent": "playerPile2"
-  },
-  "Riddlemaster_Sphinx-ilbz": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Riddlemaster_Sphinx",
-    "id": "Riddlemaster_Sphinx-ilbz",
-    "parent": "playerPile2"
-  },
-  "Waterkin_Shaman-e7yt": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Waterkin_Shaman",
-    "id": "Waterkin_Shaman-e7yt",
-    "parent": "playerPile2"
-  },
-  "Waterkin_Shaman-tbda": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Waterkin_Shaman",
-    "id": "Waterkin_Shaman-tbda",
-    "parent": "playerPile2"
-  },
-  "Waterkin_Shaman-jx2j": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Waterkin_Shaman",
-    "id": "Waterkin_Shaman-jx2j",
-    "parent": "playerPile2"
-  },
-  "Winged_Words-i8a6": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Winged_Words",
-    "id": "Winged_Words-i8a6",
-    "parent": "playerPile2"
-  },
-  "Winged_Words-7ilz": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Winged_Words",
-    "id": "Winged_Words-7ilz",
-    "parent": "playerPile2"
-  },
-  "Soulblade_Djinn-92zq": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Soulblade_Djinn",
-    "id": "Soulblade_Djinn-92zq",
-    "parent": "playerPile2"
-  },
-  "Soulblade_Djinn-hd5q": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Soulblade_Djinn",
-    "id": "Soulblade_Djinn-hd5q",
-    "parent": "playerPile2"
-  },
-  "Windstorm_Drake-m95w": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Windstorm_Drake",
-    "id": "Windstorm_Drake-m95w",
-    "parent": "playerPile2"
-  },
-  "Windstorm_Drake-74q8": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Windstorm_Drake",
-    "id": "Windstorm_Drake-74q8",
-    "parent": "playerPile2"
-  },
-  "Windreader_Sphinx-38ts": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Windreader_Sphinx",
-    "id": "Windreader_Sphinx-38ts",
-    "parent": "playerPile2"
-  },
-  "Sworn_Guardian-b8l4": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Sworn_Guardian",
-    "id": "Sworn_Guardian-b8l4",
-    "parent": "playerPile2"
-  },
-  "Sworn_Guardian-sz65": {
-    "deck": "playerDeck2",
-    "type": "card",
-    "cardType": "Sworn_Guardian",
-    "id": "Sworn_Guardian-sz65",
-    "parent": "playerPile2"
-  },
-  "flipCardButton2": {
+    "css": "font-size: 28px",
+    "fixedParent": true,
+    "height": 36,
+    "id": "zdvrU1",
+    "movableInEdit": false,
+    "parent": "zdvr1",
+    "text": "add",
     "type": "button",
-    "id": "flipCardButton2",
-    "parent": "tokenActionsBox",
-    "x": 127,
-    "y": 33,
-    "width": 100,
-    "height": 20,
-    "z": 126,
-    "text": "Flip Card",
-    "clickRoutine": [
-      {
-        "func": "SELECT",
-        "property": "parent",
-        "relation": "==",
-        "value": "tokenHolder2",
-        "collection": "tokensToBeFlipped",
-        "max": 1
-      },
-      {
-        "func": "CALL",
-        "routine": "customFlipCardRoutine"
-      }
-    ],
-    "customFlipCardRoutine": [
-          {
-      "func": "GET",
-      "collection": "tokensToBeFlipped",
-      "aggregation": "first",
-      "property": "activeFace",
-      "variable": "currentFace"
-    },
-      {
-      "func": "GET",
-      "collection": "tokensToBeFlipped",
-      "aggregation": "first",
-      "property": "layout",
-      "variable": "cardLayout"
-    },
-      "var singleFaced = ${cardLayout} == 'normal'",
-      {
-        "func": "IF",
-        "condition": "${singleFaced} && ${currentFace} == 1",
-        "thenRoutine": [
-         {
-            "func": "SET",
-          "collection": "tokensToBeFlipped", 
-        "property": "activeFace",
-        "value": "0"
-          }
-        ], 
-        "elseRoutine": [
-         {
-            "func": "SET",
-        "collection": "targetCollection", 
-        "property": "activeFace",
-        "value": "${currentFace} + 1"
-          }
-        ] 
-      }
-
-    ]
-
-  },
-  "cloneCardButton": {
-    "type": "button",
-    "id": "cloneCardButton",
-    "parent": "tokenActionsBox",
-    "x": 127,
-    "y": 5,
-    "width": 100,
-    "height": 20,
-    "z": 125,
-    "text": "Clone Card",
-    "clickRoutine": [
-      {
-        "func": "SELECT",
-        "property": "parent",
-        "relation": "==",
-        "value": "tokenHolder2",
-        "collection": "tokensToBeCloned",
-        "max": 1
-      },
-      {
-        "func": "CLONE",
-        "source": [
-          "tokensToBeCloned"
-        ],
-        "count": "1",
-        "collection": "clonedCards"
-      }
-    ]
-  },
-  "_meta": {
-    "version": 15,
-    "info": {
-      "name": "Magic: The Gathering",
-      "variants": [
-        {
-          "players": "2",
-          "language": "",
-          "variant": "Pauper Commander"
-        },
-        {
-          "players": "",
-          "language": "",
-          "variant": "60 card real?"
-        },
-        {
-          "variant": "2024-05-12 20:54"
-        },
-        {
-          "variant": "2024-05-22 16:03"
-        },
-        {
-          "variant": "2024-06-07 02:04"
-        },
-        {
-          "variant": "2024-06-07 17:46"
-        },
-        {
-          "variant": "2024-06-09 03:14"
-        }
-      ],
-      "stars": 0,
-      "id": "quicksave",
-      "image": "",
-      "showName": true,
-      "time": "",
-      "mode": "",
-      "skill": "",
-      "description": "",
-      "variantImage": "",
-      "variant": "Pauper Commander",
-      "language": "",
-      "players": "2",
-      "similarImage": "",
-      "similarName": "",
-      "year": "",
-      "similarDesigner": "",
-      "similarAwards": "",
-      "bgg": "",
-      "rules": "",
-      "ruleText": "",
-      "helpText": "",
-      "attribution": ""
-    }
+    "width": 36,
+    "x": 15,
+    "y": -40
   }
 }
