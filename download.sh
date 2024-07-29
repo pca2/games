@@ -1,4 +1,4 @@
-#! bin/sh
+#! /bin/bash
 # Check if an argument was provided
 if [ $# -eq 0 ]; then
   echo "Usage: $0 <arg>"
