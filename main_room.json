@@ -1143,7 +1143,9 @@
     "parent": "playerPile1",
     "type": "card",
     "typeLine": "Creature — Human Cleric",
-    "z": 81791
+    "z": 81791,
+    "frontDisplay": "none", 
+    "backDisplay": "none" 
   },
   "Soul_s_Attendant-w8c7": {
     "cardType": "Soul_s_Attendant",
@@ -2597,6 +2599,63 @@
           ]
         }
       ],
+      "activeFaceChangeRoutine": [
+        {
+          "func": "IF",
+          "operand1": "${PROPERTY activeFace}",
+          "relation": "==",
+          "operand2": "1",
+          "thenRoutine": [
+            {
+              "func": "SET",
+              "collection": "thisButton",
+              "property":"frontDisplay",
+              "value": "block"
+            }
+          ],
+          "elseRoutine": [
+            {
+              "func": "SET",
+              "collection": "thisButton",
+              "property":"frontDisplay",
+              "value": "none"
+            }
+          ]
+        },
+        {
+          "func": "IF",
+          "operand1": "${PROPERTY activeFace}",
+          "relation": "==",
+          "operand2": "3",
+          "thenRoutine": [
+            {
+              "func": "SET",
+              "collection": "thisButton",
+              "property":"backDisplay",
+              "value": "block"
+            }
+          ],
+          "elseRoutine": [
+            {
+              "func": "SET",
+              "collection": "thisButton",
+              "property":"backDisplay",
+              "value": "none"
+            }
+          ]
+        }
+      ],
+      "css": {
+        "#enlarged > .active": {
+          "display": "none"
+        },
+        "#enlarged > .cardFace:nth-child(3)": {
+          "display": "${PROPERTY frontDisplay}"
+        },
+        "#enlarged > .cardFace:nth-child(4)": {
+          "display": "${PROPERTY backDisplay}"
+        }
+      },
       "enlarge": 5,
       "grid": [
         {
@@ -2716,6 +2775,61 @@
           }
         ],
         "radius": 5
+      },
+      {
+        "border": false,
+        "radius": false,
+        "objects": [
+          {
+            "type": "html",
+            "css": {
+              "body": {
+                "background": "white",
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "center",
+                "position": "relative",
+                "padding": "0px"
+              },
+              ".flex": {
+                "flex": 1,
+                "text-align": "center"
+              },
+              ".title": {
+                "font-size": "14px",
+                "background": "${PROPERTY bgcolor}",
+                "text-align": "left",
+                "display": "inline",
+                "padding-top": "5px",
+                "padding-left": "2px"
+              },
+              "body > div": {},
+              ".test": {
+                "color": "red"
+              },
+              ".stats": {
+                "font-size": "14px",
+                "text-align": "right",
+                "position": "absolute",
+                "bottom": "1px",
+                "right": "1px",
+                "background": "white",
+                "display": "inline",
+                "padding-bottom": "0px",
+                "padding-right": "2px",
+                "border-radius": "5px",
+                "border": "1px rgba(0, 0, 0, 0.4) solid"
+              }
+            },
+            "x": 0,
+            "y": 0,
+            "width": 115,
+            "height": 96,
+            "classes": "html",
+            "color": "black",
+            "value": "<div class=\"title\"> ${PROPERTY label}</div><div class=\"flex\"><img src=\"${PROPERTY artCropFront}\" width='100%' height:100%><div class=\"stats\">${PROPERTY stats}</div></div>"
+          }
+        ]
       },
       {
         "border": false,
