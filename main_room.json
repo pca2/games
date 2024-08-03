@@ -19,7 +19,8 @@
             ],
             "max": 200,
             "propertyOverride": {
-              "activeFace": 1
+              "activeFace": 2,
+              "height": 157
             },
             "type": "choose",
             "variable": "chosenCard"
@@ -2680,6 +2681,9 @@
         }
       ],
       "css": {
+        "default": {
+          "overflow": "visible !important"
+        },
         "#enlarged > .active": {
           "display": "none"
         },
