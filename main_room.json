@@ -313,7 +313,7 @@
     "dragging": "Carl",
     "height": 30,
     "id": "9wmd",
-    "showCD": false,
+    "showCD": true,
     "showCDChangeRoutine": [
       {
         "arguments": {
@@ -328,7 +328,7 @@
         "widget": "libraryButton1"
       }
     ],
-    "showCZ": false,
+    "showCZ": true,
     "showCZChangeRoutine": [
       {
         "arguments": {
@@ -350,232 +350,310 @@
     "y": 467,
     "z": 114
   },
+  "Battle_Screech-01yi": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck2",
+    "id": "Battle_Screech-01yi",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 82131
+  },
+  "Battle_Screech-3e1w": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck2",
+    "id": "Battle_Screech-3e1w",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 82162
+  },
+  "Battle_Screech-8ive": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck2",
+    "id": "Battle_Screech-8ive",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 82167
+  },
   "Battle_Screech-a5nr": {
+    "backDisplay": "none",
     "cardType": "Battle_Screech",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Battle_Screech-a5nr",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Sorcery",
-    "z": 81992,
-    "frontDisplay": "none",
+    "name": "Battle Screech",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Battle Screech",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 81992
   },
   "Battle_Screech-cvle": {
+    "backDisplay": "none",
     "cardType": "Battle_Screech",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Battle_Screech-cvle",
     "layout": "normal",
+    "name": "Battle Screech",
     "parent": "playerPile1",
-    "type": "card",
-    "typeLine": "Sorcery",
-    "z": 82003,
-    "frontDisplay": "none",
     "power": "",
     "toughness": "",
-    "name": "Battle Screech",
-    "backDisplay": "none"
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 82003
   },
   "Battle_Screech-e29w": {
+    "backDisplay": "none",
     "cardType": "Battle_Screech",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Battle_Screech-e29w",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Sorcery",
-    "z": 82013,
-    "frontDisplay": "none",
+    "name": "Battle Screech",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Battle Screech",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 82013
   },
   "Battle_Screech-g38b": {
+    "backDisplay": "none",
     "cardType": "Battle_Screech",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Battle_Screech-g38b",
     "layout": "normal",
+    "name": "Battle Screech",
+    "parent": "playerPile1",
+    "power": "",
+    "toughness": "",
     "type": "card",
     "typeLine": "Sorcery",
-    "z": 81976,
-    "frontDisplay": "none",
-    "power": "",
-    "toughness": "",
-    "name": "Battle Screech",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "z": 81976
+  },
+  "Battle_Screech-xosy": {
+    "cardType": "Battle_Screech",
+    "deck": "playerDeck2",
+    "id": "Battle_Screech-xosy",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Sorcery",
+    "z": 82130
   },
   "Benevolent_Bodyguard-17am": {
+    "backDisplay": "none",
     "cardType": "Benevolent_Bodyguard",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Benevolent_Bodyguard-17am",
     "layout": "normal",
+    "name": "Benevolent Bodyguard",
     "parent": "playerPile1",
+    "power": "1",
+    "stats": "1/1",
+    "toughness": "1",
     "type": "card",
     "typeLine": "Creature — Human Cleric",
-    "z": 82006,
-    "frontDisplay": "none",
-    "power": "1",
-    "toughness": "1",
-    "stats": "1/1",
-    "name": "Benevolent Bodyguard",
-    "backDisplay": "none"
+    "z": 82006
+  },
+  "Benevolent_Bodyguard-vmkr": {
+    "cardType": "Benevolent_Bodyguard",
+    "deck": "playerDeck2",
+    "id": "Benevolent_Bodyguard-vmkr",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82180
   },
   "Blacksmith_s_Skill-5wwo": {
+    "backDisplay": "none",
     "cardType": "Blacksmith_s_Skill",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Blacksmith_s_Skill-5wwo",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Instant",
-    "z": 81964,
-    "frontDisplay": "none",
+    "name": "Blacksmith's Skill",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Blacksmith's Skill",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 81964
+  },
+  "Blacksmith_s_Skill-9y82": {
+    "cardType": "Blacksmith_s_Skill",
+    "deck": "playerDeck2",
+    "id": "Blacksmith_s_Skill-9y82",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 82182
+  },
+  "Blacksmith_s_Skill-9ztk": {
+    "cardType": "Blacksmith_s_Skill",
+    "deck": "playerDeck2",
+    "id": "Blacksmith_s_Skill-9ztk",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 82133
   },
   "Blacksmith_s_Skill-glee": {
+    "backDisplay": "none",
     "cardType": "Blacksmith_s_Skill",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Blacksmith_s_Skill-glee",
     "layout": "normal",
+    "name": "Blacksmith's Skill",
     "parent": "playerPile1",
-    "type": "card",
-    "typeLine": "Instant",
-    "z": 81994,
-    "frontDisplay": "none",
     "power": "",
     "toughness": "",
-    "name": "Blacksmith's Skill",
-    "backDisplay": "none"
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 81994
   },
   "Blacksmith_s_Skill-s8gd": {
+    "backDisplay": "none",
     "cardType": "Blacksmith_s_Skill",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Blacksmith_s_Skill-s8gd",
     "layout": "normal",
+    "name": "Blacksmith's Skill",
     "parent": "playerPile1",
-    "type": "card",
-    "typeLine": "Instant",
-    "z": 82007,
-    "frontDisplay": "none",
     "power": "",
     "toughness": "",
-    "name": "Blacksmith's Skill",
-    "backDisplay": "none"
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 82007
+  },
+  "Blacksmith_s_Skill-ud3v": {
+    "cardType": "Blacksmith_s_Skill",
+    "deck": "playerDeck2",
+    "id": "Blacksmith_s_Skill-ud3v",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 82139
   },
   "Celestial_Unicorn-2xwz": {
+    "backDisplay": "none",
     "cardType": "Celestial_Unicorn",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Celestial_Unicorn-2xwz",
     "layout": "normal",
+    "name": "Celestial Unicorn",
+    "parent": "playerPile1",
+    "power": "3",
+    "stats": "3/2",
+    "toughness": "2",
     "type": "card",
     "typeLine": "Creature — Unicorn",
-    "z": 81972,
-    "frontDisplay": "none",
-    "power": "3",
-    "toughness": "2",
-    "stats": "3/2",
-    "name": "Celestial Unicorn",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "z": 81972
+  },
+  "Celestial_Unicorn-3eam": {
+    "cardType": "Celestial_Unicorn",
+    "deck": "playerDeck2",
+    "id": "Celestial_Unicorn-3eam",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 82173
   },
   "Celestial_Unicorn-62nn": {
+    "backDisplay": "none",
     "cardType": "Celestial_Unicorn",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Celestial_Unicorn-62nn",
     "layout": "normal",
+    "name": "Celestial Unicorn",
     "parent": "playerPile1",
+    "power": "3",
+    "stats": "3/2",
+    "toughness": "2",
     "type": "card",
     "typeLine": "Creature — Unicorn",
-    "z": 81975,
-    "frontDisplay": "none",
-    "power": "3",
-    "toughness": "2",
-    "stats": "3/2",
-    "name": "Celestial Unicorn",
-    "backDisplay": "none"
+    "z": 81975
+  },
+  "Celestial_Unicorn-8bx6": {
+    "cardType": "Celestial_Unicorn",
+    "deck": "playerDeck2",
+    "id": "Celestial_Unicorn-8bx6",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 82161
   },
   "Celestial_Unicorn-8thj": {
+    "backDisplay": "none",
     "cardType": "Celestial_Unicorn",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Celestial_Unicorn-8thj",
     "layout": "normal",
+    "name": "Celestial Unicorn",
+    "parent": "playerPile1",
+    "power": "3",
+    "stats": "3/2",
+    "toughness": "2",
     "type": "card",
     "typeLine": "Creature — Unicorn",
-    "z": 81956,
-    "frontDisplay": "none",
-    "power": "3",
-    "toughness": "2",
-    "stats": "3/2",
-    "name": "Celestial Unicorn",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "z": 81956
+  },
+  "Celestial_Unicorn-99pw": {
+    "cardType": "Celestial_Unicorn",
+    "deck": "playerDeck2",
+    "id": "Celestial_Unicorn-99pw",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 82183
   },
   "Celestial_Unicorn-9n6w": {
+    "backDisplay": "none",
     "cardType": "Celestial_Unicorn",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Celestial_Unicorn-9n6w",
     "layout": "normal",
+    "name": "Celestial Unicorn",
+    "parent": "playerPile1",
+    "power": "3",
+    "stats": "3/2",
+    "toughness": "2",
     "type": "card",
     "typeLine": "Creature — Unicorn",
-    "z": 81962,
-    "frontDisplay": "none",
-    "power": "3",
-    "toughness": "2",
-    "stats": "3/2",
-    "name": "Celestial Unicorn",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "z": 81962
   },
-  "Cloudkin_Seer-do4r": {
-    "cardType": "Cloudkin_Seer",
+  "Celestial_Unicorn-nl6z": {
+    "cardType": "Celestial_Unicorn",
     "deck": "playerDeck2",
-    "id": "Cloudkin_Seer-do4r",
+    "id": "Celestial_Unicorn-nl6z",
+    "layout": "normal",
     "parent": "playerPile2",
-    "type": "card"
-  },
-  "Cloudkin_Seer-hqrt": {
-    "cardType": "Cloudkin_Seer",
-    "deck": "playerDeck2",
-    "id": "Cloudkin_Seer-hqrt",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Cloudkin_Seer-ljf2": {
-    "cardType": "Cloudkin_Seer",
-    "deck": "playerDeck2",
-    "id": "Cloudkin_Seer-ljf2",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Frilled_Sea_Serpent-lc98": {
-    "cardType": "Frilled_Sea_Serpent",
-    "deck": "playerDeck2",
-    "id": "Frilled_Sea_Serpent-lc98",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Glint-jxzf": {
-    "cardType": "Glint",
-    "deck": "playerDeck2",
-    "id": "Glint-jxzf",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Glint-wrb5": {
-    "cardType": "Glint",
-    "deck": "playerDeck2",
-    "id": "Glint-wrb5",
-    "parent": "playerPile2",
-    "type": "card"
+    "type": "card",
+    "typeLine": "Creature — Unicorn",
+    "z": 82166
   },
   "HoverSample": {
     "css": {
@@ -614,6 +692,26 @@
     "y": 708,
     "z": 79186
   },
+  "Inspiring_Overseer-6pwv": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck2",
+    "id": "Inspiring_Overseer-6pwv",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 82141
+  },
+  "Inspiring_Overseer-6vvd": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck2",
+    "id": "Inspiring_Overseer-6vvd",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 82132
+  },
   "Inspiring_Overseer-iail": {
     "cardType": "Inspiring_Overseer",
     "deck": "playerDeck1",
@@ -623,6 +721,16 @@
     "type": "card",
     "typeLine": "Creature — Angel Cleric",
     "z": 81989
+  },
+  "Inspiring_Overseer-l4or": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck2",
+    "id": "Inspiring_Overseer-l4or",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 82153
   },
   "Inspiring_Overseer-ppcr": {
     "cardType": "Inspiring_Overseer",
@@ -644,6 +752,16 @@
     "typeLine": "Creature — Angel Cleric",
     "z": 81954
   },
+  "Inspiring_Overseer-r3o6": {
+    "cardType": "Inspiring_Overseer",
+    "deck": "playerDeck2",
+    "id": "Inspiring_Overseer-r3o6",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Angel Cleric",
+    "z": 82187
+  },
   "Inspiring_Overseer-watk": {
     "cardType": "Inspiring_Overseer",
     "deck": "playerDeck1",
@@ -654,195 +772,50 @@
     "typeLine": "Creature — Angel Cleric",
     "z": 82010
   },
-  "Island-0mly": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-0mly",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-14yq": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-14yq",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-1c0v": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-1c0v",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-1cas": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-1cas",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-1jqe": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-1jqe",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-2iq3": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-2iq3",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-508f": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-508f",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-6g0m": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-6g0m",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-6gud": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-6gud",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-7rh1": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-7rh1",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-aegg": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-aegg",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-aog7": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-aog7",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-bgt8": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-bgt8",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-d79v": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-d79v",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-ebmn": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-ebmn",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-f0ix": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-f0ix",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-fvmu": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-fvmu",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-h30i": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-h30i",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-ssuq": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-ssuq",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-t44e": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-t44e",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-t6yt": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-t6yt",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-vx1n": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-vx1n",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-wdan": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-wdan",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-xfx6": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-xfx6",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Island-y481": {
-    "cardType": "Island",
-    "deck": "playerDeck2",
-    "id": "Island-y481",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Journey_to_Nowhere-72at": {
+  "Journey_to_Nowhere-6pwe": {
     "cardType": "Journey_to_Nowhere",
-    "deck": "playerDeck1",
-    "id": "Journey_to_Nowhere-72at",
+    "deck": "playerDeck2",
+    "id": "Journey_to_Nowhere-6pwe",
     "layout": "normal",
+    "parent": "playerPile2",
     "type": "card",
     "typeLine": "Enchantment",
-    "z": 81987,
-    "parent": "playerPile1",
+    "z": 82158
+  },
+  "Journey_to_Nowhere-72at": {
+    "backDisplay": "none",
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck1",
     "frontDisplay": "none",
+    "id": "Journey_to_Nowhere-72at",
+    "layout": "normal",
+    "name": "Journey to Nowhere",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Journey to Nowhere",
-    "backDisplay": "none"
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 81987
+  },
+  "Journey_to_Nowhere-f1rg": {
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck2",
+    "id": "Journey_to_Nowhere-f1rg",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 82178
+  },
+  "Journey_to_Nowhere-o87a": {
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck2",
+    "id": "Journey_to_Nowhere-o87a",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 82157
   },
   "Journey_to_Nowhere-p9q0": {
     "cardType": "Journey_to_Nowhere",
@@ -874,6 +847,26 @@
     "typeLine": "Enchantment",
     "z": 81980
   },
+  "Journey_to_Nowhere-xfg5": {
+    "cardType": "Journey_to_Nowhere",
+    "deck": "playerDeck2",
+    "id": "Journey_to_Nowhere-xfg5",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Enchantment",
+    "z": 82184
+  },
+  "Lunarch_Veteran____Luminous_Phantom-3k9z": {
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
+    "deck": "playerDeck2",
+    "id": "Lunarch_Veteran____Luminous_Phantom-3k9z",
+    "layout": "transform",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 82159
+  },
   "Lunarch_Veteran____Luminous_Phantom-5whh": {
     "cardType": "Lunarch_Veteran____Luminous_Phantom",
     "deck": "playerDeck1",
@@ -894,6 +887,16 @@
     "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
     "z": 81983
   },
+  "Lunarch_Veteran____Luminous_Phantom-g5cg": {
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
+    "deck": "playerDeck2",
+    "id": "Lunarch_Veteran____Luminous_Phantom-g5cg",
+    "layout": "transform",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 82181
+  },
   "Lunarch_Veteran____Luminous_Phantom-ldzu": {
     "cardType": "Lunarch_Veteran____Luminous_Phantom",
     "deck": "playerDeck1",
@@ -904,57 +907,56 @@
     "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
     "z": 81978
   },
-  "Lunarch_Veteran____Luminous_Phantom-smxr": {
+  "Lunarch_Veteran____Luminous_Phantom-mxri": {
     "cardType": "Lunarch_Veteran____Luminous_Phantom",
-    "deck": "playerDeck1",
-    "id": "Lunarch_Veteran____Luminous_Phantom-smxr",
+    "deck": "playerDeck2",
+    "id": "Lunarch_Veteran____Luminous_Phantom-mxri",
     "layout": "transform",
+    "parent": "playerPile2",
     "type": "card",
     "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
-    "z": 81984,
-    "frontDisplay": "none",
-    "power": "1",
-    "toughness": "1",
-    "stats": "1/1",
-    "name": "Lunarch Veteran",
+    "z": 82155
+  },
+  "Lunarch_Veteran____Luminous_Phantom-smxr": {
     "backDisplay": "none",
-    "parent": "playerPile1"
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
+    "deck": "playerDeck1",
+    "frontDisplay": "none",
+    "id": "Lunarch_Veteran____Luminous_Phantom-smxr",
+    "layout": "transform",
+    "name": "Lunarch Veteran",
+    "parent": "playerPile1",
+    "power": "1",
+    "stats": "1/1",
+    "toughness": "1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 81984
   },
-  "Octoprophet-7asp": {
-    "cardType": "Octoprophet",
+  "Lunarch_Veteran____Luminous_Phantom-v6g4": {
+    "cardType": "Lunarch_Veteran____Luminous_Phantom",
     "deck": "playerDeck2",
-    "id": "Octoprophet-7asp",
+    "id": "Lunarch_Veteran____Luminous_Phantom-v6g4",
+    "layout": "transform",
     "parent": "playerPile2",
-    "type": "card"
-  },
-  "Octoprophet-n1ve": {
-    "cardType": "Octoprophet",
-    "deck": "playerDeck2",
-    "id": "Octoprophet-n1ve",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Overflowing_Insight-v1mx": {
-    "cardType": "Overflowing_Insight",
-    "deck": "playerDeck2",
-    "id": "Overflowing_Insight-v1mx",
-    "parent": "playerPile2",
-    "type": "card"
+    "type": "card",
+    "typeLine": "Creature — Human Cleric // Creature — Spirit Cleric",
+    "z": 82160
   },
   "Plains-0fji": {
+    "backDisplay": "none",
     "cardType": "Plains",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Plains-0fji",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Basic Land — Plains",
-    "z": 81981,
-    "frontDisplay": "none",
+    "name": "Plains",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Plains",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81981
   },
   "Plains-14p7": {
     "cardType": "Plains",
@@ -965,6 +967,26 @@
     "type": "card",
     "typeLine": "Basic Land — Plains",
     "z": 81958
+  },
+  "Plains-1hr3": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-1hr3",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82148
+  },
+  "Plains-1skm": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-1skm",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82154
   },
   "Plains-24sy": {
     "cardType": "Plains",
@@ -977,19 +999,19 @@
     "z": 81986
   },
   "Plains-3lsf": {
+    "backDisplay": "none",
     "cardType": "Plains",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Plains-3lsf",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Basic Land — Plains",
-    "z": 81985,
-    "frontDisplay": "none",
+    "name": "Plains",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Plains",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81985
   },
   "Plains-3qdc": {
     "cardType": "Plains",
@@ -1000,6 +1022,36 @@
     "type": "card",
     "typeLine": "Basic Land — Plains",
     "z": 82011
+  },
+  "Plains-473b": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-473b",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82165
+  },
+  "Plains-8ffo": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-8ffo",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82138
+  },
+  "Plains-bbtq": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-bbtq",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82147
   },
   "Plains-ctnt": {
     "cardType": "Plains",
@@ -1012,19 +1064,19 @@
     "z": 81979
   },
   "Plains-dd7x": {
+    "backDisplay": "none",
     "cardType": "Plains",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Plains-dd7x",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Basic Land — Plains",
-    "z": 81955,
-    "frontDisplay": "none",
+    "name": "Plains",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Plains",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 81955
   },
   "Plains-dri9": {
     "cardType": "Plains",
@@ -1035,6 +1087,16 @@
     "type": "card",
     "typeLine": "Basic Land — Plains",
     "z": 82009
+  },
+  "Plains-e6a8": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-e6a8",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82142
   },
   "Plains-ensm": {
     "cardType": "Plains",
@@ -1056,6 +1118,41 @@
     "typeLine": "Basic Land — Plains",
     "z": 81973
   },
+  "Plains-iwp1": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-iwp1",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82185
+  },
+  "Plains-k020": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-k020",
+    "layout": "normal",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82200,
+    "frontDisplay": "none",
+    "power": "",
+    "toughness": "",
+    "name": "Plains",
+    "backDisplay": "none",
+    "parent": "playerPile2"
+  },
+  "Plains-ky1j": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-ky1j",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82151
+  },
   "Plains-l7g2": {
     "cardType": "Plains",
     "deck": "playerDeck1",
@@ -1066,35 +1163,55 @@
     "typeLine": "Basic Land — Plains",
     "z": 81995
   },
+  "Plains-mpvf": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-mpvf",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82146
+  },
   "Plains-n8w8": {
+    "backDisplay": "none",
     "cardType": "Plains",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Plains-n8w8",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Basic Land — Plains",
-    "z": 82008,
-    "frontDisplay": "none",
+    "name": "Plains",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Plains",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82008
+  },
+  "Plains-numt": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-numt",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82186
   },
   "Plains-p1xu": {
+    "backDisplay": "none",
     "cardType": "Plains",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Plains-p1xu",
     "layout": "normal",
-    "type": "card",
-    "typeLine": "Basic Land — Plains",
-    "z": 82002,
-    "frontDisplay": "none",
+    "name": "Plains",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Plains",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82002
   },
   "Plains-phkh": {
     "cardType": "Plains",
@@ -1105,6 +1222,16 @@
     "type": "card",
     "typeLine": "Basic Land — Plains",
     "z": 81965
+  },
+  "Plains-pv7k": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-pv7k",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82129
   },
   "Plains-pwe3": {
     "cardType": "Plains",
@@ -1136,20 +1263,80 @@
     "typeLine": "Basic Land — Plains",
     "z": 81991
   },
-  "Plains-w27r": {
+  "Plains-rexs": {
     "cardType": "Plains",
-    "deck": "playerDeck1",
-    "id": "Plains-w27r",
+    "deck": "playerDeck2",
+    "id": "Plains-rexs",
     "layout": "normal",
+    "parent": "playerPile2",
     "type": "card",
     "typeLine": "Basic Land — Plains",
-    "z": 82005,
+    "z": 82145
+  },
+  "Plains-rl74": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-rl74",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82152
+  },
+  "Plains-tmla": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-tmla",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82156
+  },
+  "Plains-ufxk": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-ufxk",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82171
+  },
+  "Plains-vdl3": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-vdl3",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82177
+  },
+  "Plains-w27r": {
+    "backDisplay": "none",
+    "cardType": "Plains",
+    "deck": "playerDeck1",
     "frontDisplay": "none",
+    "id": "Plains-w27r",
+    "layout": "normal",
+    "name": "Plains",
+    "parent": "playerPile1",
     "power": "",
     "toughness": "",
-    "name": "Plains",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82005
+  },
+  "Plains-wgi4": {
+    "cardType": "Plains",
+    "deck": "playerDeck2",
+    "id": "Plains-wgi4",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82174
   },
   "Plains-xh2h": {
     "cardType": "Plains",
@@ -1161,42 +1348,61 @@
     "typeLine": "Basic Land — Plains",
     "z": 81971
   },
-  "Riddlemaster_Sphinx-17fw": {
-    "cardType": "Riddlemaster_Sphinx",
+  "Plains-zeyz": {
+    "cardType": "Plains",
     "deck": "playerDeck2",
-    "id": "Riddlemaster_Sphinx-17fw",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Riddlemaster_Sphinx-ilbz": {
-    "cardType": "Riddlemaster_Sphinx",
-    "deck": "playerDeck2",
-    "id": "Riddlemaster_Sphinx-ilbz",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Sleep-d3cc": {
-    "cardType": "Sleep",
-    "deck": "playerDeck2",
-    "id": "Sleep-d3cc",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Soul_Warden-5dmk": {
-    "cardType": "Soul_Warden",
-    "deck": "playerDeck1",
-    "id": "Soul_Warden-5dmk",
+    "id": "Plains-zeyz",
     "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Basic Land — Plains",
+    "z": 82136
+  },
+  "Soul_Warden-0pme": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck2",
+    "id": "Soul_Warden-0pme",
+    "layout": "normal",
+    "parent": "playerPile2",
     "type": "card",
     "typeLine": "Creature — Human Cleric",
-    "z": 82000,
-    "frontDisplay": "none",
-    "power": "1",
-    "toughness": "1",
-    "stats": "1/1",
-    "name": "Soul Warden",
+    "z": 82149
+  },
+  "Soul_Warden-5dmk": {
     "backDisplay": "none",
-    "parent": "playerPile1"
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck1",
+    "frontDisplay": "none",
+    "id": "Soul_Warden-5dmk",
+    "layout": "normal",
+    "name": "Soul Warden",
+    "parent": "playerPile1",
+    "power": "1",
+    "stats": "1/1",
+    "toughness": "1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82000
+  },
+  "Soul_Warden-dwg1": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck2",
+    "id": "Soul_Warden-dwg1",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82172
+  },
+  "Soul_Warden-ew0b": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck2",
+    "id": "Soul_Warden-ew0b",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82179
   },
   "Soul_Warden-r499": {
     "cardType": "Soul_Warden",
@@ -1218,6 +1424,16 @@
     "typeLine": "Creature — Human Cleric",
     "z": 81961
   },
+  "Soul_Warden-v2tz": {
+    "cardType": "Soul_Warden",
+    "deck": "playerDeck2",
+    "id": "Soul_Warden-v2tz",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82134
+  },
   "Soul_Warden-y4m4": {
     "cardType": "Soul_Warden",
     "deck": "playerDeck1",
@@ -1237,6 +1453,26 @@
     "type": "card",
     "typeLine": "Creature — Human Cleric",
     "z": 82001
+  },
+  "Soul_s_Attendant-7wly": {
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck2",
+    "id": "Soul_s_Attendant-7wly",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82135
+  },
+  "Soul_s_Attendant-at2a": {
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck2",
+    "id": "Soul_s_Attendant-at2a",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82170
   },
   "Soul_s_Attendant-d9t2": {
     "cardType": "Soul_s_Attendant",
@@ -1258,35 +1494,41 @@
     "typeLine": "Creature — Human Cleric",
     "z": 81963
   },
-  "Soul_s_Attendant-suys": {
+  "Soul_s_Attendant-koj0": {
     "cardType": "Soul_s_Attendant",
-    "deck": "playerDeck1",
-    "id": "Soul_s_Attendant-suys",
+    "deck": "playerDeck2",
+    "id": "Soul_s_Attendant-koj0",
     "layout": "normal",
+    "parent": "playerPile2",
     "type": "card",
     "typeLine": "Creature — Human Cleric",
-    "z": 81990,
-    "frontDisplay": "none",
-    "power": "1",
-    "toughness": "1",
-    "stats": "1/1",
-    "name": "Soul's Attendant",
+    "z": 82169
+  },
+  "Soul_s_Attendant-q7jy": {
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck2",
+    "id": "Soul_s_Attendant-q7jy",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 82140
+  },
+  "Soul_s_Attendant-suys": {
     "backDisplay": "none",
-    "parent": "playerPile1"
-  },
-  "Soulblade_Djinn-92zq": {
-    "cardType": "Soulblade_Djinn",
-    "deck": "playerDeck2",
-    "id": "Soulblade_Djinn-92zq",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Soulblade_Djinn-hd5q": {
-    "cardType": "Soulblade_Djinn",
-    "deck": "playerDeck2",
-    "id": "Soulblade_Djinn-hd5q",
-    "parent": "playerPile2",
-    "type": "card"
+    "cardType": "Soul_s_Attendant",
+    "deck": "playerDeck1",
+    "frontDisplay": "none",
+    "id": "Soul_s_Attendant-suys",
+    "layout": "normal",
+    "name": "Soul's Attendant",
+    "parent": "playerPile1",
+    "power": "1",
+    "stats": "1/1",
+    "toughness": "1",
+    "type": "card",
+    "typeLine": "Creature — Human Cleric",
+    "z": 81990
   },
   "Stave_Off-aum2": {
     "cardType": "Stave_Off",
@@ -1308,6 +1550,26 @@
     "typeLine": "Instant",
     "z": 81993
   },
+  "Stave_Off-eeza": {
+    "cardType": "Stave_Off",
+    "deck": "playerDeck2",
+    "id": "Stave_Off-eeza",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 82143
+  },
+  "Stave_Off-spcu": {
+    "cardType": "Stave_Off",
+    "deck": "playerDeck2",
+    "id": "Stave_Off-spcu",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Instant",
+    "z": 82175
+  },
   "Suture_Priest-0fcr": {
     "cardType": "Suture_Priest",
     "deck": "playerDeck1",
@@ -1319,20 +1581,30 @@
     "z": 81997
   },
   "Suture_Priest-18wu": {
+    "backDisplay": "none",
     "cardType": "Suture_Priest",
     "deck": "playerDeck1",
+    "frontDisplay": "none",
     "id": "Suture_Priest-18wu",
     "layout": "normal",
+    "name": "Suture Priest",
+    "parent": "playerPile1",
+    "power": "1",
+    "stats": "1/1",
+    "toughness": "1",
     "type": "card",
     "typeLine": "Creature — Phyrexian Cleric",
-    "z": 81970,
-    "frontDisplay": "none",
-    "power": "1",
-    "toughness": "1",
-    "stats": "1/1",
-    "name": "Suture Priest",
-    "backDisplay": "none",
-    "parent": "playerPile1"
+    "z": 81970
+  },
+  "Suture_Priest-69af": {
+    "cardType": "Suture_Priest",
+    "deck": "playerDeck2",
+    "id": "Suture_Priest-69af",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Phyrexian Cleric",
+    "z": 82163
   },
   "Suture_Priest-e15p": {
     "cardType": "Suture_Priest",
@@ -1344,6 +1616,16 @@
     "typeLine": "Creature — Phyrexian Cleric",
     "z": 81982
   },
+  "Suture_Priest-kbpu": {
+    "cardType": "Suture_Priest",
+    "deck": "playerDeck2",
+    "id": "Suture_Priest-kbpu",
+    "layout": "normal",
+    "parent": "playerPile2",
+    "type": "card",
+    "typeLine": "Creature — Phyrexian Cleric",
+    "z": 82137
+  },
   "Suture_Priest-qssf": {
     "cardType": "Suture_Priest",
     "deck": "playerDeck1",
@@ -1354,35 +1636,53 @@
     "typeLine": "Creature — Phyrexian Cleric",
     "z": 81988
   },
-  "Sworn_Guardian-b8l4": {
-    "cardType": "Sworn_Guardian",
+  "Suture_Priest-vxvu": {
+    "cardType": "Suture_Priest",
     "deck": "playerDeck2",
-    "id": "Sworn_Guardian-b8l4",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Sworn_Guardian-sz65": {
-    "cardType": "Sworn_Guardian",
-    "deck": "playerDeck2",
-    "id": "Sworn_Guardian-sz65",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Thraben_Inspector-ggyw": {
-    "cardType": "Thraben_Inspector",
-    "deck": "playerDeck1",
-    "id": "Thraben_Inspector-ggyw",
+    "id": "Suture_Priest-vxvu",
     "layout": "normal",
     "type": "card",
-    "typeLine": "Creature — Human Soldier",
-    "z": 81977,
+    "typeLine": "Creature — Phyrexian Cleric",
     "frontDisplay": "none",
     "power": "1",
-    "toughness": "2",
-    "stats": "1/2",
-    "name": "Thraben Inspector",
+    "toughness": "1",
+    "stats": "1/1",
+    "name": "Suture Priest",
     "backDisplay": "none",
-    "parent": "playerPile1"
+    "z": 82164,
+    "parent": "playerPile2"
+  },
+  "Suture_Priest-w97p": {
+    "cardType": "Suture_Priest",
+    "deck": "playerDeck2",
+    "id": "Suture_Priest-w97p",
+    "layout": "normal",
+    "type": "card",
+    "typeLine": "Creature — Phyrexian Cleric",
+    "z": 82150,
+    "frontDisplay": "none",
+    "power": "1",
+    "toughness": "1",
+    "stats": "1/1",
+    "name": "Suture Priest",
+    "backDisplay": "none",
+    "parent": "playerPile2"
+  },
+  "Thraben_Inspector-ggyw": {
+    "backDisplay": "none",
+    "cardType": "Thraben_Inspector",
+    "deck": "playerDeck1",
+    "frontDisplay": "none",
+    "id": "Thraben_Inspector-ggyw",
+    "layout": "normal",
+    "name": "Thraben Inspector",
+    "parent": "playerPile1",
+    "power": "1",
+    "stats": "1/2",
+    "toughness": "2",
+    "type": "card",
+    "typeLine": "Creature — Human Soldier",
+    "z": 81977
   },
   "Thraben_Inspector-gy86": {
     "cardType": "Thraben_Inspector",
@@ -1394,6 +1694,54 @@
     "typeLine": "Creature — Human Soldier",
     "z": 81957
   },
+  "Thraben_Inspector-k1bq": {
+    "cardType": "Thraben_Inspector",
+    "deck": "playerDeck2",
+    "id": "Thraben_Inspector-k1bq",
+    "layout": "normal",
+    "type": "card",
+    "typeLine": "Creature — Human Soldier",
+    "z": 82176,
+    "frontDisplay": "none",
+    "power": "1",
+    "toughness": "2",
+    "stats": "1/2",
+    "name": "Thraben Inspector",
+    "backDisplay": "none",
+    "parent": "playerPile2"
+  },
+  "Thraben_Inspector-mmx7": {
+    "cardType": "Thraben_Inspector",
+    "deck": "playerDeck2",
+    "id": "Thraben_Inspector-mmx7",
+    "layout": "normal",
+    "type": "card",
+    "typeLine": "Creature — Human Soldier",
+    "z": 82168,
+    "parent": "playerPile2",
+    "frontDisplay": "none",
+    "power": "1",
+    "toughness": "2",
+    "stats": "1/2",
+    "name": "Thraben Inspector",
+    "backDisplay": "none"
+  },
+  "Thraben_Inspector-vb4d": {
+    "cardType": "Thraben_Inspector",
+    "deck": "playerDeck2",
+    "id": "Thraben_Inspector-vb4d",
+    "layout": "normal",
+    "type": "card",
+    "typeLine": "Creature — Human Soldier",
+    "z": 82144,
+    "parent": "playerPile2",
+    "frontDisplay": "none",
+    "power": "1",
+    "toughness": "2",
+    "stats": "1/2",
+    "name": "Thraben Inspector",
+    "backDisplay": "none"
+  },
   "Thraben_Inspector-z4as": {
     "cardType": "Thraben_Inspector",
     "deck": "playerDeck1",
@@ -1403,139 +1751,6 @@
     "type": "card",
     "typeLine": "Creature — Human Soldier",
     "z": 81966
-  },
-  "Unsummon-j9hw": {
-    "cardType": "Unsummon",
-    "deck": "playerDeck2",
-    "id": "Unsummon-j9hw",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Unsummon-q6gx": {
-    "cardType": "Unsummon",
-    "deck": "playerDeck2",
-    "id": "Unsummon-q6gx",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Unsummon-sujz": {
-    "cardType": "Unsummon",
-    "deck": "playerDeck2",
-    "id": "Unsummon-sujz",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Wall_of_Runes-gf4m": {
-    "cardType": "Wall_of_Runes",
-    "deck": "playerDeck2",
-    "id": "Wall_of_Runes-gf4m",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Wall_of_Runes-x1ep": {
-    "cardType": "Wall_of_Runes",
-    "deck": "playerDeck2",
-    "id": "Wall_of_Runes-x1ep",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Warden_of_Evos_Isle-a44p": {
-    "cardType": "Warden_of_Evos_Isle",
-    "deck": "playerDeck2",
-    "id": "Warden_of_Evos_Isle-a44p",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Warden_of_Evos_Isle-einj": {
-    "cardType": "Warden_of_Evos_Isle",
-    "deck": "playerDeck2",
-    "id": "Warden_of_Evos_Isle-einj",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Warden_of_Evos_Isle-mbfn": {
-    "cardType": "Warden_of_Evos_Isle",
-    "deck": "playerDeck2",
-    "id": "Warden_of_Evos_Isle-mbfn",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Waterkin_Shaman-e7yt": {
-    "cardType": "Waterkin_Shaman",
-    "deck": "playerDeck2",
-    "id": "Waterkin_Shaman-e7yt",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Waterkin_Shaman-jx2j": {
-    "cardType": "Waterkin_Shaman",
-    "deck": "playerDeck2",
-    "id": "Waterkin_Shaman-jx2j",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Waterkin_Shaman-tbda": {
-    "cardType": "Waterkin_Shaman",
-    "deck": "playerDeck2",
-    "id": "Waterkin_Shaman-tbda",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Waterknot-0hol": {
-    "cardType": "Waterknot",
-    "deck": "playerDeck2",
-    "id": "Waterknot-0hol",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Waterknot-g0m1": {
-    "cardType": "Waterknot",
-    "deck": "playerDeck2",
-    "id": "Waterknot-g0m1",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Waterknot-kbxu": {
-    "cardType": "Waterknot",
-    "deck": "playerDeck2",
-    "id": "Waterknot-kbxu",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Windreader_Sphinx-38ts": {
-    "cardType": "Windreader_Sphinx",
-    "deck": "playerDeck2",
-    "id": "Windreader_Sphinx-38ts",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Windstorm_Drake-74q8": {
-    "cardType": "Windstorm_Drake",
-    "deck": "playerDeck2",
-    "id": "Windstorm_Drake-74q8",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Windstorm_Drake-m95w": {
-    "cardType": "Windstorm_Drake",
-    "deck": "playerDeck2",
-    "id": "Windstorm_Drake-m95w",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Winged_Words-7ilz": {
-    "cardType": "Winged_Words",
-    "deck": "playerDeck2",
-    "id": "Winged_Words-7ilz",
-    "parent": "playerPile2",
-    "type": "card"
-  },
-  "Winged_Words-i8a6": {
-    "cardType": "Winged_Words",
-    "deck": "playerDeck2",
-    "id": "Winged_Words-i8a6",
-    "parent": "playerPile2",
-    "type": "card"
   },
   "b08s": {
     "id": "b08s",
@@ -1549,8 +1764,8 @@
     "id": "b9s",
     "text": "Graveyard",
     "type": "label",
-    "x": 1066,
-    "y": 175,
+    "x": 1062,
+    "y": 108,
     "z": 94
   },
   "cclf": {
@@ -1612,7 +1827,7 @@
   },
   "commandZone1": {
     "dropShadow": true,
-    "height": 156,
+    "height": 101,
     "id": "commandZone1",
     "inheritFrom": {
       "playerDeck1": [
@@ -1624,7 +1839,7 @@
       "rotation": 0
     },
     "rotation": 0,
-    "scale": 0,
+    "scale": 1,
     "type": "holder",
     "width": 123,
     "x": 373,
@@ -1643,7 +1858,7 @@
       "activeFace": 1,
       "rotation": 0
     },
-    "scale": 0,
+    "scale": 1,
     "type": "holder",
     "x": 382,
     "y": -2,
@@ -1832,8 +2047,7 @@
     "widgetType": "commanderDamage",
     "width": 40,
     "x": 1569,
-    "y": 906,
-    "scale": 0
+    "y": 906
   },
   "commanderDamage2": {
     "css": "font-size: 20px;",
@@ -1844,8 +2058,7 @@
     "widgetType": "commanderDamage",
     "width": 40,
     "x": 1565,
-    "y": 71,
-    "scale": 0
+    "y": 71
   },
   "draw1-1": {
     "clickRoutine": [
@@ -1958,8 +2171,8 @@
     "text": "Untap & Draw",
     "type": "button",
     "width": 120,
-    "x": 923,
-    "y": 190,
+    "x": 924,
+    "y": 124,
     "z": 111
   },
   "ex51": {
@@ -2130,11 +2343,11 @@
     "cardType": "commander1",
     "deck": "commandZoneDeck1",
     "id": "h06d",
+    "parent": "commandZone1",
     "type": "card",
     "x": 4,
     "y": 4,
-    "z": 81841,
-    "parent": "commandZone1"
+    "z": 81841
   },
   "h8y3": {
     "id": "h8y3",
@@ -2168,8 +2381,8 @@
     "id": "handSize2",
     "text": "Hand: 0",
     "type": "label",
-    "x": 818,
-    "y": 157,
+    "x": 833,
+    "y": 110,
     "z": 44
   },
   "importDeck1": {
@@ -2582,8 +2795,8 @@
     "text": "Library",
     "type": "button",
     "width": 60,
-    "x": 957,
-    "y": 169,
+    "x": 955,
+    "y": 105,
     "z": 114
   },
   "loadingAlert": {
@@ -3374,77 +3587,174 @@
       "width": 115
     },
     "cardTypes": {
-      "Cloudkin_Seer": {
-        "image": "https://api.scryfall.com/cards/named?exact=Cloudkin+Seer&format=image",
-        "label": "Cloudkin Seer"
+      "Battle_Screech": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Battle+Screech&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Battle+Screech&format=image",
+        "label": "Battle Screech",
+        "nameBack": "",
+        "nameFront": "Battle Screech",
+        "powerBack": "",
+        "powerFront": "",
+        "toughnessBack": "",
+        "toughnessFront": ""
       },
-      "Frilled_Sea_Serpent": {
-        "image": "https://api.scryfall.com/cards/named?exact=Frilled+Sea+Serpent&format=image",
-        "label": "Frilled Sea Serpent"
+      "Benevolent_Bodyguard": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Benevolent+Bodyguard&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Benevolent+Bodyguard&format=image",
+        "label": "Benevolent Bodyguard",
+        "nameBack": "",
+        "nameFront": "Benevolent Bodyguard",
+        "powerBack": "",
+        "powerFront": "1",
+        "toughnessBack": "",
+        "toughnessFront": "1"
       },
-      "Glint": {
-        "image": "https://api.scryfall.com/cards/named?exact=Glint&format=image",
-        "label": "Glint"
+      "Blacksmith_s_Skill": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Blacksmith's+Skill&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Blacksmith's+Skill&format=image",
+        "label": "Blacksmith's Skill",
+        "nameBack": "",
+        "nameFront": "Blacksmith's Skill",
+        "powerBack": "",
+        "powerFront": "",
+        "toughnessBack": "",
+        "toughnessFront": ""
       },
-      "Island": {
-        "image": "https://api.scryfall.com/cards/named?exact=Island&format=image",
-        "label": "Island"
+      "Celestial_Unicorn": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Celestial+Unicorn&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Celestial+Unicorn&format=image",
+        "label": "Celestial Unicorn",
+        "nameBack": "",
+        "nameFront": "Celestial Unicorn",
+        "powerBack": "",
+        "powerFront": "3",
+        "toughnessBack": "",
+        "toughnessFront": "2"
       },
-      "Octoprophet": {
-        "image": "https://api.scryfall.com/cards/named?exact=Octoprophet&format=image",
-        "label": "Octoprophet"
+      "Inspiring_Overseer": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Inspiring+Overseer&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Inspiring+Overseer&format=image",
+        "label": "Inspiring Overseer",
+        "nameBack": "",
+        "nameFront": "Inspiring Overseer",
+        "powerBack": "",
+        "powerFront": "2",
+        "toughnessBack": "",
+        "toughnessFront": "1"
       },
-      "Overflowing_Insight": {
-        "image": "https://api.scryfall.com/cards/named?exact=Overflowing+Insight&format=image",
-        "label": "Overflowing Insight"
+      "Journey_to_Nowhere": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Journey+to+Nowhere&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Journey+to+Nowhere&format=image",
+        "label": "Journey to Nowhere",
+        "nameBack": "",
+        "nameFront": "Journey to Nowhere",
+        "powerBack": "",
+        "powerFront": "",
+        "toughnessBack": "",
+        "toughnessFront": ""
       },
-      "Riddlemaster_Sphinx": {
-        "image": "https://api.scryfall.com/cards/named?exact=Riddlemaster+Sphinx&format=image",
-        "label": "Riddlemaster Sphinx"
+      "Lunarch_Veteran____Luminous_Phantom": {
+        "artCropBack": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image&version=art_crop&face=back",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image&version=art_crop",
+        "imageBack": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image&face=back",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Lunarch+Veteran+//+Luminous+Phantom&format=image",
+        "label": "Lunarch Veteran // Luminous Phantom",
+        "nameBack": "Luminous Phantom",
+        "nameFront": "Lunarch Veteran",
+        "powerBack": "1",
+        "powerFront": "1",
+        "toughnessBack": "1",
+        "toughnessFront": "1"
       },
-      "Sleep": {
-        "image": "https://api.scryfall.com/cards/named?exact=Sleep&format=image",
-        "label": "Sleep"
+      "Plains": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Plains&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Plains&format=image",
+        "label": "Plains",
+        "nameBack": "",
+        "nameFront": "Plains",
+        "powerBack": "",
+        "powerFront": "",
+        "toughnessBack": "",
+        "toughnessFront": ""
       },
-      "Soulblade_Djinn": {
-        "image": "https://api.scryfall.com/cards/named?exact=Soulblade+Djinn&format=image",
-        "label": "Soulblade Djinn"
+      "Soul_Warden": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Soul+Warden&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Soul+Warden&format=image",
+        "label": "Soul Warden",
+        "nameBack": "",
+        "nameFront": "Soul Warden",
+        "powerBack": "",
+        "powerFront": "1",
+        "toughnessBack": "",
+        "toughnessFront": "1"
       },
-      "Sworn_Guardian": {
-        "image": "https://api.scryfall.com/cards/named?exact=Sworn+Guardian&format=image",
-        "label": "Sworn Guardian"
+      "Soul_s_Attendant": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Soul's+Attendant&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Soul's+Attendant&format=image",
+        "label": "Soul's Attendant",
+        "nameBack": "",
+        "nameFront": "Soul's Attendant",
+        "powerBack": "",
+        "powerFront": "1",
+        "toughnessBack": "",
+        "toughnessFront": "1"
       },
-      "Unsummon": {
-        "image": "https://api.scryfall.com/cards/named?exact=Unsummon&format=image",
-        "label": "Unsummon"
+      "Stave_Off": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Stave+Off&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Stave+Off&format=image",
+        "label": "Stave Off",
+        "nameBack": "",
+        "nameFront": "Stave Off",
+        "powerBack": "",
+        "powerFront": "",
+        "toughnessBack": "",
+        "toughnessFront": ""
       },
-      "Wall_of_Runes": {
-        "image": "https://api.scryfall.com/cards/named?exact=Wall+of+Runes&format=image",
-        "label": "Wall of Runes"
+      "Suture_Priest": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Suture+Priest&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Suture+Priest&format=image",
+        "label": "Suture Priest",
+        "nameBack": "",
+        "nameFront": "Suture Priest",
+        "powerBack": "",
+        "powerFront": "1",
+        "toughnessBack": "",
+        "toughnessFront": "1"
       },
-      "Warden_of_Evos_Isle": {
-        "image": "https://api.scryfall.com/cards/named?exact=Warden+of+Evos+Isle&format=image",
-        "label": "Warden of Evos Isle"
-      },
-      "Waterkin_Shaman": {
-        "image": "https://api.scryfall.com/cards/named?exact=Waterkin+Shaman&format=image",
-        "label": "Waterkin Shaman"
-      },
-      "Waterknot": {
-        "image": "https://api.scryfall.com/cards/named?exact=Waterknot&format=image",
-        "label": "Waterknot"
-      },
-      "Windreader_Sphinx": {
-        "image": "https://api.scryfall.com/cards/named?exact=Windreader+Sphinx&format=image",
-        "label": "Windreader Sphinx"
-      },
-      "Windstorm_Drake": {
-        "image": "https://api.scryfall.com/cards/named?exact=Windstorm+Drake&format=image",
-        "label": "Windstorm Drake"
-      },
-      "Winged_Words": {
-        "image": "https://api.scryfall.com/cards/named?exact=Winged+Words&format=image",
-        "label": "Winged Words"
+      "Thraben_Inspector": {
+        "artCropBack": "",
+        "artCropFront": "https://api.scryfall.com/cards/named?exact=Thraben+Inspector&format=image&version=art_crop",
+        "imageBack": "",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=Thraben+Inspector&format=image",
+        "label": "Thraben Inspector",
+        "nameBack": "",
+        "nameFront": "Thraben Inspector",
+        "powerBack": "",
+        "powerFront": "1",
+        "toughnessBack": "",
+        "toughnessFront": "2"
       }
     },
     "faceTemplates": [
@@ -3629,8 +3939,7 @@
     "width": 250,
     "x": 890,
     "y": 788,
-    "z": 151,
-    "scale": 0
+    "z": 151
   },
   "playerDeckActions2": {
     "borderRadius": 8,
@@ -3643,11 +3952,11 @@
     "holderId": "playerDeckHolder2",
     "id": "playerDeckActions2",
     "movable": false,
-    "scale": 0,
     "width": 250,
-    "x": 852,
-    "y": 189,
-    "z": 156
+    "x": 863,
+    "y": 133,
+    "z": 156,
+    "scale": 0
   },
   "playerDeckHolder1": {
     "dropshadow": true,
@@ -3676,7 +3985,8 @@
     "type": "holder",
     "width": 123,
     "x": 928,
-    "y": 3
+    "y": 3,
+    "height": 101
   },
   "playerExile1": {
     "dropShadow": true,
@@ -3703,7 +4013,8 @@
     "width": 123,
     "x": 1185,
     "y": 1,
-    "z": 76
+    "z": 76,
+    "height": 101
   },
   "playerGraveyard1": {
     "dropShadow": true,
@@ -3730,7 +4041,8 @@
     "width": 123,
     "x": 1057,
     "y": 2,
-    "z": 75
+    "z": 75,
+    "height": 101
   },
   "playerHand1": {
     "childrenPerOwner": true,
@@ -3747,6 +4059,7 @@
         "value": "Hand: ${COUNT}"
       }
     ],
+    "height": 101,
     "hidePlayerCursors": true,
     "hoverInheritVisibleForSeat": false,
     "id": "playerHand1",
@@ -3774,8 +4087,7 @@
     "width": 921,
     "x": 5,
     "y": 898,
-    "z": 28,
-    "height": 101
+    "z": 28
   },
   "playerHand2": {
     "childrenPerOwner": true,
@@ -3794,7 +4106,7 @@
         "value": "Hand: ${COUNT}"
       }
     ],
-    "height": 156,
+    "height": 101,
     "hidePlayerCursors": true,
     "hoverInheritVisibleForSeat": false,
     "id": "playerHand2",
@@ -3876,13 +4188,13 @@
     "width": 115
   },
   "playerPile2": {
-    "height": 160,
     "id": "playerPile2",
-    "parent": "playerDeckHolder2",
     "type": "pile",
     "width": 115,
-    "x": 4,
-    "y": 4
+    "height": 160,
+    "z": 82189,
+    "hoverParent": "playerDeckHolder2",
+    "parent": "playerDeckHolder2"
   },
   "rg7t": {
     "clickRoutine": [
@@ -4336,11 +4648,13 @@
     ],
     "height": 25,
     "id": "seat2",
-    "occupied": 0,
+    "occupied": 1,
     "type": "seat",
     "width": 130,
     "x": 1454,
-    "y": 6
+    "y": 6,
+    "player": "Carl",
+    "color": "#00b1cd"
   },
   "shlu": {
     "id": "shlu",
@@ -4370,11 +4684,11 @@
     "height": 143,
     "id": "tokenActionsBox",
     "layer": 2,
+    "scale": 0,
     "width": 230,
     "x": 1358,
     "y": 687,
-    "z": 172,
-    "scale": 0
+    "z": 172
   },
   "tokenHolder1": {
     "dropTarget": {
@@ -4499,8 +4813,8 @@
     "id": "v9d4",
     "text": "Exile",
     "type": "label",
-    "x": 1198,
-    "y": 177,
+    "x": 1189,
+    "y": 108,
     "z": 95
   },
   "xn6j": {
