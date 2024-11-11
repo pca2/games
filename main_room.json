@@ -4535,11 +4535,9 @@
         ]
       }
     ],
-    "color": "#00b385",
     "height": 25,
     "id": "seat1",
-    "occupied": 1,
-    "player": "Carl",
+    "occupied": 0,
     "type": "seat",
     "width": 130,
     "x": 1456,
@@ -4610,13 +4608,11 @@
     ],
     "height": 25,
     "id": "seat2",
-    "occupied": 1,
+    "occupied": 0,
     "type": "seat",
     "width": 130,
     "x": 1454,
-    "y": 6,
-    "player": "Carl",
-    "color": "#00b1cd"
+    "y": 6
   },
   "shlu": {
     "id": "shlu",
