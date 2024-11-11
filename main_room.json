@@ -1825,45 +1825,6 @@
     "y": 5,
     "z": 125
   },
-  "commandZone1": {
-    "dropShadow": true,
-    "height": 101,
-    "id": "commandZone1",
-    "inheritFrom": {
-      "playerDeck1": [
-        "*"
-      ]
-    },
-    "onEnter": {
-      "activeFace": 1,
-      "rotation": 0
-    },
-    "rotation": 0,
-    "scale": 1,
-    "type": "holder",
-    "width": 123,
-    "x": 373,
-    "y": 0,
-    "z": 3
-  },
-  "commandZone2": {
-    "dropShadow": true,
-    "id": "commandZone2",
-    "inheritFrom": {
-      "playerDeck2": [
-        "*"
-      ]
-    },
-    "onEnter": {
-      "activeFace": 1,
-      "rotation": 0
-    },
-    "scale": 1,
-    "type": "holder",
-    "x": 382,
-    "y": -2,
-    "z": 3
-  },
   "commandZoneDeck1": {
     "cardDefaults": {
       "clickRoutine": [
@@ -3939,7 +3900,8 @@
     "width": 250,
     "x": 890,
     "y": 788,
-    "z": 151
+    "z": 151,
+    "scale": 0
   },
   "playerDeckActions2": {
     "borderRadius": 8,
@@ -5028,5 +4990,44 @@
     "width": 36,
     "x": 15,
     "y": -40
+  },
+  "commandZone2": {
+    "type": "holder",
+    "id": "commandZone2",
+    "x": 382,
+    "y": -2,
+    "scale": 1,
+    "z": 3,
+    "dropShadow": true,
+    "inheritFrom": {
+      "playerDeck2": [
+        "*"
+      ]
+    },
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    }
+  },
+  "commandZone1": {
+    "type": "holder",
+    "id": "commandZone1",
+    "x": 373,
+    "y": 0,
+    "width": 123,
+    "height": 101,
+    "scale": 1,
+    "rotation": 0,
+    "z": 3,
+    "dropShadow": true,
+    "inheritFrom": {
+      "playerDeck1": [
+        "*"
+      ]
+    },
+    "onEnter": {
+      "activeFace": 1,
+      "rotation": 0
+    }
   }
 }
