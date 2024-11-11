@@ -2116,7 +2116,7 @@
       {
         "angle": 0,
         "collection": "bottomCards",
-        "count": 0,
+        "count": 999,
         "func": "ROTATE",
         "mode": "set"
       },
@@ -2155,7 +2155,7 @@
       {
         "angle": 0,
         "collection": "topCards",
-        "count": 0,
+        "count": 999,
         "func": "ROTATE",
         "mode": "set"
       },
@@ -2549,7 +2549,7 @@
       {
         "angle": 0,
         "collection": "bottomCards",
-        "count": 0,
+        "count": 999,
         "func": "ROTATE",
         "mode": "set"
       }
@@ -2616,7 +2616,7 @@
       {
         "angle": 0,
         "collection": "bottomCards",
-        "count": 0,
+        "count": 999,
         "func": "ROTATE",
         "mode": "set"
       }
