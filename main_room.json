@@ -2376,8 +2376,8 @@
         "func": "INPUT"
       },
       "var playerNumber = 1",
-      "var parsedMoxfieldArray = ${moxfieldUrl} split 'https://www.moxfield.com/decks/'",
-      "var moxfieldId = ${parsedMoxfieldArray.1}",
+      "var parsedMoxfieldArray = ${moxfieldUrl} split '/'",
+      "var moxfieldId = ${parsedMoxfieldArray} getIndex '4'",
       "var apiURL = 'https://vtt-importer-golang-282928896773.us-central1.run.app/deckUpdate?roomID=' + ${roomID}",
       "var apiURL = ${apiURL} + '&moxfieldID='",
       "var apiURL = ${apiURL} + ${moxfieldId}",
@@ -2430,8 +2430,8 @@
         "func": "INPUT"
       },
       "var playerNumber = 2",
-      "var parsedMoxfieldArray = ${moxfieldUrl} split 'https://www.moxfield.com/decks/'",
-      "var moxfieldId = ${parsedMoxfieldArray.1}",
+      "var parsedMoxfieldArray = ${moxfieldUrl} split '/'",
+      "var moxfieldId = ${parsedMoxfieldArray} getIndex '4'",
       "var apiURL = 'https://vtt-importer-golang-282928896773.us-central1.run.app/deckUpdate?roomID=' + ${roomID}",
       "var apiURL = ${apiURL} + '&moxfieldID='",
       "var apiURL = ${apiURL} + ${moxfieldId}",
