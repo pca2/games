@@ -1854,7 +1854,7 @@
     },
     "cardTypes": {
       "commander1": {
-        "image": "https://api.scryfall.com/cards/named?exact=jasmine+boreal+of+the+seven&format=image",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=jasmine+boreal+of+the+seven&format=image",
         "label": "commander1"
       }
     },
@@ -1880,7 +1880,7 @@
           {
             "color": "transparent",
             "dynamicProperties": {
-              "value": "image"
+              "value": "imageFront"
             },
             "height": 160,
             "type": "image",
@@ -1929,7 +1929,7 @@
     },
     "cardTypes": {
       "commander2": {
-        "image": "https://api.scryfall.com/cards/named?exact=thalisse+reverent+medium&format=image",
+        "imageFront": "https://api.scryfall.com/cards/named?exact=thalisse+reverent+medium&format=image",
         "label": "commander2"
       }
     },
@@ -1955,7 +1955,7 @@
           {
             "color": "transparent",
             "dynamicProperties": {
-              "value": "image"
+              "value": "imageFront"
             },
             "height": 160,
             "type": "image",
