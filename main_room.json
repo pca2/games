@@ -7223,18 +7223,16 @@
   "commandZone1": {
     "type": "holder",
     "id": "commandZone1",
-    "x": 373,
-    "y": 0,
+    "x": 1301,
+    "y": 892,
     "width": 123,
     "height": 101,
     "scale": 1,
     "rotation": 0,
     "z": 3,
     "dropShadow": true,
-    "inheritFrom": {
-      "playerDeck1": [
-        "*"
-      ]
+    "dropTarget": {
+      "type": "card"
     },
     "onEnter": {
       "activeFace": 1,
@@ -7244,15 +7242,13 @@
   "commandZone2": {
     "type": "holder",
     "id": "commandZone2",
-    "x": 382,
-    "y": -2,
+    "x": 1312,
+    "y": -3,
     "scale": 1,
     "z": 3,
     "dropShadow": true,
-    "inheritFrom": {
-      "playerDeck2": [
-        "*"
-      ]
+    "dropTarget": {
+      "type": "card"
     },
     "onEnter": {
       "activeFace": 1,
